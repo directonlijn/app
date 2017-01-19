@@ -1,0 +1,25 @@
+body{ padding-top: 51px; }
+
+.standhouders-table tr.unseen-row {
+    cursor: pointer;
+}
+
+.standhouders-table tr.unseen-row:nth-of-type(odd)
+{
+    background-color: rgba(255, 0, 0, 0.43);
+}
+
+.standhouders-table tr.unseen-row:nth-of-type(even)
+{
+    background-color: rgba(255, 0, 0, 0.18);
+}
+
+.standhouders-table tr.selected-row:nth-of-type(odd)
+{
+    background-color: rgba(255, 0, 0, 0.43);
+}
+
+.standhouders-table tr.selected-row:nth-of-type(even)
+{
+    background-color: rgba(255, 0, 0, 0.18);
+}
