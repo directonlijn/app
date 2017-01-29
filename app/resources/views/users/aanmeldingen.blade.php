@@ -127,10 +127,10 @@
                     var id = self.closest("tr").data("id");
                     if(self.prop("checked")){
                         setStandhouderSelected(id, 1)
-                        self.closest("tr").removeClass("unseen-row");
+                        self.closest("tr").addClass("selected-row");
                     } else {
                         setStandhouderSelected(id, 0)
-                        self.closest("tr").addClass("unseen-row");
+                        self.closest("tr").removeClass("selected-row");
                     }
                 }, 20);
             });
@@ -208,6 +208,10 @@
                                 if (!$data['koppelStandhoudersMarkten'][$x]->seen)
                                 {
                                     echo '<tr class="unseen-row" data-id="'.$standhouder->id.'">';
+                                }
+                                else if ($data['koppelStandhoudersMarkten'][$x]->selected)
+                                {
+                                    echo '<tr class="selected-row" data-id="'.$standhouder->id.'">';
                                 }
                                 else
                                 {
