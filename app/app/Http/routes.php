@@ -37,7 +37,10 @@ Route::get("mail/test", "MarktenController@test");
 /* Authenticated users */
 Route::group(['middleware' => 'auth'], function()
 {
+    // PDF
+    Route::get('pdf', 'PdfController@sendInvoce');
 
+    // Emails
     Route::get('sendemail2', 'MailController@sendWelcomeMail');
     Route::get('sendemail', function () {
 
