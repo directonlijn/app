@@ -38,19 +38,7 @@ Route::get("mail/test", "MarktenController@test");
 Route::group(['middleware' => 'auth'], function()
 {
     // PDF
-    Route::get('pdf', function () {
-        // $pdf = App::make('dompdf.wrapper');
-        // $pdf->loadHTML('<h1>Test</h1>');
-        // return $pdf->stream();
-        $data = array();
-        $data['factuurnr'] = "201700001";
-        $data['datum'] = "201700001";
-
-        // $pdf = PDF::setOptions(["logOutputFile" => "/tmp/log.htm"]);
-        $pdf = PDF::loadView('pdf.factuur', $data);
-        // return $pdf->download('invoice.pdf');
-        return $pdf->stream();
-    });
+    Route::get('pdf', 'PdfController@sendInvoce');
 
     // Emails
     Route::get('sendemail2', 'MailController@sendWelcomeMail');
