@@ -38,7 +38,11 @@ Route::get("mail/test", "MarktenController@test");
 Route::group(['middleware' => 'auth'], function()
 {
     // PDF
-    Route::get('pdf', 'PdfController@sendInvoce');
+    // Route::get('pdf', 'PdfController@sendInvoce');
+    // Route::get('pdf', 'PdfController@hoogsteFactuurNummer');
+    Route::get('/testpdf', function () {
+        return view('pdf.factuur');
+    });
 
     // Emails
     Route::get('sendemail2', 'MailController@sendWelcomeMail');
@@ -68,6 +72,9 @@ Route::group(['middleware' => 'auth'], function()
 	{
 	       return View('users.dashboard');
 	}));
+
+    // PDF
+    Route::post('markten/{slug}/sendInvoices', 'PdfController@sendInvoce');
 
     // excel exports
     Route::get('markten/{slug}/export/aanmeldingen', 'MarktenController@exportAllStandhoudersForMarkt');

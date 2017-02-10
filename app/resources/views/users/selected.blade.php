@@ -3,21 +3,21 @@
 @section('title') Markten @stop
 
 @section('bottom')
+    <?php
+        $markt_name = request()->segment(2);
+    ?>
+
     <script>
         $(document).ready(function(){
 
             $(".exportToExcel").on("click", function(){
-                // markten/{slug}/export
-                // $.ajax({
-                //     url: "/markten/Hippiemarkt Amsterdam XL/export",
-                //     success: function(result){
-                //         alert("succes");
-                //     },
-                //     fail: function(){
-                //         alert("fail");
-                //     }
-                // });
-                window.open("/markten/Hippiemarkt Amsterdam XL/export/selected", '_blank');
+                window.open("/markten/{{$markt_name}}/export/selected", '_blank');
+            });
+
+            $(".verstuurFacturen").on("click", function(){
+                var $data = { _token: "{{ csrf_token() }}" };
+
+                getJsonData("POST", "/markten/{{$markt_name}}/sendInvoices", $data);
             });
 
             function getJsonData(type, url, $data)
@@ -49,7 +49,7 @@
                     // $(".standhouders-table tbody").append($html);
                 })
                 .fail(function(data){
-                console.log(data);
+                    console.log(data);
                     returnValue = false;
                 });
 
@@ -154,6 +154,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" data-tab="aanmeldingen">
             <h1 class="page-header">Geselecteerd</h1>
             <input type="button" class="exportToExcel" value="export all">
+            <input type="button" class="verstuurFacturen" value="verstuur facturen">
             <div class="table-responsive">
                 <table class="table table-striped standhouders-table">
                     <thead>
