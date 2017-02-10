@@ -1,7 +1,8 @@
-# Webalizer V2.21-02 Incremental Data - 01/18/2017 23:44:35
-2017 1 18 23 44 35
-13 7 6 2 4 6 13135 7 7 0
-3 1 3 14 18
+# Webalizer V2.21-02 Incremental Data - 02/01/2017 16:20:57
+2017 2 1 16 20 57
+9 5 6 3 1 6 3140 3 3 0
+6 1 5 1 1
+9 5 3140 6 3 3
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
@@ -15,11 +16,10 @@
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
-4 2 10400 1 2 2
 0 0 0 0 0 0
-2 0 1008 1 0 0
-2 1 490 2 1 1
-5 4 1237 3 4 4
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
@@ -34,47 +34,29 @@
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0
+3 2 1237 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+3 1 1346 1
+2 2 72 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
-1 0 490 0
 0 0 0 0
 0 0 0 0
-3 2 10400 1
-2 1 0 2
-0 0 0 0
-2 1 861 1
+1 0 485 0
 0 0 0 0
 0 0 0 0
-2 0 1008 0
-0 0 0 0
-1 1 0 1
-0 0 0 0
-1 1 0 1
 0 0 0 0
 0 0 0 0
-1 1 376 1
-0
-0
-0
-7
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
+0 0 0 0
+0 0 0 0
+0 0 0 0
 0
 0
 0
@@ -96,68 +78,91 @@
 0
 0
 0
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
 0
 0
 # -urls- 
 /
-0 7 0 1370 7 3
-/logo.png
-0 1 0 9292 0 0
+0 3 1 1128 3 0
+/.well-known/acme-challenge/f4e90b
+0 1 21264144 36 0 0
+/.well-known/acme-challenge/66308b
+0 1 21257952 36 0 0
 # End Of Table - urls
 # -sites- (monthly)
-ip3e83063b.speed.planet.nl
-0 2 0 1008 0 0
+baiduspider-180-76-15-141.crawl.baidu.com
+0 2 1 861 1 1485930971
+/
+crawl-66-249-76-156.googlebot.com
+0 1 1 376 1 1485912831
+/
+crawl-66-249-76-27.googlebot.com
+0 1 0 485 0 0
 -
-173.208.213.114
-0 1 1 376 1 1484783075
-/
-205.201.140.14
-0 3 3 0 3 1484770884
-/
-dhcp-077-251-087-106.chello.nl
-0 1 0 490 0 0
+s198.webhostingserver.nl
+0 2 2 72 0 0
 -
-alvast-online.nl
-0 4 2 10400 2 1484393791
-/
+baiduspider-180-76-15-7.crawl.baidu.com
+0 1 0 485 0 0
+-
 spider-141-8-142-3.yandex.com
-0 2 1 861 1 1484744487
+0 2 1 861 1 1485913329
 /
 # End Of Table - sites (monthly)
 # -sites- (daily)
-173.208.213.114
-0 1 1 376 1 1484783075
+baiduspider-180-76-15-141.crawl.baidu.com
+0 2 1 861 1 1485930971
 /
-205.201.140.14
-0 2 2 0 2 1484770884
+crawl-66-249-76-156.googlebot.com
+0 1 1 376 1 1485912831
 /
+crawl-66-249-76-27.googlebot.com
+0 1 0 485 0 0
+-
+s198.webhostingserver.nl
+0 2 2 72 0 0
+-
+baiduspider-180-76-15-7.crawl.baidu.com
+0 1 0 485 0 0
+-
 spider-141-8-142-3.yandex.com
-0 2 1 861 1 1484744487
+0 2 1 861 1 1485913329
 /
 # End Of Table - sites (daily)
 # -referrers- 
 - (Direct Request)
 0 9
-http://www.alvast-online.nl/
-0 1
-http://www-d-o-t-directevents-d-o-t-nl.alvast-online.nl/
-0 2
-http://burger-imperia.com/
-0 1
 # End Of Table - referrers
 # -agents- 
+Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+0 1
+Mozilla/5.0 (compatible; Let's Encrypt prevalidation check; +https://www.antagonist.nl)
+0 2
 Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
 0 2
-Zend_Http_Client
-0 3
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 0 1
-Apple-iPhone8C2/1305.238
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile S
+0 1
+Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2
 0 2
-Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CL
-0 1
-Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
-0 4
 # End Of Table - agents
 # -search strings- 
 # End Of Table - search strings
