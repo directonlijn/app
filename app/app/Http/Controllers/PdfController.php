@@ -189,6 +189,7 @@ class PdfController extends Controller
             $factuurInstance = new Factuur;
             $factuurInstance->factuurnummer = $hoogsteFactuurNummer;
             $factuurInstance->datum = date("d-m-Y");
+            $factuurInstance->standhouder_id = $nieuwe_factuur['id'];
             $factuurInstance->markt_id = $nieuwe_factuur['markt_id'];
             $factuurInstance->totaal_bedrag =  number_format(round($nieuwe_factuur['kraam']*$data['markt']->bedrag_kraam + $nieuwe_factuur['grondplek']*$data['markt']->bedrag_grondplek, 2), 2);
             $factuurInstance->betaald = 0;
