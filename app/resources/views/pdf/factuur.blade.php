@@ -35,7 +35,7 @@
         </div>
 
         <!-- <img style="width: 400px;position: absolute;right: 0px;top: 0px;" src="/assets/img/hippiemarkt-amsterdam-xl/logo.png"> -->
-        <img style="width: 400px;height: 133px;position: absolute;right: 0px;top: 0px;" src="http://app.directevents.dev/assets/img/direct-events-logo.jpg">
+        <img style="width: 400px;height: 133px;position: absolute;right: 0px;top: 0px;" src="http://app.directevents.nl/assets/img/direct-events-logo.jpg">
 
         <div class="own-left" style="font-weight:900;text-align: left;position: absolute;right: 120px;">
             E-MAIL:
