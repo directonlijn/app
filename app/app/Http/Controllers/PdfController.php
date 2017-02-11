@@ -232,6 +232,17 @@ class PdfController extends Controller
                 'email' => "grahamneal1991@gmail.com",
                 'pathToFile' => $path
             );
+            
+        // $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y") . "00003.pdf";
+//dd($path);
+        // $pdf = \PDF::loadView('pdf.factuur', $data)->save( $path )->stream();
+
+        // $data = array(
+        //     'name' => "Graham",
+        //     'datum' => "19 Januari 2017",
+        //     'marktNaam' => 'Hippiemark Amsterdam XL'
+        // );
+//dd($path);
 
             $data = array(
                 'name' => "Graham",
