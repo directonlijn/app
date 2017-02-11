@@ -679,7 +679,6 @@ Info@directevents.nl<br>
 
                             <em>Copyright © 2017 Direct Events, All rights reserved.</em><br>
 <br>
-<strong>Our mailing address is:</strong><br>
 info@directevents.nl<br></td>
                     </tr>
                 </tbody></table>
