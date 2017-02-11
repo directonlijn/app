@@ -244,6 +244,7 @@ class PdfController extends Controller
             $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
             // return $pdf->stream();
             // return $pdf;
+            sleep(1);
 
             $testText .= " pdf created for " . $pdf_data['standhouder']['bedrijfsnaam'];
 
@@ -264,6 +265,7 @@ class PdfController extends Controller
         //     'marktNaam' => 'Hippiemark Amsterdam XL'
         // );
 //dd($path);
+    sleep(1);
 
             $data5 = array(
                 'name' => "Graham",
@@ -285,6 +287,7 @@ class PdfController extends Controller
             $testText .= " mail sent to " . $pdf_data['standhouder']['bedrijfsnaam'];
 
             $aantal_facturen++;
+            sleep(2);
         }
 
         // return "Er zijn " . $aantal_facturen . " facturen verstuurd.";
