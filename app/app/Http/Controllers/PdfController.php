@@ -54,6 +54,7 @@ class PdfController extends Controller
         $standhouder_merged['stroom'] = $standhouderKoppel->stroom;
         $standhouder_merged['bedrag'] = $standhouderKoppel->bedrag;
         $standhouder_merged['bedrijfsnaam'] = $standhouder->Bedrijfsnaam;
+        $standhouder_merged['email'] = $standhouder->email;
         $standhouder_merged['adres'] = $standhouder->Straat . " " . $standhouder->Huisnummer;
         $standhouder_merged['postcodeplaats'] = $standhouder->Postcode . ", " . $standhouder->Woonplaats;
 
@@ -244,13 +245,13 @@ class PdfController extends Controller
             $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
             // return $pdf->stream();
             // return $pdf;
-            sleep(1);
+            // sleep(1);
 
             $testText .= " pdf created for " . $pdf_data['standhouder']['bedrijfsnaam'];
 
             $emailData = array(
                 'template' => "factuur",
-                'email' => "grahamneal1991@gmail.com",
+                'email' => $nieuwe_factuur['email'],
                 'pathToPdf' => $path,
                 'pathToTerms' => $pathToAlgemeneVoorwaarden
             );
@@ -269,7 +270,7 @@ class PdfController extends Controller
 
             $data5 = array(
                 'name' => "Graham",
-                'datum' => "19 Januari 2017",
+                'datum' => "11 Februari 2017",
                 'marktNaam' => 'Hippiemark Amsterdam XL'
             );
 
@@ -287,7 +288,7 @@ class PdfController extends Controller
             $testText .= " mail sent to " . $pdf_data['standhouder']['bedrijfsnaam'];
 
             $aantal_facturen++;
-            sleep(2);
+            sleep(1);
         }
 
         // return "Er zijn " . $aantal_facturen . " facturen verstuurd.";
