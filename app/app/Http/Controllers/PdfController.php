@@ -222,6 +222,7 @@ class PdfController extends Controller
             // dd($pdf_data);
 
             $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y")."/".$hoogsteFactuurNummer.".pdf";
+            $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/Algemene voorwaarden Hippiemarkt Amsterdam XL.pdf";
 
             $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
             // return $pdf->stream();
@@ -230,9 +231,10 @@ class PdfController extends Controller
             $emailData = array(
                 'template' => "factuur",
                 'email' => "grahamneal1991@gmail.com",
-                'pathToFile' => $path
+                'pathToPdf' => $path,
+                'pathToTerms' => $pathToAlgemeneVoorwaarden
             );
-            
+
         // $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y") . "00003.pdf";
 //dd($path);
         // $pdf = \PDF::loadView('pdf.factuur', $data)->save( $path )->stream();
@@ -252,7 +254,8 @@ class PdfController extends Controller
 
             \Mail::send('emails.'.$emailData['template'], $data, function ($message) use($emailData) {
 
-                $message->attach($emailData['pathToFile']);
+                $message->attach($emailData['pathToPdf']);
+                $message->attach($emailData['pathToTerms']);
 
                 $message->from('info@directevents.nl', 'Factuur Direct Events');
 
