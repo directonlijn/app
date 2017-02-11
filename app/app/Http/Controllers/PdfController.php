@@ -179,6 +179,8 @@ class PdfController extends Controller
 
         // return $data['facturen'];
 
+        $testText = "";
+
         // $hoogsteFactuurNummer
         $aantal_facturen = 0;
         foreach($data['facturen']['normaal']['standhouders'] as $nieuwe_factuur)
@@ -243,6 +245,8 @@ class PdfController extends Controller
             // return $pdf->stream();
             // return $pdf;
 
+            $testText .= " pdf created for " . $pdf_data['standhouder']['bedrijfsnaam'];
+
             $emailData = array(
                 'template' => "factuur",
                 'email' => "grahamneal1991@gmail.com",
@@ -278,10 +282,13 @@ class PdfController extends Controller
 
             });
 
+            $testText .= " mail sent to " . $pdf_data['standhouder']['bedrijfsnaam'];
+
             $aantal_facturen++;
         }
 
-        return "Er zijn " . $aantal_facturen . " facturen verstuurd.";
+        // return "Er zijn " . $aantal_facturen . " facturen verstuurd.";
+        return $testText;
     }
 
     /**
