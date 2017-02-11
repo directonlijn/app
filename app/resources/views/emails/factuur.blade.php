@@ -13,7 +13,7 @@
 		<meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bedankt voor uw aanmelding - Hippiemarkt Amsterdam XL</title>
+		<title>*|MC:SUBJECT|*</title>
 
     <style type="text/css">
 		p{
@@ -435,7 +435,7 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
 
-                            <a href="http://app.directevents.nl/mail/view/hippiemarkt-amsterdam-xl-welcome" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>
+                            <a href="*|ARCHIVE|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">View this email in your browser</a>
                         </td>
                     </tr>
                 </tbody></table>
@@ -491,58 +491,22 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
-                            <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
+                            <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Factuur Hippiemarkt Amsterdam XL</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de grootste Hippiemarkt van Nederland in Amsterdam op het Osdorpplein op Zondag 26 maart van 11:00 tot 17:00. </strong><br>
-<br>
-<strong><em>Lees deze info goed!</em></strong><br>
-Hippiemarkt Amsterdam XL is onderdeel van Direct Events. Hippiemarkt Amsterdam XL zal van 11:00 tot 17:00 duren. Er zullen ruim 200 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het plein zelf zal een podium met grote bar worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). Op het plein zal een groot deel van de food geplaatst worden. De kramen zijn 4 meter en hebben aan beide zijde een loop waar eventueel ruimte is voor een rek.<br>
-<br>
-<strong>LOCATIE:</strong><br>
-<strong>Adres: </strong>Osdorpplein Amsterdam<br>
-<strong>Opbouw: </strong>9:00 tot 10:45<br>
-<strong><em>LET OP: Alles Trucks dienen om 6:30 aanwezig te zijn!  </em></strong><br>
-<br>
-<strong>Afbouw: </strong>17:00 tot 19:00 <br>
-<br>
-Na het laden en lossen kunnen de auto’s geparkeerd worden in de buurt. Wij verzoeken iedereen om met 1 auto te komen in verband met de verwachtte drukten! (nadere informatie volgt in aanloop van het event).<br>
-<br>
-AANKLEDING KRAAM: </p>
-
-<ul>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Wij vragen van jullie om de kraam zo sfeervol en origineel mogelijk passend bij het thema ‘Ibiza’ in te richten.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je kraam er netjes en professioneel uitziet. </li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat wat onder je kraam staat er netjes bijstaat, of nog beter: zorg ervoor dat het bedekt is door een kleed, denk ook aan de zijkanten van je kraam.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Kraam: Een kraam is 4m lang bij 80cm breed en voorzien van een witte luifel.</li>
-</ul>
-PUBLICITEIT:<br>
-Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt Amsterdam XL kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!<br>
-Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. <br>
-<br>
-Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
-<br>
-<a href="https://www.facebook.com/events/1875225416093941/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1875225416093941/</a><br>
-<br>
-<a href="http://www.hippiemarktamsterdamxl.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktamsterdamxl.nl</a><br>
-<br>
-CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 11.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. 
-<ul>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Dichtstbijzijnde pinautomaat is een paar honderd meter verderop in het centrum. Een pinautomaat meenemen is aan te raden.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je op tijd bent.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Je bent zelf verantwoordelijk voor het bieden van kwaliteit aan de koper.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">De organisatie is niet aansprakelijk voor diefstal en schade toegebracht door derden.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg voor voldoende wisselgeld!</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Plaats geen rekken of producten in de doorloop van de bezoekers! Probeer het zoveel mogelijk naast de kraam te zetten, er is ruimte genoeg. </li>
-</ul>
-
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
-<br>
-Tot zondag 26 maart op De Hippiemarkt Amsterdam XL!<br>
-<br>
-Met vriendelijke groet,<br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-<br>
-Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
+Bedankt voor uw inschrijving voor De Hippiemarkt Amsterdam XL op zondag 26 maart. Met trots kunnen wij u mededelen dat u van harte welkom bent op de grootste outdoor Hippiemarkt van Nederland.<br>
+ <br>
+Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden (met onder andere opbouw en afbouw tijden) en de factuur.<br>
+ <br>
+Pas na ontvangst van uw betaling is uw inschrijving definitief.<br>
+ <br>
+Tot zondag 26 maart te Osdorpplein Amsterdam,<br>
+ <br>
+Contact informatie:<br>
+Info@directevents.nl<br>
+(06) 10434170<br>
+ </p>
 
                         </td>
                     </tr>
@@ -561,7 +525,25 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
 </table></td>
                             </tr>
                             <tr>
-                                <td valign="top" id="templateFooter" style="background:#FAFAFA none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <td valign="top" id="templateFooter" style="background:#FAFAFA none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+                                        <img align="center" alt="" src="https://gallery.mailchimp.com/042b4e4809d32ad5aa6147613/images/0bbee562-e766-4dda-83ca-4474a23a419b.png" width="564" style="max-width: 975px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
     <tbody class="mcnFollowBlockOuter">
         <tr>
             <td align="center" valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowBlockInner">
@@ -626,7 +608,7 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="http://www.hippiemarktamsterdamxl.nl" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="http://app.directevents.nl/markt/hippiemarkt-amsterdam-xl" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -660,6 +642,58 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
             </td>
         </tr>
     </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class="mcnDividerBlockOuter">
+        <tr>
+            <td class="mcnDividerBlockInner" style="min-width: 100%;padding: 10px 18px 25px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top-width: 2px;border-top-style: solid;border-top-color: #EEEEEE;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+
+				<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: center;">
+
+                            <em>Copyright © 2017 Direct Events, All rights reserved.</em><br>
+<br>
+<strong>Our mailing address is:</strong><br>
+info@directevents.nl<br></td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
 </table></td>
                             </tr>
                         </table>
@@ -673,5 +707,12 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
                 </tr>
             </table>
         </center>
-        </body>
+                <center>
+                <style type="text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; margin-top:10px !important;}
+                    }
+                </style>
+            </center></body>
 </html>
