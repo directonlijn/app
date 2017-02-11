@@ -54,7 +54,7 @@ class PdfController extends Controller
         $standhouder_merged['stroom'] = $standhouderKoppel->stroom;
         $standhouder_merged['bedrag'] = $standhouderKoppel->bedrag;
         $standhouder_merged['bedrijfsnaam'] = $standhouder->Bedrijfsnaam;
-        $standhouder_merged['email'] = $standhouder->email;
+        $standhouder_merged['email'] = $standhouder->Email;
         $standhouder_merged['adres'] = $standhouder->Straat . " " . $standhouder->Huisnummer;
         $standhouder_merged['postcodeplaats'] = $standhouder->Postcode . ", " . $standhouder->Woonplaats;
 
@@ -244,7 +244,7 @@ class PdfController extends Controller
             // return $pdf->stream();
             // return $pdf;
             // sleep(1);
-            dd($nieuwe_factuur['email']);
+            // dd($nieuwe_factuur);
             $emailData = array(
                 'template' => "factuur",
                 'email' => $nieuwe_factuur['email'],
