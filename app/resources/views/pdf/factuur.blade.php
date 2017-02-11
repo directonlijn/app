@@ -40,6 +40,8 @@
         <div class="own-left" style="font-weight:900;text-align: left;position: absolute;right: 120px;">
             E-MAIL:
             <br>
+            T.N.V.
+            <br>
             BANK IBAN:
             <br>
             KVK-NUMMER:
@@ -50,11 +52,13 @@
         <div class="own-right" style="position: absolute;right: 0px;width: 100px;">
             info@directevents.nl
             <br>
-            NL73INGB0007389233
+            G.J. Neal
+            <br>
+            NL90 INGB 0747 8910 01
             <br>
             66333180
             <br>
-            66333180
+            NL85 6498 944B 01
         </div>
 
         <div style="margin-top:60px;">
