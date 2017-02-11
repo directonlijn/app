@@ -37,7 +37,7 @@
         <!-- <img style="width: 400px;position: absolute;right: 0px;top: 0px;" src="/assets/img/hippiemarkt-amsterdam-xl/logo.png"> -->
         <img style="width: 400px;height: 133px;position: absolute;right: 0px;top: 0px;" src="http://app.directevents.nl/assets/img/direct-events-logo.jpg">
 
-        <div class="own-left" style="font-weight:900;text-align: left;position: absolute;right: 120px;">
+        <div class="own-left" style="font-weight:900;text-align: left;position: absolute;right: 170px;">
             E-MAIL:
             <br>
             T.N.V.
@@ -49,7 +49,7 @@
             BTW-NUMMER
         </div>
 
-        <div class="own-right" style="position: absolute;right: 0px;width: 100px;">
+        <div class="own-right" style="position: absolute;right: 0px;width: 150px;">
             info@directevents.nl
             <br>
             G.J. Neal
