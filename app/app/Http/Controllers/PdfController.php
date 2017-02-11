@@ -32,8 +32,8 @@ class PdfController extends Controller
         $data['factuurnr'] = "201700001";
         $data['datum'] = "201700001";
 
-        $path = dirname(__DIR__, 3) . "\public\pdf\/".date("Y") . "00001.pdf";
-
+        $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y") . "00003.pdf";
+//dd($path);
         $pdf = \PDF::loadView('pdf.factuur', $data)->save( $path )->stream();
 
         // $data = array(
@@ -41,6 +41,7 @@ class PdfController extends Controller
         //     'datum' => "19 Januari 2017",
         //     'marktNaam' => 'Hippiemark Amsterdam XL'
         // );
+//dd($path);
 
         $emailData = array(
             'template' => "factuur",
