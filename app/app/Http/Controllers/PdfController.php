@@ -244,7 +244,7 @@ class PdfController extends Controller
             // return $pdf->stream();
             // return $pdf;
             // sleep(1);
-
+            dd($nieuwe_factuur['email']);
             $emailData = array(
                 'template' => "factuur",
                 'email' => $nieuwe_factuur['email'],
