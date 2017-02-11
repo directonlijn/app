@@ -261,13 +261,13 @@ class PdfController extends Controller
         // );
 //dd($path);
 
-            $data = array(
+            $data5 = array(
                 'name' => "Graham",
                 'datum' => "19 Januari 2017",
                 'marktNaam' => 'Hippiemark Amsterdam XL'
             );
 
-            \Mail::send('emails.'.$emailData['template'], $data, function ($message) use($emailData) {
+            \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
 
                 $message->attach($emailData['pathToPdf']);
                 $message->attach($emailData['pathToTerms']);
