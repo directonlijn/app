@@ -38,7 +38,9 @@ class Koppel_standhouders_markten extends Model
                 'dierenspullen',
                 'anders',
                 'seen',
-                'selected'
+                'selected',
+                'factuurnummer',
+                'factuurdatum'
             ];
 
 

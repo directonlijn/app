@@ -83,7 +83,7 @@ class PdfController extends Controller
         */
 
         // 1. Wat is het hoogste huidige factuurnummer
-        $hoogsteFactuurNummer = $this->geefNieuwFactuurNummer();
+        // $hoogsteFactuurNummer = $this->geefNieuwFactuurNummer();
 
         $data = array();
 
@@ -183,6 +183,20 @@ class PdfController extends Controller
         $aantal_facturen = 0;
         foreach($data['facturen']['normaal']['standhouders'] as $nieuwe_factuur)
         {
+
+            $hoogsteFactuurNummer = $this->geefNieuwFactuurNummer();
+
+            $factuurInstance = new Factuur;
+            $factuurInstance->factuurnummer = $hoogsteFactuurNummer;
+            $factuurInstance->datum = date("d-m-Y");
+            $factuurInstance->markt_id = $nieuwe_factuur['markt_id'];
+            $factuurInstance->totaal_bedrag =  number_format(round($nieuwe_factuur['kraam']*$data['markt']->bedrag_kraam + $nieuwe_factuur['grondplek']*$data['markt']->bedrag_grondplek, 2), 2);
+            $factuurInstance->betaald = 0;
+            $factuurInstance->tweede_herinnering = 0;
+            $factuurInstance->derde_herinnering = 0;
+
+            $factuurInstance->save();
+
             $pdf_data = array();
             $pdf_data['factuurnr'] = $hoogsteFactuurNummer;
             $pdf_data['datum'] = date("d-m-Y");
