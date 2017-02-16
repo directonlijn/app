@@ -92,6 +92,7 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('markt/getStandhoudersForMarkt', 'MarktenController@getStandhouderTableJSON');
     Route::post('markt/setStandhouderSeen', 'MarktenController@setStandhouderSeen');
     Route::post('markt/setStandhouderSelected', 'MarktenController@setStandhouderSelected');
+    Route::post('markt/setStandhouderBetaald', 'MarktenController@setStandhouderBetaald');
 });
 
 return view('errors.404');

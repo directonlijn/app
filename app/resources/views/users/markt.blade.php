@@ -144,12 +144,12 @@
                             {
                                 // dd($standhouder);
                                 echo '<tr>';
-                                echo '<td>' . $standhouder->id . '</td>';
-                                echo '<td>' . $standhouder->Bedrijfsnaam . '</td>';
-                                echo '<td>' . $standhouder->Voornaam . " " . $standhouder->Achternaam . '</td>';
-                                echo '<td>' . $standhouder->Telefoon . '</td>';
-                                echo '<td>' . $standhouder->Email . '</td>';
-                                echo '<td>' . $standhouder->Website . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->id . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Bedrijfsnaam . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Voornaam . " " . $standhouder->Achternaam . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Telefoon . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Email . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Website . '</td>';
                                 echo '</tr>';
                             }
                         ?>

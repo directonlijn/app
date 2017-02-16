@@ -166,6 +166,21 @@ class MarktenController extends Controller
     }
 
     /**
+     * Set standhouder selected
+     *
+     * @return Response
+     */
+    public function setStandhouderBetaald(Request $request)
+    {
+        // dd($request->input('id'));
+
+        $standhouder = KoppelStandhoudersMarkten::where('standhouder_id', $request->input('id'))->firstOrFail();
+        $standhouder->betaald = $request->input('value');
+
+        $standhouder->save();
+    }
+
+    /**
      * Export standhouders for markt
      *
      * @return Response
