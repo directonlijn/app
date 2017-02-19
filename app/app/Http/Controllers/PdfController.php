@@ -249,7 +249,7 @@ class PdfController extends Controller
         // dd($pdf_data);
 
         $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y")."/".$factuur->factuurnummer.".pdf";
-        $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/Algemene voorwaarden Hippiemarkt Amsterdam XL.pdf";
+        $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/".$markt->{"algemene-voorwaarden-template"}.".pdf";
 
         $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
 

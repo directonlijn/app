@@ -52,6 +52,22 @@ class MarktenController extends Controller
     }
 
     /**
+     * Get Markt Data
+     *
+     * @return Response
+     */
+    public function getMarktManagement(Request $request)
+    {
+        try {
+            $markt = Markt::where('id', $request->input("markt_id"))->firstOrFail();
+            return json_encode(array("code" => "200", "data" => $markt, "message" => "Markt data is opgehaald."));
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return json_encode(array("code" => "400", "message" => "Markt kon niet gevonden worden."));
+        }
+    }
+
+    /**
      * Get page for markt
      *
      * @return Response

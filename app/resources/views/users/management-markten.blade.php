@@ -6,8 +6,66 @@
     <!-- <script src="/assets/js/aanmelding-geselecteerd.js"></script> -->
     <script>
         $(document).ready(function(){
+            $(".show-overzicht").on("click", function(){
+                $(".overlay").show();
+                $("body").addClass("loading");
+
+                setTimeout(function(){
+                    $(".markt-tab").hide();
+                    $(".overzicht").show();
+                    $(".overlay").hide();
+                    $("body").removeClass("loading");
+                }, 100);
+            });
             $(".show-markt").on("click", function(){
-                console.log($(this).attr("data-marktid"));
+                $(".overlay").show();
+                $("body").addClass("loading");
+                var $data = { _token: $(".token").text(), markt_id: $(this).attr("data-marktid")};
+                $.post({
+                    type: "POST",
+                    url: "/markten/beheer/getMarkt",
+                    data: $data
+                })
+                .done(function(data){
+                    var dataParsed = JSON.parse(data);
+                    // alert(JSON.parse(data).message);
+                    if (dataParsed.code == 200)
+                    {
+                        console.log(data);
+                        $marktData = dataParsed.data;
+                        console.log($marktData);
+                        $(".markt-titel").text($marktData["Naam"]);
+                        for (var key in $marktData)
+                        {
+                            if ($marktData.hasOwnProperty(key)) {
+                                //  console.log("Key is " + key + ", value is " + $marktData[key]);
+                                $(".markt-form input[name="+key+"]").val($marktData[key]);
+                            }
+                        }
+                        $(".overzicht").hide();
+                        $(".markt-tab").show();
+                        $(".overlay").hide();
+                        $("body").removeClass("loading");
+                    }
+                    else if (dataParsed.code == 400)
+                    {
+                        alert(dataParsed.message);
+                        $(".markt-tab").hide();
+                        $(".overzicht").show();
+                        $(".overlay").hide();
+                        $("body").removeClass("loading");
+                    }
+
+
+                })
+                .fail(function(data){
+                    // alert(JSON.parse(data).message);
+                    alert("Er is iets fout gegaan. Mocht dit probleem zich voor blijven doen neem dan contact op met uw systeem beheerder.");
+                    $(".markt-tab").hide();
+                    $(".overzicht").show();
+                    $(".overlay").hide();
+                    $("body").removeClass("loading");
+                });
             });
         })
     </script>
@@ -23,18 +81,66 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" style="position: absolute;">
             <ul class="nav nav-sidebar">
-                <li class="markt-overview"><a href="/markten/Beheer">Overzicht <span class="sr-only"></span></a></li>
+                <li class="markt-overview"><a class="show-overzicht">Overzicht <span class="sr-only"></span></a></li>
                 @foreach ($markten as $markt)
                     <li class="markt"><a class="show-markt" data-marktid="{{ $markt['id'] }}">{{ $markt['Naam'] }} <span class="sr-only"></span></a></li>
                 @endforeach
             </ul>
         </div>
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" data-tab="aanmeldingen">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 overzicht" data-tab="overzicht">
 
-        </div><!-- end of tab aanmeldingen -->
+        </div><!-- end of tab overzicht -->
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 markt-tab" data-tab="markt" style="display: none;">
+            <h1 class="page-header markt-titel"></h1>
+            <form class="markt-form">
+                <div class="form-title">Markt gegevens:</div>
+                <label><span>id:</span><input type="text" name="id" value="" readonly></label>
+                <br>
+                <label><span>Markt naam:</span><input type="text" name="naam" value=""></label>
+                <label><span>Datum:</span><input type="text" name="Datum" value=""></label>
+                <br>
+                <label><span>Bedrag Kraam:</span><input type="text" name="bedrag_kraam" value=""></label>
+                <label><span>Bedrag Grondplek:</span><input type="text" name="bedrag_grondplek" value=""></label>
+                <br>
+                <label><span>Vanaf:</span><input type="text" name="van-tijd" value=""></label>
+                <label><span>tot:</span><input type="text" name="tot-tijd" value=""></label>
+                <br>
+                <label><span>Website:</span><input type="text" name="Website" value=""></label>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="form-title">Markt adres gegevens:</div>
+                <label><span>Straat:</span><input type="text" name="Adres" value=""></label>
+                <label><span>Postcode:</span><input type="text" name="Postcode" value=""></label>
+                <br>
+                <label><span>Huisnummer:</span><input type="text" name="Huisnummer" value=""></label>
+                <label><span>Toevoeging:</span><input type="text" name="Toevoeging" value=""></label>
+                <br>
+                <label><span>Plaats:</span><input type="text" name="Plaats" value=""></label>
+                <label><span>Land:</span><input type="text" name="Land" value=""></label>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="form-title">Extra gegevens:</div>
+                <span>Welcome Email Template Naam:</span><input type="text" name="welcome-mail-template" value="">
+                <br>
+                <span>Algemene Voorwaarden Naam:</span><input type="text" name="algemene-voorwaarden" value="">
+
+
+            </form>
+        </div><!-- end of tab markt -->
 
         <div class="overlay"></div>
+
+        <div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
 
         <div class="standhouder-wijzig">
             <img src="/assets/img/dashboard/icons/close-icon.png" class="close-standhouder-wijzig">

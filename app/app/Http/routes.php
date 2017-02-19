@@ -83,6 +83,7 @@ Route::group(['middleware' => 'auth'], function()
 
     // Markten
     Route::get('markten/beheer', 'MarktenController@getManagement');
+    Route::post('markten/beheer/getMarkt', 'MarktenController@getMarktManagement');
     Route::get('markten/{slug}/aanmeldingen', 'MarktenController@getMarktAanmeldingen');
     Route::get('markten/{slug}/geselecteerd', 'MarktenController@getMarktSelected');
     Route::get('markten/{slug}', 'MarktenController@getMarkt');
