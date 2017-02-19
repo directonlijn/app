@@ -209,21 +209,29 @@ class PdfController extends Controller
         }
         else
         {
-            $pdf_data['tabel'][0] = array();
-            $pdf_data['tabel'][0]['factuurnummer'] =  $factuur->factuurnummer;
-            $pdf_data['tabel'][0]['aantal'] = $standhouderExtra->kraam;
-            $pdf_data['tabel'][0]['soort'] = "Kraam";
-            $pdf_data['tabel'][0]['btw'] = "21%";
-            $pdf_data['tabel'][0]['prijsperstuk'] = "€".number_format(round($markt->bedrag_kraam/1.21, 2), 2);
-            $pdf_data['tabel'][0]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->kraam/1.21), 2), 2);
+            if ($standhouderExtra->kraam > 0)
+            {
+                $pdf_data['tabel'][] = array();
+                $key = count($pdf_data['tabel']) - 1;
+                $pdf_data['tabel'][$key]['factuurnummer'] =  $factuur->factuurnummer;
+                $pdf_data['tabel'][$key]['aantal'] = $standhouderExtra->kraam;
+                $pdf_data['tabel'][$key]['soort'] = "Kraam";
+                $pdf_data['tabel'][$key]['btw'] = "21%";
+                $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_kraam/1.21, 2), 2);
+                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->kraam/1.21), 2), 2);
+            }
 
-            $pdf_data['tabel'][1] = array();
-            $pdf_data['tabel'][1]['factuurnummer'] =  $factuur->factuurnummer;
-            $pdf_data['tabel'][1]['aantal'] = $standhouderExtra->grondplek;
-            $pdf_data['tabel'][1]['soort'] = "Grondplek";
-            $pdf_data['tabel'][1]['btw'] = "21%";
-            $pdf_data['tabel'][1]['prijsperstuk'] = "€".number_format(round($markt->bedrag_grondplek/1.21, 2), 2);
-            $pdf_data['tabel'][1]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->grondplek/1.21), 2), 2);
+            if ($standhouderExtra->grondplek > 0)
+            {
+                $pdf_data['tabel'][] = array();
+                $key = count($pdf_data['tabel']) - 1;
+                $pdf_data['tabel'][$key]['factuurnummer'] =  $factuur->factuurnummer;
+                $pdf_data['tabel'][$key]['aantal'] = $standhouderExtra->grondplek;
+                $pdf_data['tabel'][$key]['soort'] = "Grondplek";
+                $pdf_data['tabel'][$key]['btw'] = "21%";
+                $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_grondplek/1.21, 2), 2);
+                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->grondplek/1.21), 2), 2);
+            }
 
             $pdf_data['totaalexbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21), 2), 2);
             $pdf_data['totaalbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21*0.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21*0.21), 2), 2);
@@ -234,8 +242,8 @@ class PdfController extends Controller
 
         $pdf_data['standhouder'] = array();
         $pdf_data['standhouder']['bedrijfsnaam'] = $standhouder->Bedrijfsnaam;
-        $pdf_data['standhouder']['adres'] = $standhouder->adres;
-        $pdf_data['standhouder']['postcodeplaats'] = $standhouder->postcodeplaats;
+        $pdf_data['standhouder']['adres'] = $standhouder->Straat . " " . $standhouder->Huisnummer;
+        $pdf_data['standhouder']['postcodeplaats'] = $standhouder->Postcode . ", " . $standhouder->Woonplaats;
 
         // return \PDF::loadView('pdf.factuur', $pdf_data)->stream();
         // dd($pdf_data);
