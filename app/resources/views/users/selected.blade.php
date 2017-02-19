@@ -7,158 +7,14 @@
         $markt_name = request()->segment(2);
     ?>
 
-    <script>
-        $(document).ready(function(){
-
-            $(".exportToExcel").on("click", function(){
-                window.open("/markten/{{$markt_name}}/export/selected", '_blank');
-            });
-
-            $(".verstuurFacturen").on("click", function(){
-                var $data = { _token: "{{ csrf_token() }}" };
-
-                getJsonData("POST", "/markten/{{$markt_name}}/sendInvoices", $data);
-            });
-
-            function getJsonData(type, url, $data)
-            {
-                var returnValue = '';
-                $.post({
-                    type: type,
-                    url: url,
-                    data: $data
-                })
-                .done(function(data){
-                    returnValue = data;
-                    console.log(data);
-                    // $(".standhouders-table tbody").empty();
-                    // $standhouders = data.standhouders;
-                    // $html = '';
-                    // for(var i = 0;i < $standhouders.length; i++)
-                    // {
-                    //     $html += "<tr>";
-                    //     $html += "<td>"+ $standhouders[i].id +"</td>";
-                    //     $html += "<td>"+ $standhouders[i].Bedrijfsnaam +"</td>";
-                    //     $html += "<td>"+ $standhouders[i].Voornaam + " " + $standhouders[i].Achternaam +"</td>";
-                    //     $html += "<td>"+ $standhouders[i].Telefoon +"</td>";
-                    //     $html += "<td>"+ $standhouders[i].Email +"</td>";
-                    //     $html += "<td>"+ $standhouders[i].Website +"</td>";
-                    //     $html += "</tr>";
-                    // }
-                    //
-                    // $(".standhouders-table tbody").append($html);
-                })
-                .fail(function(data){
-                    console.log(data);
-                    returnValue = false;
-                });
-
-                return returnValue;
-            }
-
-            $(".markt-item").on("click", function(){
-                var $id = $(this).find("a").data("id");
-                var $data = { _token: "{{ csrf_token() }}", id: $id };
-
-                data = getJsonData("POST", "getStandhoudersForMarkt", $data);
-                $(".standhouders-table tbody").empty();
-                console.log(data);
-                $standhouders = data.standhouders;
-                $html = '';
-                for(var i = 0;i < $standhouders.length; i++)
-                {
-                    $html += "<tr>";
-                    $html += "<td>"+ $standhouders[i].id +"</td>";
-                    $html += "<td>"+ $standhouders[i].Bedrijfsnaam +"</td>";
-                    $html += "<td>"+ $standhouders[i].Voornaam + " " + $standhouders[i].Achternaam +"</td>";
-                    $html += "<td>"+ $standhouders[i].Telefoon +"</td>";
-                    $html += "<td>"+ $standhouders[i].Email +"</td>";
-                    $html += "<td>"+ $standhouders[i].Website +"</td>";
-                    $html += "</tr>";
-                }
-
-                $(".standhouders-table tbody").append($html);
-            });
-
-            $(".standhouders-table tr.unseen-row").on("click", function(){
-                $(this).removeClass("unseen-row");
-
-                var $id = $(this).data("id");
-
-                setStandhouderSeen($id, 1)
-            });
-
-            $(".standhouders-table tr input.seen").on("click", function(){
-                var self = $(this);
-
-                setTimeout(function(){
-                    var id = self.closest("tr").data("id");
-                    if(self.prop("checked")){
-                        setStandhouderSeen(id, 1)
-                        self.closest("tr").removeClass("unseen-row");
-                    } else {
-                        setStandhouderSeen(id, 0)
-                        self.closest("tr").addClass("unseen-row");
-                    }
-                }, 20);
-            });
-
-            function setStandhouderSeen($id, $value)
-            {
-                var $data = { _token: "{{ csrf_token() }}", id: $id, value: $value };
-
-                data = getJsonData("POST", "/markt/setStandhouderSeen", $data);
-            }
-
-            $(".standhouders-table tr input.selected").on("click", function(){
-                var self = $(this);
-
-                setTimeout(function(){
-                    var id = self.closest("tr").data("id");
-                    if(self.prop("checked")){
-                        setStandhouderSelected(id, 1)
-                        self.closest("tr").removeClass("selected-row");
-                    } else {
-                        setStandhouderSelected(id, 0)
-                        self.closest("tr").addClass("selected-row");
-                    }
-                }, 20);
-            });
-
-            $(".standhouders-table tr input.betaald").on("click", function(){
-                var self = $(this);
-
-                setTimeout(function(){
-                    var id = self.closest("tr").data("id");
-                    if(self.prop("checked")){
-                        setStandhouderBetaald(id, 1)
-                    } else {
-                        setStandhouderBetaald(id, 0)
-                    }
-                }, 20);
-            });
-
-            function setStandhouderSelected($id, $value)
-            {
-                var $data = { _token: "{{ csrf_token() }}", id: $id, value: $value };
-
-                data = getJsonData("POST", "/markt/setStandhouderSelected", $data);
-            }
-
-            function setStandhouderBetaald($id, $value)
-            {
-                var $data = { _token: "{{ csrf_token() }}", id: $id, value: $value };
-
-                data = getJsonData("POST", "/markt/setStandhouderBetaald", $data);
-            }
-        });
-    </script>
+    <script src="/assets/js/aanmelding-geselecteerd.js"></script>
 @stop
 
 @section('content')
     <?php
         // dd($data);
     ?>
+    <div class="token">{{ csrf_token() }}</div>
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" style="position: absolute;">
             <ul class="nav nav-sidebar">
@@ -176,10 +32,11 @@
             <input type="button" class="exportToExcel" value="export all">
             <input type="button" class="verstuurFacturen" value="verstuur facturen">
             <div class="table-responsive">
-                <table class="table table-striped standhouders-table">
+                <table class="table table-striped standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
                     <thead>
                         <tr>
                             <th>#</th>
+                            <th>Wijzig</th>
                             <th>Gezien</th>
                             <th>Geselecteerd</th>
                             <th>Betaald</th>
@@ -231,6 +88,8 @@
 
                                 echo '<td>' . $standhouder->id . '</td>';
 
+                                echo '<td class="filterable-cell"><img class="adjust" src="/assets/img/dashboard/icons/pencil.png"></td>';
+
                                 echo '<td><input type="checkbox" class="seen" name="seen" value="seen"';
                                 if($data['koppelStandhoudersMarkten'][$x]->seen){
                                     echo 'checked=checked>' . '</td>';
@@ -246,7 +105,7 @@
                                 }
 
                                 echo '<td class="filterable-cell"><input type="checkbox" class="betaald" name="betaald" value="betaald"';
-                                if($data['koppelStandhoudersMarkten'][$x]->betaald){
+                                if(isset($data['factuur'][$standhouder->id]) && $data['factuur'][$standhouder->id]->betaald){
                                     echo 'checked=checked>' . '</td>';
                                 } else {
                                     echo '>' . '</td>';
@@ -258,25 +117,31 @@
                                 echo '<td>' . $standhouder->Email . '</td>';
                                 echo '<td>' . $standhouder->Website . '</td>';
 
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->schoenen . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->lifestyle . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"} . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->kunst . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->sieraden . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->tassen . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->brocante . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->dierenspullen . '</td>';
-                                echo '<td>' . $data['koppelStandhoudersMarkten'][$x]->anders . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Bedrijfsnaam . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Voornaam . " " . $standhouder->Achternaam . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Telefoon . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Email . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->Website . '</td>';
+
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->schoenen . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->lifestyle . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"} . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kunst . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->sieraden . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->tassen . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->brocante . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->dierenspullen . '</td>';
+                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->anders . '</td>';
 
                                 echo '</tr>';
                                 $x++;
@@ -286,6 +151,105 @@
                 </table>
             </div>
         </div><!-- end of tab aanmeldingen -->
+
+        <div class="overlay"></div>
+
+        <div class="standhouder-wijzig">
+            <img src="/assets/img/dashboard/icons/close-icon.png" class="close-standhouder-wijzig">
+            <form class="standhouderAdjustForm">
+                <div class="form-title">Contact gegevens:</div>
+                <label><span>id:</span><input type="text" name="id" value="" readonly></label>
+                <br>
+                <label><span>Bedrijfsnaam:</span><input type="text" name="Bedrijfsnaam" value=""></label>
+                <br>
+                <label><span>Voornaam:</span><input type="text" name="Voornaam" value=""></label>
+                <br>
+                <label><span>Achternaam:</span><input type="text" name="Achternaam" value=""></label>
+                <br>
+                <label><span>Email:</span><input type="text" name="Email" value=""></label>
+                <br>
+                <label><span>Telefoon:</span><input type="text" name="Telefoon" value=""></label>
+                <br>
+                <label><span>Website:</span><input type="text" name="Website" value=""></label>
+
+                <br><br><br>
+
+                <div class="form-title">Adres gegevens:</div>
+                <label><span>Straat:</span><input type="text" name="Straat" value=""></label>
+                <label><span>Postcode:</span><input type="text" name="Postcode" value=""></label>
+                <br>
+                <label><span>Huisnummer:</span><input type="text" name="Huisnummer" value=""></label>
+                <label><span>Toevoeging:</span><input type="text" name="Toevoeging" value=""></label>
+                <br>
+                <label><span>Woonplaats:</span><input type="text" name="Woonplaats" value=""></label>
+
+                <br><br><br>
+
+                <div class="form-title">Ander bedrag:</div>
+                <label><span>Prijsafspraak:</span><input type="checkbox" name="afgesproken_prijs" value="1"></label>
+                <label><span>Afgesproken prijs:</span><input type="text" name="afgesproken_bedrag" value=""></label>
+
+                <br><br><br>
+
+                <input type="button" value="verstuur factuur" class="send-single-invoice">
+                <div class="form-title">Markt Gegevens:</div>
+                <label>
+                    Food/non-food*:
+                    <input type="radio" name="foodNonfood" value="food">food
+                    <span style="display:inline-block;width:20px;"></span>
+                    <input type="radio" name="foodNonfood" value="non-food">non food
+                </label>
+                <br>
+                <label><span>Kramen:</span><input type="text" name="kraam" value=""></label>
+                <label><span>Grondplekken:</span><input type="text" name="grondplek" value=""></label>
+                <br>
+                <label><span>Betaald:</span><input type="checkbox" name="betaald" value="1"></label>
+                <label><span>Bedrag:</span><input type="text" name="bedrag" value="" readonly></label>
+
+                <br>
+                <br>
+                <br>
+
+                <label><input type="checkbox" name="anders" value="1"><span>Anders:</span></label>
+                <label><input type="checkbox" name="baby-kleding" value="1"><span>Baby Kleding:</span></label>
+                <br>
+                <label><input type="checkbox" name="brocante" value="1"><span>Brocante:</span></label>
+                <label><input type="checkbox" name="dames-kleding" value="1"><span>Dames Kleding</span></label>
+                <br>
+                <label><input type="checkbox" name="dierenspullen" value="1"><span>Dierenspullen:</span></label>
+                <label><input type="checkbox" name="fashion-acceoires" value="1"><span>Fashion accesoires:</span></label>
+                <br>
+                <label><input type="checkbox" name="selected" value="1"><span>Geselecteerd:</span></label>
+                <label><input type="checkbox" name="grote-maten" value="1"><span>Grote maten:</span></label>
+                <br>
+                <label><input type="checkbox" name="heren-kleding" value="1"><span>Heren kleding:</span></label>
+                <label><input type="checkbox" name="kinder-kleding" value="1"><span>Kinder kleding:</span></label>
+                <br>
+                <label><input type="checkbox" name="kunst" value="1"><span>Kunst:</span></label>
+                <label><input type="checkbox" name="lifestyle" value="1"><span>Lifestyle:</span></label>
+                <br>
+                <label><input type="checkbox" name="schoenen" value="1"><span>Schoenen</span></label>
+                <label><input type="checkbox" name="sieraden" value="1"><span>Sieraden:</span></label>
+                <br>
+                <label><input type="checkbox" name="stroom" value="1"><span>Stroom</span></label>
+                <label><input type="checkbox" name="tassen" value="1"><span>Tassen:</span></label>
+                <br>
+                <label><input type="checkbox" name="woon-accessoires" value="1"><span>Woon accessoires:</span></label>
+
+                <br><br>
+
+
+                <input type="button" class="cancel-standhouder-change" value="Annuleren" style="margin-right:20px;"> <input type="submit" value="Opslaan">
+            </form>
+        </div>
+
+        <div class="popup popup-single-invoice">
+            <div class="popup-title">Weet u het zeker?</div>
+
+            <div class="popup-text">U staat op het punt om een standhouder een nieuwe of een mogelijk gewijzigde factuur te sturen.<br><span style="color:red;">Heeft u wel eerst de wijzigingen opgeslagen?</span></div>
+
+            <input type="button" class="cancel-standhouder-send-invoice" value="Annuleren" style="margin-right:20px;"> <input type="button" class="send-single-invoice-definitief" value="Verzenden">
+        </div>
 
     </div>
 @stop

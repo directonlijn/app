@@ -280,6 +280,15 @@ class MarktenController extends Controller
             if ($standhouder) {
                 $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
             }
+
+            try {
+                $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                if ($factuur) {
+                    $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                }
+            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                // do nothing
+            }
         }
 
         return View('users.selected')->with('data', $data);

@@ -87,3 +87,5 @@ body{ padding-top: 51px; font-family: Roboto, sans-serif, arial !important; }
 }
 .popup-title { font-size: 25px; font-weight: 600; color: red; margin-bottom: 15px;}
 .popup-text { font-size: 15px; font-weight: 500; margin-bottom: 20px; }
+
+.token { display: none; }
