@@ -247,7 +247,7 @@ class PdfController extends Controller
 
         $emailData = array(
             'template' => "factuur",
-            'email' => $standhouder['email'],
+            'email' => $standhouder->Email,
             'pathToPdf' => $path,
             'pathToTerms' => $pathToAlgemeneVoorwaarden
         );
