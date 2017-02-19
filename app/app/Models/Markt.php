@@ -14,7 +14,25 @@ class Markt extends Model
      *
      * @var array
      */
-    public $fillable = ['Naam', 'Datum', 'van-tijd', 'tot-tijd', 'Website', 'Adres', 'Huisnummer', 'Toevoeging', 'Postcode', 'Plaats', 'Land', 'bedrag_grondplek', 'bedrag_kraam', 'aantalPlekken', 'aantalGeselecteerd', 'welcome-mail-template'];
+    public $fillable = [
+                'Naam',
+                'Datum',
+                'van-tijd',
+                'tot-tijd',
+                'Website',
+                'Adres',
+                'Huisnummer',
+                'Toevoeging',
+                'Postcode',
+                'Plaats',
+                'Land',
+                'bedrag_grondplek',
+                'bedrag_kraam',
+                'aantalPlekken',
+                'aantalGeselecteerd',
+                'welcome-mail-template',
+                'algemene-voorwaarden-template'
+            ];
 
     /**
      * Get all of the standhouders for the markt.
