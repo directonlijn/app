@@ -308,7 +308,7 @@
 
             $(".cancel-standhouder-send-invoice").on("click", function(){
                 $(".popup-single-invoice").hide();
-                    $(".standhouder-wijzig").show();
+                $(".standhouder-wijzig").show();
             });
 
             $(".send-single-invoice-definitief").on("click", function(){
@@ -324,6 +324,8 @@
                 .done(function(data){
                     // self.prop("checked", !self.prop("checked"));
                     alert(JSON.parse(data).message);
+                    $(".popup-single-invoice").hide();
+                    $(".standhouder-wijzig").show();
                 })
                 .fail(function(data){
                     e.stopPropagation();
