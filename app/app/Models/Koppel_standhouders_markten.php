@@ -21,7 +21,6 @@ class Koppel_standhouders_markten extends Model
                 'kraam',
                 'grondplek',
                 'bedrag',
-                'betaald',
                 'grote-maten',
                 'dames-kleding',
                 'heren-kleding',
@@ -40,7 +39,8 @@ class Koppel_standhouders_markten extends Model
                 'seen',
                 'selected',
                 'factuurnummer',
-                'factuurdatum'
+                'afgesproken_prijs',
+                'afgesproken_bedrag'
             ];
 
 

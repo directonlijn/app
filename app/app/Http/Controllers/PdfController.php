@@ -63,6 +63,216 @@ class PdfController extends Controller
     }
 
     /**
+     * Checks if standhouders allready has an invoice
+     *
+     */
+    private function checkIfStandhouderHasInvoice($markt_id, $standhouder_id)
+    {
+        try {
+            $factuur = Factuur::where("markt_id", $markt_id)->where("standhouder_id", $standhouder_id)->firstOrFail();
+            return $factuur;
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Get Markt Model by ID
+     *
+     * @return Model or false
+     */
+    private function getMarktModel($id)
+    {
+        try {
+            return Markt::where('id', $id)->firstOrFail();
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Get standhouder Model by ID
+     *
+     * @return Model or false
+     */
+    private function getStandhouderModel($id)
+    {
+        try {
+            return Standhouder::where('id', $id)->firstOrFail();
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Get standhouder Model by ID
+     *
+     * @return Model or false
+     */
+    private function getStandhouderExtraModel($markt_id, $standhouder_id)
+    {
+        try {
+            $standhouderExtra = KoppelStandhoudersMarkten::where("markt_id", $markt_id)->where("standhouder_id", $standhouder_id)->firstOrFail();
+            return $standhouderExtra;
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Send standhouder invoice new or adjusted
+     *
+     */
+    public function sendInvoiceForStandhouder(Request $request)
+    {
+        $markt = $this->getMarktModel($request->input('markt_id'));
+        if ($markt == false) return json_encode(array("message" => "De markt kon niet gevonden worden."));
+
+        $standhouder = $this->getStandhouderModel($request->input('standhouder_id'));
+        if ($standhouder == false) return json_encode(array("message" => "De standhouder kon niet gevonden worden."));
+
+        $standhouderExtra = $this->getStandhouderExtraModel($request->input('markt_id'), $request->input('standhouder_id'));
+        if ($standhouderExtra == false) return json_encode(array("message" => "De standhouder extra gegevens konden niet gevonden worden."));
+
+        /*
+            1. Kijken of er voor deze standhouder en markt al een factuur vestuurd is
+            2a. Als die al verstuurd is moeten we dat factuurnummer gebruiken en die opnieuw sturen
+            2b. Als die nog niet verstuurd is volgen we de normale weg om voor deze enkele gebruiker
+                een factuur te sturen
+        */
+        $factuur = $this->checkIfStandhouderHasInvoice($request->input('markt_id'), $request->input('standhouder_id'));
+
+        if ($factuur == false)
+        {
+            // Er is nog geen factuur en dus gaan we een nieuwe factuur versturen
+            $factuur = new Factuur;
+            $factuur->factuurnummer = $this->geefNieuwFactuurNummer();
+            $factuur->datum = new \DateTime();
+            $factuur->standhouder_id = $standhouder->id;
+            $factuur->markt_id = $markt->id;
+            if ($factuur->afgesproken_prijs)
+            {
+                $factuur->totaal_bedrag = number_format(round($standhouderExtra->afgesproken_bedrag, 2), 2);
+            }
+            else
+            {
+                $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
+            }
+            $factuur->betaald = 0;
+            $factuur->tweede_herinnering = 0;
+            $factuur->derde_herinnering = 0;
+
+            $factuur->save();
+        }
+        else
+        {
+            // We hebben al een factuur dus gaan we dat factuurnummer gebruiken
+            $factuur->datum = date("Y-m-d");
+            $factuur->betaald = 0;
+            $factuur->tweede_herinnering = 0;
+            $factuur->tweede_herinnering_datum = "";
+            $factuur->derde_herinnering = 0;
+            $factuur->derde_herinnering_datum = "";
+            if ($standhouderExtra->afgesproken_prijs)
+            {
+                $factuur->totaal_bedrag = number_format(round($standhouderExtra->afgesproken_bedrag, 2), 2);
+            }
+            else
+            {
+                $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
+            }
+
+            $factuur->save();
+        }
+
+        $pdf_data = array();
+        $pdf_data['factuurnr'] = $factuur->factuurnummer;
+        $pdf_data['datum'] = date("d-m-Y");
+        $pdf_data['tabel'] = array();
+        $pdf_data['titel'] = $markt->Naam;
+
+        if ($standhouderExtra->afgesproken_prijs)
+        {
+            $pdf_data['tabel'][0] = array();
+            $pdf_data['tabel'][0]['factuurnummer'] =  $factuur->factuurnummer;
+            $pdf_data['tabel'][0]['aantal'] = 1;
+            $pdf_data['tabel'][0]['soort'] = "Prijs afspraak";
+            $pdf_data['tabel'][0]['btw'] = "21%";
+            $pdf_data['tabel'][0]['prijsperstuk'] = "€".number_format(round($standhouderExtra->afgesproken_bedrag/1.21, 2), 2);
+            $pdf_data['tabel'][0]['totaal'] = "€ " . number_format(round($standhouderExtra->afgesproken_bedrag/1.21, 2), 2);
+
+            $pdf_data['totaalexbtw'] = "€ " . number_format(round($standhouderExtra->afgesproken_bedrag/1.21, 2), 2);
+            $pdf_data['totaalbtw'] = "€ " . number_format(round($standhouderExtra->afgesproken_bedrag/1.21*0.21, 2), 2);
+            $pdf_data['totaalinbtw'] = "€ " . number_format(round($standhouderExtra->afgesproken_bedrag, 2), 2);
+        }
+        else
+        {
+            $pdf_data['tabel'][0] = array();
+            $pdf_data['tabel'][0]['factuurnummer'] =  $factuur->factuurnummer;
+            $pdf_data['tabel'][0]['aantal'] = $standhouderExtra->kraam;
+            $pdf_data['tabel'][0]['soort'] = "Kraam";
+            $pdf_data['tabel'][0]['btw'] = "21%";
+            $pdf_data['tabel'][0]['prijsperstuk'] = "€".number_format(round($markt->bedrag_kraam/1.21, 2), 2);
+            $pdf_data['tabel'][0]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->kraam/1.21), 2), 2);
+
+            $pdf_data['tabel'][1] = array();
+            $pdf_data['tabel'][1]['factuurnummer'] =  $factuur->factuurnummer;
+            $pdf_data['tabel'][1]['aantal'] = $standhouderExtra->grondplek;
+            $pdf_data['tabel'][1]['soort'] = "Grondplek";
+            $pdf_data['tabel'][1]['btw'] = "21%";
+            $pdf_data['tabel'][1]['prijsperstuk'] = "€".number_format(round($markt->bedrag_grondplek/1.21, 2), 2);
+            $pdf_data['tabel'][1]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->grondplek/1.21), 2), 2);
+
+            $pdf_data['totaalexbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21), 2), 2);
+            $pdf_data['totaalbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21*0.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21*0.21), 2), 2);
+            $pdf_data['totaalinbtw'] = "€ " . number_format(round($standhouderExtra->kraam*$markt->bedrag_kraam + $standhouderExtra->grondplek*$markt->bedrag_grondplek, 2), 2);
+        }
+
+        $pdf_data['vervaldatum'] = date('d-m-Y', strtotime(date("d-m-Y"). ' + 14 days'));
+
+        $pdf_data['standhouder'] = array();
+        $pdf_data['standhouder']['bedrijfsnaam'] = $standhouder->Bedrijfsnaam;
+        $pdf_data['standhouder']['adres'] = $standhouder->adres;
+        $pdf_data['standhouder']['postcodeplaats'] = $standhouder->postcodeplaats;
+
+        // return \PDF::loadView('pdf.factuur', $pdf_data)->stream();
+        // dd($pdf_data);
+
+        $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y")."/".$factuur->factuurnummer.".pdf";
+        $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/Algemene voorwaarden Hippiemarkt Amsterdam XL.pdf";
+
+        $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
+
+        $emailData = array(
+            'template' => "factuur",
+            'email' => $standhouder['email'],
+            'pathToPdf' => $path,
+            'pathToTerms' => $pathToAlgemeneVoorwaarden
+        );
+
+        $data5 = array(
+            'name' => "Graham",
+            'datum' => "11 Februari 2017",
+            'marktNaam' => 'Hippiemark Amsterdam XL'
+        );
+
+        \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
+
+            $message->attach($emailData['pathToPdf']);
+            $message->attach($emailData['pathToTerms']);
+
+            $message->from('info@directevents.nl', 'Factuur Direct Events');
+
+            $message->to($emailData['email'])->subject('Factuur Direct Events');
+
+        });
+
+        return json_encode(array("message" => "De factuur voor de standhouder is aangemaakt en verstuurd."));
+    }
+
+    /**
      * Sends standhouder invoice by mail
      *
      */

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Markt as Markt;
 use App\Models\Standhouder as Standhouder;
+use App\Models\Factuur as Factuur;
 use App\Models\Koppel_standhouders_markten as KoppelStandhoudersMarkten;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -101,9 +102,158 @@ class MarktenController extends Controller
             if ($standhouder) {
                 $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
             }
+
+            try {
+                $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                if ($factuur) {
+                    $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                }
+            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                // do nothing
+            }
         }
 
         return View('users.aanmeldingen')->with('data', $data);
+    }
+
+    /**
+     * Get standhouderData
+     *
+     * @return Response
+     */
+    public function getStandhouder(Request $request)
+    {
+        $data = array();
+        $data['standhouderMarktData'] = KoppelStandhoudersMarkten::where("markt_id", $request->input('markt_id'))->where('standhouder_id', $request->input('standhouder_id'))->firstOrFail();
+
+        $data['standhouder'] = Standhouder::where('id', $data['standhouderMarktData']['standhouder_id'])->firstOrFail();
+
+        $data['factuur'] = ($this->getFactuurModel($data['standhouderMarktData']['standhouder_id']));
+
+        return $data;
+    }
+
+    /**
+     * Get Markt Model by ID
+     *
+     * @return Model or false
+     */
+    private function getMarktModel($id)
+    {
+        try {
+            return Markt::where('id', $id)->firstOrFail();
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Get standhouder Model by ID
+     *
+     * @return Model or false
+     */
+    private function getStandhouderModel($id)
+    {
+        try {
+            return Standhouder::where('id', $id)->firstOrFail();
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Get facuur Model by ID
+     *
+     * @return Model or false
+     */
+    private function getFactuurModel($id)
+    {
+        try {
+            return Factuur::where('id', $id)->firstOrFail();
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
+    }
+
+    /**
+     * Get standhouderData
+     *
+     * @return Response
+     */
+    public function changeStandhouder(Request $request)
+    {
+
+        $markt = $this->getMarktModel($request->input("markt_id"));
+        if ($markt == false) return json_encode(array("message" => "De bijbehorende markt kon niet gevonden worden."));
+
+        $standhouderData = array("Bedrijfsnaam", "Voornaam", "Achternaam", "Email", "Telefoon", "Website", "Straat", "Postcode", "Huisnummer", "Toevoeging", "Woonplaats");
+        $standhouderMarktData = array(
+                    "afgesproken_prijs",
+                    "afgesproken_bedrag",
+                    "kraam",
+                    "grondplek",
+                    "anders",
+                    "baby-kleding",
+                    "brocante",
+                    "dames-kleding",
+                    "dierenspullen",
+                    "fashion-accesoires",
+                    "selected",
+                    "grote-maten",
+                    "heren-kleding",
+                    "kinder-kleding",
+                    "kunst",
+                    "lifestyle",
+                    "schoenen",
+                    "sieraden",
+                    "stroom",
+                    "tassen",
+                    "woon-accessoires"
+                );
+
+        try {
+            $koppelStandhoudersMarkten = KoppelStandhoudersMarkten::where("markt_id", $request->input("markt_id"))->where('standhouder_id', $request->input("id"))->firstOrFail();
+
+            $koppelStandhoudersMarkten->type = $request->input("foodNonfood");
+
+            foreach ($standhouderMarktData as $dataItem)
+            {
+                if (null !== $request->input($dataItem))
+                    $koppelStandhoudersMarkten->$dataItem = $request->input($dataItem);
+            }
+
+            $koppelStandhoudersMarkten->bedrag = ($markt->bedrag_kraam * $request->input("kraam") + $markt->bedrag_grondplek * $request->input("grondplek"));
+            $this->setStandhouderBetaaldBedrag($request->input("markt_id"), $request->input("id"), ($markt->bedrag_kraam * $request->input("kraam") + $markt->bedrag_grondplek * $request->input("grondplek")), $request->input("betaald"));
+
+            $koppelStandhoudersMarkten->save();
+
+            try {
+                $standhouder = $this->getStandhouderModel($koppelStandhoudersMarkten->standhouder_id);
+
+                foreach ($standhouderData as $dataItem)
+                {
+                    if ($request->input($dataItem))
+                        $standhouder->$dataItem = $request->input($dataItem);
+                }
+
+                $standhouder->save();
+
+                $factuur = $this->getFactuurModel($request->input("markt_id"), $request->input("standhouder_id"));
+                if ($factuur != false)
+                {
+                    $factuur->betaald = $request->input("betaald");
+                }
+            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                return json_encode(array("message" => "De marktdata voor de desbetreffende standhouder is bijgewerkt. Alleen de standhouder is niet gevonden en de contact/adres gegevens konden niet bijgewerkt worden."));
+            }
+
+            return json_encode(array("message" => "Standhouder is geupdate"));
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return json_encode(array("message" => "Standhouder is niet gevonden bij de markt"));
+        }
     }
 
     /**
@@ -144,7 +294,7 @@ class MarktenController extends Controller
     {
         // dd($request->input('id'));
 
-        $standhouder = KoppelStandhoudersMarkten::where('standhouder_id', $request->input('id'))->firstOrFail();
+        $standhouder = KoppelStandhoudersMarkten::where('markt_id', $request->input('markt_id'))->where('standhouder_id', $request->input('standhouder_id'))->firstOrFail();
         $standhouder->seen = $request->input('value');
 
         $standhouder->save();
@@ -159,25 +309,51 @@ class MarktenController extends Controller
     {
         // dd($request->input('id'));
 
-        $standhouder = KoppelStandhoudersMarkten::where('standhouder_id', $request->input('id'))->firstOrFail();
+        $standhouder = KoppelStandhoudersMarkten::where('markt_id', $request->input('markt_id'))->where('standhouder_id', $request->input('standhouder_id'))->firstOrFail();
         $standhouder->selected = $request->input('value');
 
         $standhouder->save();
     }
 
     /**
-     * Set standhouder selected
+     * Set standhouder betaald with request
      *
      * @return Response
      */
-    public function setStandhouderBetaald(Request $request)
+    private function setStandhouderBetaaldRequest(Request $request)
     {
         // dd($request->input('id'));
+        try {
+            $factuur = Factuur::where('markt_id', $request->input('markt_id'))->where('standhouder_id', $request->input('standhouder_id'))->firstOrFail();
+            $factuur->betaald = $request->input('value');
 
-        $standhouder = KoppelStandhoudersMarkten::where('standhouder_id', $request->input('id'))->firstOrFail();
-        $standhouder->betaald = $request->input('value');
+            $factuur->save();
 
-        $standhouder->save();
+            return json_encode(array("message" => "De standhouder factuur betaald is gewijzigd."));
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return json_encode(array("message" => "De factuur is niet gevonden of nog niet aangemaakt."));
+        }
+    }
+
+    /**
+     * Set standhouder betaald
+     *
+     * @return Response
+     */
+    private function setStandhouderBetaaldBedrag($markt_id, $standhouder_id, $bedrag, $betaald)
+    {
+        // dd($request->input('id'));
+        try {
+            $factuur = Factuur::where('markt_id', $markt_id)->where('standhouder_id', $standhouder_id)->firstOrFail();
+            $factuur->totaal_bedrag = $bedrag;
+            $factuur->betaald = $betaald;
+
+            $factuur->save();
+
+            return true;
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return false;
+        }
     }
 
     /**

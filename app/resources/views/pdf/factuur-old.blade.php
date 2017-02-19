@@ -97,32 +97,46 @@
                 </td>
             </tr></thead>
             <tbody>
-                <?php $x = 0; ?>
-                @foreach ($tabel as $row)
-                    <tr>
-                        <td>
-                            @if ($x == 0)
-                                {{ $factuurnr }}
-                            @endif
-                        </td>
-                        <td>
-                            {{ $row['aantal'] }}
-                        </td>
-                        <td>
-                            {{ $row['soort'] }}
-                        </td>
-                        <td>
-                            {{ $row['btw'] }}
-                        </td>
-                        <td>
-                            {{ $row['prijsperstuk'] }}
-                        </td>
-                        <td>
-                            {{ $row['totaal'] }}
-                        </td>
-                    </tr>
-                    <?php $x++; ?>
-                @endforeach
+                <tr>
+                    <td>
+                        {{ $factuurnr }}
+                    </td>
+                    <td>
+                        {{ $tabel[0]['aantal'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[0]['soort'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[0]['btw'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[0]['prijsperstuk'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[0]['totaal'] }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        {{ $tabel[1]['aantal'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[1]['soort'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[1]['btw'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[1]['prijsperstuk'] }}
+                    </td>
+                    <td>
+                        {{ $tabel[1]['totaal'] }}
+                    </td>
+                </tr>
             </tbody>
         </table>
 

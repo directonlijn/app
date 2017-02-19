@@ -75,6 +75,7 @@ Route::group(['middleware' => 'auth'], function()
 
     // PDF
     Route::post('markten/{slug}/sendInvoices', 'PdfController@sendInvoce');
+    Route::post('markt/sendInvoiceForStandhouder', 'PdfController@sendInvoiceForStandhouder');
 
     // excel exports
     Route::get('markten/{slug}/export/aanmeldingen', 'MarktenController@exportAllStandhoudersForMarkt');
@@ -92,7 +93,9 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('markt/getStandhoudersForMarkt', 'MarktenController@getStandhouderTableJSON');
     Route::post('markt/setStandhouderSeen', 'MarktenController@setStandhouderSeen');
     Route::post('markt/setStandhouderSelected', 'MarktenController@setStandhouderSelected');
-    Route::post('markt/setStandhouderBetaald', 'MarktenController@setStandhouderBetaald');
+    Route::post('markt/setStandhouderBetaald', 'MarktenController@setStandhouderBetaaldRequest');
+    Route::post('markt/getStandhouder', 'MarktenController@getStandhouder');
+    Route::post('markt/changeStandhouder', 'MarktenController@changeStandhouder');
 });
 
 return view('errors.404');
