@@ -26,6 +26,7 @@ class MarktenController extends Controller
 
         \App::call('App\Http\Controllers\MailController@sendWelcomeMail', $data);
     }
+
     /**
      * Show the main page
      *
@@ -35,6 +36,19 @@ class MarktenController extends Controller
     {
         $markten = Markt::orderBy('datum', 'desc')->get();
         return View('users.markten')->with('markten', $markten);
+    }
+
+    /**
+     * Show magement page for all the markten
+     *
+     * @return Response
+     */
+    public function getManagement()
+    {
+        // dd("test");
+        // return View('users.management-markten');
+        $markten = Markt::orderBy('datum', 'Naam')->get();
+        return View('users.management-markten')->with('markten', $markten);
     }
 
     /**

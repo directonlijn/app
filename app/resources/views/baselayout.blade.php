@@ -43,9 +43,10 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Markten
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                              @foreach ($markten as $markt)
-                                  <li><a href="/markten/{{ $markt->Naam }}">{{ $markt->Naam }}</a></li>
-                              @endforeach
+                                <li><a href="/markten/beheer">Markten beheren</a></li>
+                                @foreach ($markten as $markt)
+                                    <li><a href="/markten/{{ $markt->Naam }}">{{ $markt->Naam }}</a></li>
+                                @endforeach
                             </ul>
                         </li>
                     @endif

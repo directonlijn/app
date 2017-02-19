@@ -40,29 +40,29 @@ Route::group(['middleware' => 'auth'], function()
     // PDF
     // Route::get('pdf', 'PdfController@sendInvoce');
     // Route::get('pdf', 'PdfController@hoogsteFactuurNummer');
-    Route::get('/testpdf', function () {
-        return view('pdf.factuur');
-    });
+    // Route::get('/testpdf', function () {
+    //     return view('pdf.factuur');
+    // });
 
     // Emails
     Route::get('sendemail2', 'MailController@sendWelcomeMail');
-    Route::get('sendemail', function () {
-
-        $data = array(
-            'name' => "Learning Laravel",
-        );
-
-        Mail::send('emails.welcome', $data, function ($message) {
-
-            $message->from('graham@directevents.nl', 'Learning Laravel');
-
-            $message->to('grahamneal1991@gmail.com')->subject('Learning Laravel test email');
-
-        });
-
-        return "Your email has been sent successfully";
-
-    });
+    // Route::get('sendemail', function () {
+    //
+    //     $data = array(
+    //         'name' => "Learning Laravel",
+    //     );
+    //
+    //     Mail::send('emails.welcome', $data, function ($message) {
+    //
+    //         $message->from('graham@directevents.nl', 'Learning Laravel');
+    //
+    //         $message->to('grahamneal1991@gmail.com')->subject('Learning Laravel test email');
+    //
+    //     });
+    //
+    //     return "Your email has been sent successfully";
+    //
+    // });
 
     // Register
     Route::get('register', 'Auth\AuthController@getRegister');
@@ -82,6 +82,7 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('markten/{slug}/export/selected', 'MarktenController@exportAllSelectedStandhoudersForMarkt');
 
     // Markten
+    Route::get('markten/beheer', 'MarktenController@getManagement');
     Route::get('markten/{slug}/aanmeldingen', 'MarktenController@getMarktAanmeldingen');
     Route::get('markten/{slug}/geselecteerd', 'MarktenController@getMarktSelected');
     Route::get('markten/{slug}', 'MarktenController@getMarkt');

@@ -266,16 +266,16 @@ class PdfController extends Controller
             'marktNaam' => 'Hippiemark Amsterdam XL'
         );
 
-        // \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
-        //
-        //     $message->attach($emailData['pathToPdf']);
-        //     $message->attach($emailData['pathToTerms']);
-        //
-        //     $message->from('info@directevents.nl', 'Factuur Direct Events');
-        //
-        //     $message->to($emailData['email'])->subject('Factuur Direct Events');
-        //
-        // });
+        \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
+
+            $message->attach($emailData['pathToPdf']);
+            $message->attach($emailData['pathToTerms']);
+
+            $message->from('info@directevents.nl', 'Factuur Direct Events');
+
+            $message->to($emailData['email'])->subject('Factuur Direct Events');
+
+        });
 
         return json_encode(array("message" => "De factuur voor de standhouder is aangemaakt en verstuurd."));
     }
