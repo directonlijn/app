@@ -32,7 +32,7 @@
             <input type="button" class="exportToExcel" value="export all">
             <input type="button" class="verstuurFacturen" value="verstuur facturen">
             <div class="table-responsive">
-                <table class="table table-striped standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
+                <table class="table table-fixed standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
                     <thead>
                         <tr>
                             <th>#</th>
