@@ -25,6 +25,77 @@ class PdfController extends Controller
     }
 
     /**
+     * Downloads invoice
+     *
+     * @return Response
+     */
+    public function actualDownloadInvoice($year, $factuurnummer)
+    {
+        $path = dirname(__DIR__, 3) . "/public/pdf/".$year."/".$factuurnummer.".pdf";
+
+        if (file_exists($path))
+        {
+            $headers = array(
+                'Content-Type: application/pdf',
+            );
+
+            return response()->download($path, $factuurnummer.'.pdf', $headers);
+        }
+        else
+        {
+            $returnData = array(
+                'message' => 'De factuur is niet gevonden.'
+            );
+
+            return response()->json($returnData, 500);
+        }
+    }
+
+    /**
+     * Checks if download is possible
+     *
+     * @return Response
+     */
+    public function downloadInvoice(Request $request)
+    {
+
+        try {
+            $factuur = Factuur::where("markt_id", $request->input("markt_id"))->where("standhouder_id", $request->input("standhouder_id"))->firstOrFail();
+
+            $date = \DateTime::createFromFormat("Y-m-d", $factuur->datum);
+
+            $path = dirname(__DIR__, 3) . "/public/pdf/".$date->format("Y")."/".$factuur->factuurnummer.".pdf";
+
+            if (file_exists($path))
+            {
+                $headers = array(
+                    'Content-Type: application/pdf',
+                );
+
+                // return Response::download($path, 'filename.pdf', $headers);
+                // return response()->download($path, $factuur->factuurnummer.'.pdf', $headers);
+                return json_encode(array("message" => "De factuur is opgehaald.", "year" => $date->format("Y"), "factuurnummer" => $factuur->factuurnummer));
+            }
+            else
+            {
+                $returnData = array(
+                    'message' => 'De factuur is niet gevonden.'
+                );
+
+                return response()->json($returnData, 500);
+            }
+
+
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            $returnData = array(
+                'message' => 'Er is nog geen factuur aangemaakt.'
+            );
+
+            return response()->json($returnData, 500);
+        }
+    }
+
+    /**
      * Pak het hoogste factuurnummer
      *
      */
@@ -456,7 +527,7 @@ class PdfController extends Controller
             // dd($pdf_data);
 
             $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y")."/".$hoogsteFactuurNummer.".pdf";
-            $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/Algemene voorwaarden Hippiemarkt Amsterdam XL.pdf";
+            $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/".$data['markt']->{"algemene-voorwaarden-template"}.".pdf";
 
             $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
             // return $pdf->stream();

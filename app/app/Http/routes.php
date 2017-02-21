@@ -76,6 +76,8 @@ Route::group(['middleware' => 'auth'], function()
     // PDF
     Route::post('markten/{slug}/sendInvoices', 'PdfController@sendInvoce');
     Route::post('markt/sendInvoiceForStandhouder', 'PdfController@sendInvoiceForStandhouder');
+    Route::post('markt/downloadInvoice', 'PdfController@downloadInvoice');
+    Route::get('markt/downloadInvoice/{year}/{factuurnummer}', 'PdfController@actualDownloadInvoice');
 
     // excel exports
     Route::get('markten/{slug}/export/aanmeldingen', 'MarktenController@exportAllStandhoudersForMarkt');

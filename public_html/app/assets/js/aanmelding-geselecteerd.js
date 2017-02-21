@@ -203,6 +203,27 @@ $(document).ready(function(){
         });
     });
 
+    $(".download-single-invoice").on("click", function(){
+        var $data = {
+                _token: $(".token").text(),
+                markt_id: $(".standhouders-table").attr("data-marktid"),
+                standhouder_id: $(this).closest(".standhouderAdjustForm").find("input[name=id]").val()
+            };
+
+        $.post({
+            type: "POST",
+            url: "/markt/downloadInvoice",
+            data: $data
+        })
+        .done(function(data){
+            $parsed = JSON.parse(data);
+            window.open("/markt/downloadInvoice/"+$parsed.year+"/"+$parsed.factuurnummer);
+        })
+        .fail(function(data){
+            alert(JSON.parse(data).message);
+        });
+    });
+
     $(".close-standhouder-wijzig, .cancel-standhouder-change").on("click", function(){
         $(".overlay").hide();
         $(".standhouder-wijzig").hide();

@@ -177,9 +177,13 @@
 
                 <br><br><br>
 
+                <input type="button" value="download factuur" class="download-single-invoice">
                 <div class="form-title">Ander bedrag:</div>
                 <label><span>Prijsafspraak:</span><input type="checkbox" name="afgesproken_prijs" value="1"></label>
                 <label><span>Afgesproken prijs:</span><input type="text" name="afgesproken_bedrag" value=""></label>
+                <br>
+                <label><span>Factuur verstuurd:</span><input type="checkbox" name="factuur_verstuurd" value="1"></label>
+                <label><span>Factuur datum:</span><input type="text" name="factuur_datum" value="" readonly></label>
 
                 <br><br><br>
 

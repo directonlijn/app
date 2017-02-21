@@ -63,7 +63,7 @@ body{ padding-top: 51px; font-family: Roboto, sans-serif, arial !important; }
 .standhouder-wijzig label input[type=checkbox] { margin-right: 5px; width: 40px; }
 .standhouder-wijzig label input[readonly] { background: #BEBEBE; }
 
-.send-single-invoice { position: absolute; left: 490px; }
+.send-single-invoice, .download-single-invoice { position: absolute; left: 490px; }
 .form-title { font-size: 20px; font-weight: 600; margin-bottom: 10px;}
 
 .markt-form label { display: inline-block; width: 300px;}
@@ -194,3 +194,5 @@ body:not(.loading) #loader-wrapper {
     -webkit-transition: all 0.3s 1s ease-out;
             transition: all 0.3s 1s ease-out;
 }
+
+.download-single-invoice-link { width: 0px; height: 0px; display:block; }
