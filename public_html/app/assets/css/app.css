@@ -196,3 +196,19 @@ body:not(.loading) #loader-wrapper {
 }
 
 .download-single-invoice-link { width: 0px; height: 0px; display:block; }
+
+.fixed-table-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.fixed-table-th {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}

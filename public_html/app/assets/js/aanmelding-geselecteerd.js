@@ -375,8 +375,11 @@ $(document).ready(function(){
         // clone the original table
         var newTbl = oTbl.clone();
 
-        // remove table header from original table
-        oTbl.find('thead tr').remove();
+        newTbl.find('thead tr th').each(function(index){
+            // $(this).width($(this).attr("data-item-original-width"));
+            $(this).width(oTbl.find("thead tr th:eq("+index+")").outerWidth()).css("box-sizigin", "border-box");
+        });
+        
         // remove table body from new table
         newTbl.find('tbody tr').remove();
 
@@ -392,6 +395,9 @@ $(document).ready(function(){
         oTbl.find('tbody tr:eq(0) td').each(function(){
             $(this).width($(this).attr("data-item-original-width"));
         });
+
+        // remove table header from original table
+        oTbl.find('thead tr').remove();
 
         newTbl.css("margin-bottom", "0px");
 

@@ -28,7 +28,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" data-tab="aanmeldingen">
             <h1 class="page-header">Aanmeldingen</h1>
             <input type="button" class="exportToExcel" value="export all">
-            <div class="table-responsive" style="max-height: 70vh;margin-top: 50px;">
+            <div class="table-responsive" style="max-height: 70vh;margin-top: 50px;position:relative;">
                 <table class="table table-striped standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
                     <thead>
                         <tr>
