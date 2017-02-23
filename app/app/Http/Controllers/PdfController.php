@@ -424,7 +424,7 @@ class PdfController extends Controller
                         $data['facturen']['tweede']['totaal']++;
 
                         $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->first();
-                        if ($standhouder) {
+                        if ($standhouder && $standhouder->winkelier != 1) {
                             $data['facturen']['tweede']['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
                         }
 
@@ -437,7 +437,7 @@ class PdfController extends Controller
                         $data['facturen']['derde']['totaal']++;
 
                         $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->first();
-                        if ($standhouder) {
+                        if ($standhouder && $standhouder->winkelier != 1) {
                             $data['facturen']['derde']['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
                         }
 

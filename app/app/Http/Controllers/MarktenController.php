@@ -326,6 +326,44 @@ class MarktenController extends Controller
     }
 
     /**
+     * Get page for markt met alle winkeliers
+     *
+     * @return Response
+     */
+    public function getMarktWinkeliers($slug)
+    {
+        $data = array();
+
+        $data['slug'] = $slug;
+
+        $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+
+        $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)
+                                                        ->where('selected', 1)
+                                                        ->get();
+
+        $data['standhouders'] = array();
+        foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+        {
+            $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+            if ($standhouder && $standhouder->winkelier == 1) {
+                $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur) {
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
+                }
+            }
+        }
+
+        return View('users.winkeliers')->with('data', $data);
+    }
+
+    /**
      * Set standhouder seen
      *
      * @return Response
