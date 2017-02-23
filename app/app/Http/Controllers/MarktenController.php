@@ -129,17 +129,18 @@ class MarktenController extends Controller
         foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
         {
             $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
-            if ($standhouder) {
-                $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
-            }
 
-            try {
-                $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
-                if ($factuur) {
-                    $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+            if ($standhouder && $standhouder->winkelier != 1) {
+                $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur) {
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
                 }
-            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
-                // do nothing
             }
         }
 
@@ -307,17 +308,17 @@ class MarktenController extends Controller
         foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
         {
             $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
-            if ($standhouder) {
+            if ($standhouder && $standhouder->winkelier != 1) {
                 $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
-            }
 
-            try {
-                $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
-                if ($factuur) {
-                    $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur) {
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
                 }
-            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
-                // do nothing
             }
         }
 
@@ -359,7 +360,7 @@ class MarktenController extends Controller
      *
      * @return Response
      */
-    private function setStandhouderBetaaldRequest(Request $request)
+    public function setStandhouderBetaaldRequest(Request $request)
     {
         // dd($request->input('id'));
         try {
