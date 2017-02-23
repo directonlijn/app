@@ -1,9 +1,21 @@
 $(document).ready(function(){
 
-    $(".aanmelden").on("click", function(){
+    $(".aanmelden.standhouders").on("click", function(){
         $(".form-overlay").fadeIn(700);
         $(".form-wrapper").fadeIn(700);
-	ga('send', 'event', 'campaign', 'aanmelden-step1', 'step1');
+        $("form input[name=winkeliersvereniging]").val(0);
+        $(".gevel").hide();
+        $(".text-standhouders").show();
+	    ga('send', 'event', 'campaign', 'aanmelden-step1', 'step1-standhouders');
+    });
+
+    $(".aanmelden.winkeliersvereniging").on("click", function(){
+        $(".form-overlay").fadeIn(700);
+        $(".form-wrapper").fadeIn(700);
+        $("form input[name=winkeliersvereniging]").val(1);
+        $(".gevel").show();
+        $(".text-standhouders").hide();
+	    ga('send', 'event', 'campaign', 'aanmelden-step1', 'step1-winkeliersvereniging');
     });
 
     $(".close").on("click", function(){
@@ -87,6 +99,9 @@ $(document).ready(function(){
                 alert("U aanmelding is succesvol ontvangen. We hebben u zojuist een mail gestuurd. Mocht u deze niet ontvangen hebben graag een e-mail sturen naar standhouders@directevents.nl");
                 $(".form-overlay").fadeOut(700);
                 $(".form-wrapper").fadeOut(700);
+                setTimeout(function(){
+                    $(window).trigger("resize");
+                }, 710);
             },
             error: function (jXHR, textStatus, errorThrown) {
                 if(jXHR.status == 503)

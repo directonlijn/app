@@ -65,19 +65,21 @@
 	            FASHION | FOOD | DRINKS | MUSIC | LIFESTYLE
 	        </div>
 
-			<input type="button" class="aanmelden" value="aanmelden">
+			<input type="button" class="aanmelden standhouders" value="aanmelden">
+			<input type="button" class="aanmelden winkeliersvereniging" value="winkeliersvereniging">
 		</div>
 
 		<div class="form-overlay"></div>
 
         <div class="form-wrapper">
 			<div class="close"></div>
-            
+
 			<div class="form-style-10">
 				<h1>Aanmelden Hippiemarkt Amsterdam XL<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt Amsterdam XL.</span></h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 	                <input type="hidden" name="markt_id" value="2" />
+	                <input type="hidden" name="winkeliersvereniging" value="0" />
 				    <div class="section"><span>1</span>Bedrijfs- &amp; <h3 class="mobile-only"><br></h3>Persoons-gegevens</div>
 				    <div class="inner-wrap">
 				        <label>Bedrijfsnaam*: <input type="text" name="bedrijfsnaam" required/></label>
@@ -99,14 +101,15 @@
 
 					<div class="section"><span>3</span>Markt gegevens</div>
 				    <div class="inner-wrap">
+						<label class="gevel">Gevel vrij:<input type="checkbox" name="gevelvrij"></label>
 				        <label>
 							Food/non-food*:
 							<input type="radio" name="foodNonfood" value="food">food
 							<span style="display:inline-block;width:20px;"></span>
                             <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
 						</label>
-				        <label>Kramen (4 meter, &euro;75,- incl. BTW): <input type="number" name="kramen" value="0"/></label>
-				        <label>Grondplekken (4 meter, &euro;65,- incl. BTW): <input type="number" name="grondplekken" value="0"/></label>
+				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;75,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
+				        <label>Aantal grondplekken (4 meter<span class="text-standhouders">, &euro;65,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
 				        <div class="form-label">
 							Producten*:<br>
 							<label><input type="checkbox" class="producten" name="producten[0]" value="grote-maten">Grote maten kleding</label>

@@ -43,15 +43,13 @@ class AanmeldController extends Controller
         $standhouder->Woonplaats = $request->woonplaats;
         $standhouder->Telefoon = $request->telefoon;
         $standhouder->Email = $request->email;
+        $standhouder->winkelier = $request->winkeliersvereniging;
         $standhouder->Website = $request->website;
 
         $standhouder->save();
 
         // get the current markt for signup
         $markt = Markt::where('id', $request->markt_id)->firstOrFail();
-
-        // Koppel_standhouders_markten
-        // protected $fillable = ['markt_id', 'standhouder_id', 'type', 'kraam', 'grondplek', 'bedrag', 'betaald'];
 
         $koppel_standhouders_markten = new KoppelStandhoudersMarkten;
         $koppel_standhouders_markten->markt_id = $request->markt_id;
@@ -60,8 +58,12 @@ class AanmeldController extends Controller
         $koppel_standhouders_markten->kraam = $request->kramen;
         $koppel_standhouders_markten->grondplek = $request->grondplekken;
         $koppel_standhouders_markten->bedrag = ($markt->bedrag_grondplek * $request->grondplekken) + ($markt->bedrag_kraam * $request->kramen);
-        $koppel_standhouders_markten->betaald = 0;
         $koppel_standhouders_markten->stroom = 0;
+        if ($request->winkeliersvereniging && $request->gevelvrij == "on") {
+            $koppel_standhouders_markten->gevel = 1;
+        } else {
+            $koppel_standhouders_markten->gevel = 0;
+        }
 
         if(isset($request->producten)){
             foreach ($request->producten as $product)
@@ -70,27 +72,6 @@ class AanmeldController extends Controller
             }
         }
         $koppel_standhouders_markten->save();
-
-        // $msg = "<h1>Bedankt voor uw aanmelding!</h1>
-        //         <br>
-        //         <br>
-        //         U bent aangemeld voor de:
-        //         <br>
-        //         Hippiemarkt Amsterdam XL op Zondag 26 maart 2017, Osdorpplein.
-        //         <br>
-        //         <br>
-        //         We hebben uw bericht in goede orde ontvangen, we sturen
-        //         <br>
-        //         u zo spoedig mogelijk nadere informatie over het event!
-        //         <br>
-        //         <br>
-        //         Hou de FacebookPagina in de gaten voor verdere updates
-        //         <br>
-        //         <br>
-        //         @HippiemarktAmsterdamXL";
-
-        // use wordwrap() if lines are longer than 70 characters
-        // $msg = wordwrap($msg,70);
 
         $template_name = $markt->{"welcome-mail-template"};
         $data = array(
@@ -101,9 +82,6 @@ class AanmeldController extends Controller
         );
 
         \App::call('App\Http\Controllers\MailController@sendWelcomeMail', $data);
-
-        // send email
-        // mail($request->email,"Aanmelding Ontvangen",$msg);
 
         return header("HTTP/1.1 200 OK");
     }

@@ -676,131 +676,20 @@ body {
     }
 }
 
-@-webkit-keyframes swing2
-{
-
-    75%
-    {
-        right: 30px;
-    }
-    78.75%
-    {
-        right: 35px;
-    }
-    82.5%
-    {
-        right: 25px;
-    }
-    87.5%
-    {
-        right: 33px;
-    }
-    91.25%
-    {
-        right: 27px;
-    }
-    95%
-    {
-        right: 32px;
-    }
-    100%
-    {
-        right: 30px;
-    }
-}
-@keyframes swing2
-{
-    75%
-    {
-        right: 30px;
-    }
-    78.75%
-    {
-        right: 35px;
-    }
-    82.5%
-    {
-        right: 25px;
-    }
-    87.5%
-    {
-        right: 33px;
-    }
-    91.25%
-    {
-        right: 27px;
-    }
-    95%
-    {
-        right: 32px;
-    }
-    100%
-    {
-        right: 30px;
-    }
-}
-
-
-@-webkit-keyframes swing3
-{
-
-    75%
-    {
-        left: 50%;
-    }
-    78.75%
-    {
-        left: calc(50% + 5px);
-    }
-    82.5%
-    {
-        left: calc(50% - 5px);
-    }
-    87.5%
-    {
-        left: calc(50% + 3px);
-    }
-    91.25%
-    {
-        left: calc(50% - 3px);
-    }
-    95%
-    {
-        left: calc(50% + 2px);
-    }
-    100%
-    {
-        left: 50%;
-    }
-}
-@keyframes swing3
-{
-    75%
-    {
-        left: 50%;
-    }
-    78.75%
-    {
-        left: calc(50% + 5px);
-    }
-    82.5%
-    {
-        left: calc(50% - 5px);
-    }
-    87.5%
-    {
-        left: calc(50% + 3px);
-    }
-    91.25%
-    {
-        left: calc(50% - 3px);
-    }
-    95%
-    {
-        left: calc(50% + 2px);
-    }
-    100%
-    {
-        left: 50%;
-    }
+input.aanmelden.winkeliersvereniging {
+    top: auto;
+    left: auto;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
 }

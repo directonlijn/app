@@ -14,7 +14,7 @@ class Standhouder extends Model
      *
      * @var array
      */
-    protected $fillable = ['Bedrijfsnaam', 'Voornaam', 'Achternaam', 'Straat', 'Postcode', 'Huisnummer', 'Toevoeging', 'Woonplaats', 'Land', 'Telefoon', 'Email', 'Website'];
+    protected $fillable = ['Bedrijfsnaam', 'Voornaam', 'Achternaam', 'Straat', 'Postcode', 'Huisnummer', 'Toevoeging', 'Woonplaats', 'Land', 'Telefoon', 'Email', 'Website', 'winkelier'];
 
     /**
      * Get all of the markten for the standhouder.
