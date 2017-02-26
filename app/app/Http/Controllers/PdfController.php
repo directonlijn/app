@@ -467,6 +467,8 @@ class PdfController extends Controller
             $x++;
         }
 
+        dd($data['facturen']);
+
         // return $data['facturen'];
 
         // $hoogsteFactuurNummer

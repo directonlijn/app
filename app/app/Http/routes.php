@@ -81,7 +81,9 @@ Route::group(['middleware' => 'auth'], function()
 
     // excel exports
     Route::get('markten/{slug}/export/aanmeldingen', 'MarktenController@exportAllStandhoudersForMarkt');
-    Route::get('markten/{slug}/export/selected', 'MarktenController@exportAllSelectedStandhoudersForMarkt');
+    Route::get('markten/{slug}/export/geselecteerd', 'MarktenController@exportAllSelectedStandhoudersForMarkt');
+    Route::get('markten/{slug}/export/betaald', 'MarktenController@exportAllPayedStandhoudersForMarkt');
+    Route::get('markten/{slug}/export/openstaand', 'MarktenController@exportAllOpenstaandeStandhoudersForMarkt');
 
     // Markten
     Route::get('markten/beheer', 'MarktenController@getManagement');
@@ -89,6 +91,8 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('markten/{slug}/winkeliers', 'MarktenController@getMarktWinkeliers');
     Route::get('markten/{slug}/aanmeldingen', 'MarktenController@getMarktAanmeldingen');
     Route::get('markten/{slug}/geselecteerd', 'MarktenController@getMarktSelected');
+    Route::get('markten/{slug}/betaald', 'MarktenController@getMarktBetaald');
+    Route::get('markten/{slug}/openstaand', 'MarktenController@getMarktOpenstaand');
     Route::get('markten/{slug}', 'MarktenController@getMarkt');
     Route::get('markten', 'MarktenController@getIndex');
     Route::get('mail', 'MailController@getIndex');

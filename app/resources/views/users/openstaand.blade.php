@@ -3,17 +3,14 @@
 @section('title') Markten @stop
 
 @section('bottom')
-    <?php
-        $markt_name = request()->segment(2);
-    ?>
-
     <script src="/assets/js/aanmelding-geselecteerd.js"></script>
 @stop
 
 @section('content')
     <?php
         // dd($data);
-        // dd($data['koppelStandhoudersMarkten'][0]);
+        // dd($data['standhouders'][1]->id);
+        // dd($data['koppelStandhoudersMarkten'][0]['markt_id']);
     ?>
     <div class="token">{{ csrf_token() }}</div>
     <div class="row">
@@ -30,11 +27,10 @@
         </div>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" data-tab="aanmeldingen">
-            <h1 class="page-header">Winkeliers</h1>
+            <h1 class="page-header">Openstaand</h1>
             <input type="button" class="exportToExcel" value="export all">
-            <input type="button" class="verstuurFacturen" value="verstuur facturen">
-            <div class="table-responsive">
-                <table class="table table-fixed standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
+            <div class="table-responsive" style="max-height: 70vh;margin-top: 50px;position:relative;">
+                <table class="table table-striped standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -50,7 +46,6 @@
                             <th>Type</th>
                             <th>Kraam</th>
                             <th>Grondplek</th>
-                            <th>Gevel vrij</th>
                             <th>Bedrag</th>
                             <th>Grote maten</th>
                             <th>Dames kleding</th>
@@ -73,6 +68,7 @@
                         <?php
                             $x = 0;
                             // for ($x=0;$x < count($data['standhouders']); $x++)
+                            // $data['standhouders'][1]['id'];
                         	foreach($data['standhouders'] as $standhouder)
                             {
                                 // dd($standhouder);
@@ -89,18 +85,18 @@
                                     echo '<tr data-id="'.$standhouder->id.'">';
                                 }
 
-                                echo '<td>' . $standhouder->id . '</td>';
+                                echo '<td class="filterable-cell">' . $standhouder->id . '</td>';
 
                                 echo '<td class="filterable-cell"><img class="adjust" src="/assets/img/dashboard/icons/pencil.png"></td>';
 
-                                echo '<td><input type="checkbox" class="seen" name="seen" value="seen"';
+                                echo '<td class="filterable-cell"><input type="checkbox" class="seen" name="seen" value="seen"';
                                 if($data['koppelStandhoudersMarkten'][$x]->seen){
                                     echo 'checked=checked>' . '</td>';
                                 } else {
                                     echo '>' . '</td>';
                                 }
 
-                                echo '<td><input type="checkbox" class="selected" name="selected" value="selected"';
+                                echo '<td class="filterable-cell"><input type="checkbox" class="selected" name="selected" value="selected"';
                                 if($data['koppelStandhoudersMarkten'][$x]->selected){
                                     echo 'checked=checked>' . '</td>';
                                 } else {
@@ -123,11 +119,6 @@
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
-                                if (count($data['koppelStandhoudersMarkten'][$x]->gevel) == 1){
-                                    echo '<td class="filterable-cell">gevel vrij</td>';
-                                } else {
-                                    echo '<td class="filterable-cell">nee</td>';
-                                }
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
@@ -191,6 +182,9 @@
                 <div class="form-title">Ander bedrag:</div>
                 <label><span>Prijsafspraak:</span><input type="checkbox" name="afgesproken_prijs" value="1"></label>
                 <label><span>Afgesproken prijs:</span><input type="text" name="afgesproken_bedrag" value=""></label>
+                <br>
+                <label><span>Factuur verstuurd:</span><input type="checkbox" name="factuur_verstuurd" value="1"></label>
+                <label><span>Factuur datum:</span><input type="text" name="factuur_datum" value="" readonly></label>
 
                 <br><br><br>
 

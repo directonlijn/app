@@ -326,6 +326,80 @@ class MarktenController extends Controller
     }
 
     /**
+     * Get page for markt met alle betaalde aanmeldingen
+     *
+     * @return Response
+     */
+    public function getMarktBetaald($slug)
+    {
+        $data = array();
+
+        $data['slug'] = $slug;
+
+        $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+
+        $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)
+                                                        ->where('selected', 1)
+                                                        ->get();
+
+        $data['standhouders'] = array();
+        foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+        {
+            $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+            if ($standhouder) {
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur->betaald == 1) {
+                        $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
+                }
+            }
+        }
+
+        return View('users.betaald')->with('data', $data);
+    }
+
+    /**
+     * Get page for markt met alle openstaand aanmeldingen
+     *
+     * @return Response
+     */
+    public function getMarktOpenstaand($slug)
+    {
+        $data = array();
+
+        $data['slug'] = $slug;
+
+        $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+
+        $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)
+                                                        ->where('selected', 1)
+                                                        ->get();
+
+        $data['standhouders'] = array();
+        foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+        {
+            $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+            if ($standhouder) {
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur->betaald == 0) {
+                        $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
+                }
+            }
+        }
+
+        return View('users.openstaand')->with('data', $data);
+    }
+
+    /**
      * Get page for markt met alle winkeliers
      *
      * @return Response
@@ -454,7 +528,7 @@ class MarktenController extends Controller
         foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
         {
             $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
-            if ($standhouder) {
+            if ($standhouder && $standhouder->winkelier != 1) {
                 $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
                 $data['aantal_standhouders']++;
             }
@@ -464,7 +538,7 @@ class MarktenController extends Controller
     }
 
     /**
-     * Export standhouders for markt
+     * Export selected standhouders for markt
      *
      * @return Response
      */
@@ -483,9 +557,81 @@ class MarktenController extends Controller
         foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
         {
             $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
-            if ($standhouder) {
+            if ($standhouder && $standhouder->winkelier != 1) {
                 $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
                 $data['aantal_standhouders']++;
+            }
+        }
+
+        $this->exportStandhouders($data, $slug);
+    }
+
+    /**
+     * Export payed standhouders for markt
+     *
+     * @return Response
+     */
+    public function exportAllPayedStandhoudersForMarkt($slug)
+    {
+
+        $data = array();
+        // dd($slug);
+        $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+
+        $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)->where("selected", 1)->get();
+
+
+        $data['standhouders'] = array();
+        $data['aantal_standhouders'] = 0;
+        foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+        {
+            $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+            if ($standhouder && $standhouder->winkelier != 1) {
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur->betaald == 1) {
+                        $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
+                }
+            }
+        }
+
+        $this->exportStandhouders($data, $slug);
+    }
+
+    /**
+     * Export unpayed standhouders for markt
+     *
+     * @return Response
+     */
+    public function exportAllOpenstaandeStandhoudersForMarkt($slug)
+    {
+
+        $data = array();
+        // dd($slug);
+        $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+
+        $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)->where("selected", 1)->get();
+
+
+        $data['standhouders'] = array();
+        $data['aantal_standhouders'] = 0;
+        foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+        {
+            $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+            if ($standhouder && $standhouder->winkelier != 1) {
+                try {
+                    $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                    if ($factuur->betaald == 0) {
+                        $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+                        $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                    }
+                } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                    // do nothing
+                }
             }
         }
 

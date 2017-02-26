@@ -1,17 +1,8 @@
 $(document).ready(function(){
 
     $(".exportToExcel").on("click", function(){
-        // markten/{slug}/export
-        // $.ajax({
-        //     url: "/markten/Hippiemarkt Amsterdam XL/export",
-        //     success: function(result){
-        //         alert("succes");
-        //     },
-        //     fail: function(){
-        //         alert("fail");
-        //     }
-        // });
-        window.open("/markten/Hippiemarkt Amsterdam XL/export/aanmeldingen", '_blank');
+        var pathArray = window.location.pathname.split( '/' );
+        window.open("/markten/" + pathArray[2] + "/export/" + pathArray[3], '_blank');
     });
 
     function getJsonData(type, url, $data)
@@ -24,29 +15,10 @@ $(document).ready(function(){
         })
         .done(function(data){
             return data;
-            // $(".standhouders-table tbody").empty();
-            // $standhouders = data.standhouders;
-            // $html = '';
-            // for(var i = 0;i < $standhouders.length; i++)
-            // {
-            //     $html += "<tr>";
-            //     $html += "<td>"+ $standhouders[i].id +"</td>";
-            //     $html += "<td>"+ $standhouders[i].Bedrijfsnaam +"</td>";
-            //     $html += "<td>"+ $standhouders[i].Voornaam + " " + $standhouders[i].Achternaam +"</td>";
-            //     $html += "<td>"+ $standhouders[i].Telefoon +"</td>";
-            //     $html += "<td>"+ $standhouders[i].Email +"</td>";
-            //     $html += "<td>"+ $standhouders[i].Website +"</td>";
-            //     $html += "</tr>";
-            // }
-            //
-            // $(".standhouders-table tbody").append($html);
         })
         .fail(function(data){
-        console.log(returnValue);
             returnValue = false;
         });
-
-        console.log(returnValue);
 
         return returnValue;
     }
@@ -57,7 +29,7 @@ $(document).ready(function(){
 
         data = getJsonData("POST", "getStandhoudersForMarkt", $data);
         $(".standhouders-table tbody").empty();
-        console.log(data);
+
         $standhouders = data.standhouders;
         $html = '';
         for(var i = 0;i < $standhouders.length; i++)
@@ -379,7 +351,7 @@ $(document).ready(function(){
             // $(this).width($(this).attr("data-item-original-width"));
             $(this).width(oTbl.find("thead tr th:eq("+index+")").outerWidth()).css("box-sizigin", "border-box");
         });
-        
+
         // remove table body from new table
         newTbl.find('tbody tr').remove();
 
