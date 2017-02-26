@@ -5,6 +5,12 @@ $(document).ready(function(){
         window.open("/markten/" + pathArray[2] + "/export/" + pathArray[3], '_blank');
     });
 
+    $(".exportToExcelWinkeliers").on("click", function(){
+        // var pathArray = window.location.pathname.split( '/' );
+        // window.open("/markten/" + pathArray[2] + "/export/" + pathArray[3], '_blank');
+        alert("werkt nog niet");
+    });
+
     function getJsonData(type, url, $data)
     {
         var returnValue = '';

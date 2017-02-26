@@ -31,7 +31,7 @@
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" data-tab="aanmeldingen">
             <h1 class="page-header">Winkeliers</h1>
-            <input type="button" class="exportToExcel" value="export all">
+            <input type="button" class="exportToExcelWinkeliers" value="export all">
             <input type="button" class="verstuurFacturen" value="verstuur facturen">
             <div class="table-responsive">
                 <table class="table table-fixed standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
