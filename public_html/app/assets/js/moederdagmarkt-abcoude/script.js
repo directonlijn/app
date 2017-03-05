@@ -149,6 +149,7 @@ $(document).ready(function(){
             $(".flower").animate({
                 right: "=" + $(".flower").width()
             }, 1000);
+            $(".flower").css("right",$(".flower").width());
             $(".bord").css("top", $(".bord").height()+"px");
             $("body").height($(document).height());
             $(".all").height($(document).height());
