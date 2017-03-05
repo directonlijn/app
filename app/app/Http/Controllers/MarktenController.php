@@ -591,6 +591,7 @@ class MarktenController extends Controller
                     $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
                     if ($factuur->betaald == 1) {
                         $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+                        $koppelStuk->betaald = 1;
                         $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
                     }
                 } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
@@ -598,8 +599,8 @@ class MarktenController extends Controller
                 }
             }
         }
-
-        $this->exportStandhouders($data, $slug);
+        // dd($data);
+        $this->exportPayedStandhouders($data, $slug);
     }
 
     /**
@@ -714,6 +715,114 @@ class MarktenController extends Controller
             $newRow[] = $data['koppelStandhoudersMarkten'][$x]->grondplek;
             $newRow[] = $data['koppelStandhoudersMarkten'][$x]->bedrag;
             $newRow[] = $data['koppelStandhoudersMarkten'][$x]->betaald;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->schoenen;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->lifestyle;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"};
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->kunst;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->sieraden;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->tassen;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->brocante;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->dierenspullen;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->anders;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->seen;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->selected;
+
+            $exportData[] = $newRow;
+            $x++;
+        }
+
+        \Excel::create($slug." ".date("Y-m-d"), function($excel) use($exportData) {
+
+            $excel->sheet('Standhouders', function($sheet) use($exportData) {
+
+                $sheet->fromArray($exportData, null, 'A1', false, false);
+
+            });
+
+        })->export('xls');
+    }
+
+    /**
+     * Exports standhouders to excel
+     * @var $standhouders - de standhouders die geexporteerd moeten worden
+     *
+     * @return Response
+     */
+    private function exportPayedStandhouders($data, $slug)
+    {
+        $exportData = array();
+
+        $headers = array();
+        $headers[] = '#';
+        $headers[] = 'Bedrijfsnaam';
+        $headers[] = 'Naam';
+        $headers[] = 'Telefoon';
+        $headers[] = 'E-mail';
+        $headers[] = 'Website';
+        $headers[] = 'Type';
+        $headers[] = 'Kraam';
+        $headers[] = 'Grondplek';
+        $headers[] = 'Bedrag';
+        $headers[] = 'Betaald';
+        $headers[] = 'factuurdatum';
+        $headers[] = 'factuurnummer';
+
+        $headers[] = 'tweede_herinnering';
+        $headers[] = 'tweede_herinnering_datum';
+        $headers[] = 'derde_herinnering';
+        $headers[] = 'derde_herinnering_datum';
+
+        $headers[] = 'Grote maten';
+        $headers[] = 'Dames kleding';
+        $headers[] = 'Heren kleding';
+        $headers[] = 'Kinder kleding';
+        $headers[] = 'Baby kleding';
+        $headers[] = 'Fashion accessoires';
+        $headers[] = 'Schoenen';
+        $headers[] = 'Lifestyle';
+        $headers[] = 'Woon accessoires';
+        $headers[] = 'Kunst';
+        $headers[] = 'Sieraden';
+        $headers[] = 'Tassen';
+        $headers[] = 'Brocante';
+        $headers[] = 'Dieren spullen';
+        $headers[] = 'Anders';
+        $headers[] = 'Gezien';
+        $headers[] = 'Geselecteerd';
+
+        $exportData[] = $headers;
+
+        $x = 0;
+        // for ($x=0;$x < count($data['standhouders']); $x++)
+        foreach($data['standhouders'] as $standhouder)
+        {
+            $newRow = array();
+            $newRow[] = $standhouder->id;
+            $newRow[] = $standhouder->Bedrijfsnaam;
+            $newRow[] = $standhouder->Voornaam . " " . $standhouder->Achternaam;
+            $newRow[] = $standhouder->Telefoon;
+            $newRow[] = $standhouder->Email;
+            $newRow[] = $standhouder->Website;
+
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->type;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->kraam;
+            $newRow[] = $data['koppelStandhoudersMarkten'][$x]->grondplek;
+            $newRow[] = $data['factuur'][$standhouder->id]->totaal_bedrag;
+            $newRow[] = $data['factuur'][$standhouder->id]->betaald;
+            $newRow[] = $data['factuur'][$standhouder->id]->datum;
+            $newRow[] = $data['factuur'][$standhouder->id]->factuurnummer;
+
+            $newRow[] = $data['factuur'][$standhouder->id]->tweede_herinnering;
+            $newRow[] = $data['factuur'][$standhouder->id]->tweede_herinnering_datum;
+            $newRow[] = $data['factuur'][$standhouder->id]->derde_herinnering;
+            $newRow[] = $data['factuur'][$standhouder->id]->derde_herinnering_datum;
+
             $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"};
             $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"};
             $newRow[] = $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"};
