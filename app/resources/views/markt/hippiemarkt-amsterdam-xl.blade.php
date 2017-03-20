@@ -65,8 +65,7 @@
 	            FASHION | FOOD | DRINKS | MUSIC | LIFESTYLE
 	        </div>
 
-			<input type="button" class="aanmelden standhouders" value="aanmelden">
-			<input type="button" class="aanmelden winkeliersvereniging" value="winkeliersvereniging">
+			<input type="button" class="aanmelden" value="VOL">
 		</div>
 
 		<div class="form-overlay"></div>
