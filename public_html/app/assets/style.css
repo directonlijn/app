@@ -511,7 +511,10 @@ body {
         transform: translateX(0%);
     }
     .form-style-10 { width: 100%; -webkit-border-radius: 0px; border-radius: 0px; margin: 0px; padding: 0px; }
-    .form-style-10 h1 { border-radius: 0px; font-size: 19px; margin: 0px; position: fixed; top: 0px; height: 80px; }
+    /*.form-style-10 h1 { border-radius: 0px; font-size: 19px; margin: 0px; position: fixed; top: 0px; height: 80px; }normal */
+    .form-style-10 h1 { border-radius: 0px; font-size: 19px; margin: 0px; height: 40px;}
+    .form-style-10 h2 { padding: 0px 10px; }
+    .form-style-10 p { padding: 0px 10px; }
     .form-style-10 .section span { margin-left: 0px; left: 10px; }
     .form-style-10 .section { text-align: center; }
     .close { position: fixed; top: 20px; z-index: 10; }

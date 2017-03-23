@@ -65,7 +65,7 @@
 	            FASHION | FOOD | DRINKS | MUSIC | LIFESTYLE
 	        </div>
 
-			<input type="button" class="aanmelden" value="VOL">
+			<input type="button" class="aanmelden standhouders" value="Info">
 		</div>
 
 		<div class="form-overlay"></div>
@@ -73,7 +73,33 @@
         <div class="form-wrapper">
 			<div class="close"></div>
 
+
 			<div class="form-style-10">
+				<h1>Informatie Hippiemarkt Amsterdam XL</span></h1>
+
+				<h2>Algemene informatie</h2>
+				<ul>
+					<li>De markt is gratis toegankelijk</li>
+					<li>De markt duurt van van 11:00 tot 17:00</li>
+					<li>Parkeren is gratis doordat de Hippiemarkt op een zondag valt</li>
+					<li>Adres: Osdorpplein 626, 1068 TB Amsterdam</li>
+				</ul>
+
+				<h2>Bezoekers</h2>
+				<p>
+					Hippiemarkt Amsterdam XL op het osdorpplein/tussenmeer in Amsterdam en is voor bezoekers vrij toegankelijk. De hippiemarkt vind plaats op 26 maart. Doordat dit op een zondag valt
+					is het overal vrij parkeren in Amsterdam.
+				</p>
+
+				<h2>Standhouders</h2>
+				<p>
+					Helaas zitten wij helemaal vol. Mocht u zich aangemeld hebben en de email met informatie en de plattegrond ontvangen hebben dan bent u welkom op de Hippiemarkt Amsterdam XL.
+				</p>
+
+				<p>
+					Mocht u nog verdere vragen hebben dan kunt u een e-mail sturen naar <a href="mailto:info@directevents.nl">info@directevents.nl</a>. Tot zondag 26 maart.
+				</p>
+				<?php /*
 				<h1>Aanmelden Hippiemarkt Amsterdam XL<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt Amsterdam XL.</span></h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -132,6 +158,7 @@
 				     	<input type="button" name="Aanmelden" value="aanmelden"/>
 				    </div>
 				</form>
+				*/ ?>
 			</div>
         </div>
 
