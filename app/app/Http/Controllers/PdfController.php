@@ -325,7 +325,7 @@ class PdfController extends Controller
         $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
 
         $emailData = array(
-            'template' => "factuur",
+            'template' => $markt->{"factuur-mail-template"},
             'email' => $standhouder->Email,
             'pathToPdf' => $path,
             'pathToTerms' => $pathToAlgemeneVoorwaarden

@@ -31,6 +31,7 @@ class Markt extends Model
                 'aantalPlekken',
                 'aantalGeselecteerd',
                 'welcome-mail-template',
+                'factuur-mail-template',
                 'algemene-voorwaarden-template'
             ];
 
