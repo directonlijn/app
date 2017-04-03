@@ -493,16 +493,20 @@
 
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de Moederdagmarkt De Ronde Venen in de hoogstraat van Abcoude op Zondag 14 mei van 12:00 tot 17:30. </strong><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Bedankt voor uw aanmelding voor de Moederdagmarkt De Ronde Venen in Abcoude. </strong><br>
+<br>
+<strong>Datum: </strong>14 mei<br>
+<strong>Tijd: </strong>12:00 tot 17:30<br>
+<br>
+<strong><em>Let op: Uw aanmelding is pas definitief na ontvangst van alle overige informatie!</em></strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-Moederdagmarkt De Ronde Venen is onderdeel van Direct Events. Moederdagmarkt Abcoude zal van 12:00 tot 17:30 duren. Er zullen ruim 75 kramen aanwezig zijn met verschillende producten in het Moederdag thema.
-Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de dag op de moederdagmarkt zullen er verschillende optredens zijn. Voor de eerste 50 bezoekers hebben wij een goodiebag samengesteld.
-Deze worden aan de standhouders uitgedeeld worden en pas worden afgegeven bij verkoop van een product uit het eigen assortiment van de standhouder. Er is een plan opgesteld wat voor veel publiciteit gaat zorgen
-in de Ronde Venen. Wij kunnen hier nog niet te veel over vertellen, maar het zal snel duidelijk worden.
+Moederdagmarkt De Ronde Venen is onderdeel van Direct Events. De Moederdagmarkt zal van 12:00 tot 17:30 duren. Er zullen ruim 75 kramen aanwezig zijn met verschillende producten.
+Voor de eerste 50 bezoekers hebben wij een goodiebag samengesteld.
+Er is een promotieplan opgesteld dat voor veel publiciteit gaat zorgen. Wij kunnen hier nog niet te veel over vertellen, maar het zal snel duidelijk worden.
 <br>
 <br>
-De organisatie zal zorg dragen voor genoeg diversiteit van de stands. Ook word er een modeshow georganiseerd. Standhouders kunnen zich hiervoor opgeven via de mail.
+De organisatie zal zorg dragen voor genoeg diversiteit van de stands. Tijdens het evenement zijn er live zang en dans optredens bij de plaatselijke horeca.
 <br>
 <br>
 <strong>LOCATIE:</strong><br>
@@ -511,9 +515,7 @@ De organisatie zal zorg dragen voor genoeg diversiteit van de stands. Ook word e
 <strong>Afbouw: </strong>17:30<br>
 <strong><em>LET OP: Alle Trucks dienen om 9:30 aanwezig te zijn!  </em></strong><br>
 <br>
-Wij verzoeken iedereen om met 1 auto te komen in verband met de verwachte drukten! (nadere informatie volgt in aanloop van het event).<br>
-<br>
-AANKLEDING KRAAM: </p>
+<strong>AANKLEDING KRAAM: </strong></p>
 
 <ul>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Wij vragen van jullie om de kraam zo origineel mogelijk bij het thema ‘moederdag’ in te richten.</li>
@@ -521,8 +523,14 @@ AANKLEDING KRAAM: </p>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat wat onder je kraam staat er netjes bijstaat, of nog beter: zorg ervoor dat het bedekt is door een kleed, denk ook aan de zijkanten van je kraam.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Kraam: Een kraam is 4m lang bij 80cm breed en voorzien van een witte luifel.</li>
 </ul>
-PUBLICITEIT:<br>
-Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Moederdagmarkt De Ronde Venen kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!<br>
+<strong>PUBLICITEIT: </strong><br>
+Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Moederdagmarkt De Ronde Venen kun je dit evenement delen.
+<br>
+<br>
+Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt,
+zodat mensen je later terug kunnen vinden!
+<br>
+<br>
 Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. <br>
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
@@ -531,19 +539,21 @@ Houd de website en Facebook pagina goed in de gaten voor alle overige informatie
 <br>
 <a target="_blank" href="http://www.moederdagmarktderondevenen.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.moederdagmarktderondevenen.nl</a><br>
 <br>
-CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 12.00 tot 17.30.
+CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 12.00 tot 17.30. Er word op de dag zelf een borg gevraagd van € 10,- die u terug krijgt bij het netjes achterlaten van uw plek.
 <ul>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Er bevind zich op circa 200 meter van de markt een pinautomaat en op circa 500 meter.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je op tijd bent.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Je bent zelf verantwoordelijk voor het bieden van kwaliteit aan de koper.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">De organisatie is niet aansprakelijk voor diefstal en schade toegebracht door derden.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg voor voldoende wisselgeld!</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Plaats geen rekken of producten in de doorloop van de bezoekers! Probeer het zoveel mogelijk naast de kraam te zetten, er is ruimte genoeg. </li>
+	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Indien u gebruik maakt van stroom dient u dit tijdig aan te geven via de email (info@directevents.nl)</li>
 </ul>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+	<em>
+		Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.
+	</em>
 <br>
-Tot zondag 14 mei op De Moederdagmarkt De Ronde Venen!<br>
 <br>
 Met vriendelijke groet,<br>
  <br>

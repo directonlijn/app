@@ -93,7 +93,7 @@
 						<label class="gevel">Gevel vrij:<input type="checkbox" name="gevelvrij"></label>
 				        <label>
 							Food/non-food*:
-							<input type="radio" name="foodNonfood" value="food">food
+							<input type="radio" name="foodNonfood" value="food">food (€121,- per plek)
 							<span style="display:inline-block;width:20px;"></span>
                             <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
 						</label>
