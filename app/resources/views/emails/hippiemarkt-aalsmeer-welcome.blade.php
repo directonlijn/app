@@ -13,7 +13,7 @@
 		<meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bedankt voor uw aanmelding - Hippiemarkt De Ronde Venen</title>
+		<title>Bedankt voor uw aanmelding - Hippiemarkt Aalsmeer</title>
 
     <style type="text/css">
 		p{
@@ -419,7 +419,7 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
 
-                            Bevestiging aanmelding Hippiemarkt De Ronde Venen
+                            Bevestiging aanmelding Hippiemarkt Aalsmeer
                         </td>
                     </tr>
                 </tbody></table>
@@ -435,7 +435,7 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
 
-                            <a href="http://app.directevents.nl/mail/view/hippiemarkt-de-ronde-venen-welcome" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>
+                            <a href="http://app.directevents.nl/mail/view/hippiemarkt-aalsmeer-welcome" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>
                         </td>
                     </tr>
                 </tbody></table>
@@ -462,7 +462,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-de-ronde-venen/mail-header.JPG" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.JPG" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
 
 
                             </td>
@@ -491,19 +491,20 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
+							<strong><em>LET OP: Uw aanmelding is pas definitief na ontvangst van alle overige informatie!</em></strong><br><br>
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de Hippiemarkt de Ronde Venen op eiland één te Vinkeveen op Zondag 25 juni van 12:00 tot 18:00. </strong><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u zich aanmeld voor de Hippiemarkt Aalsmeer op het surfeiland te Aalsmeer op Zondag 21 juli van 16:00 tot 23:00. </strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-Hippiemarkt De Ronde Venen is onderdeel van Direct Events. Hippiemarkt De Ronde Venen zal van 12:00 tot 18:00 duren. Er zullen ruim 80 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het eiland zal een podium met grote bar worden geplaatst. Op het eiland wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). In de buurt van de bar het podium zal een groot deel van de food geplaatst worden. De kramen zijn 4 meter en hebben aan beide zijde een loop waar eventueel ruimte is voor een rek.<br>
+Hippiemarkt Aalsmeer is onderdeel van Direct Events. Hippiemarkt Aalsmeer zal van 16:00 tot 23:00 duren. Er zullen ruim 60 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het eiland zal een podium met grote bar worden geplaatst. Op het eiland wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). In de buurt van de bar het podium zal een groot deel van de food geplaatst worden. Wij maken gebruik van 4 meter kramen.<br>
 <br>
 <strong>LOCATIE:</strong><br>
-<strong>Adres: </strong>Molenkade 30, Vinkeveen<br>
-<strong>Opbouw: </strong>vanaf 09:00<br>
-<strong><em>LET OP: Alle Trucks dienen om 8:00 aanwezig te zijn!  </em></strong><br>
+<strong>Adres: </strong>Surfeiland, Aalsmeer<br>
+<strong>Opbouw: </strong>vanaf 13:30<br>
+<strong><em>LET OP: Alle Trucks dienen om 12:30 aanwezig te zijn!  </em></strong><br>
 <br>
-<strong>Afbouw: </strong>18:00 tot 20:00 <br>
+<strong>Afbouw: </strong>23:00 tot 24:00 <br>
 <br>
 Na het laden en lossen kunnen de auto’s geparkeerd worden op de parkeerplaats bij het eiland. Wij verzoeken iedereen om met 1 auto te komen in verband met de verwachte drukten! (nadere informatie volgt in aanloop van het event).<br>
 <br>
@@ -516,16 +517,16 @@ AANKLEDING KRAAM: </p>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Kraam: Een kraam is 4m lang bij 80cm breed en voorzien van een witte luifel.</li>
 </ul>
 PUBLICITEIT:<br>
-Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt De Ronde Venen kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!<br>
+Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt Aalsmeer kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!<br>
 Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. <br>
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
 <br>
-<a target="_blank" href="https://www.facebook.com/events/768595133308430/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/768595133308430/</a><br>
+<a target="_blank" href="https://www.facebook.com/events/1787774984873640/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1787774984873640/</a><br>
 <br>
-<a target="_blank" href="http://www.hippiemarktderondevenen.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktderondevenen.nl</a><br>
+<a target="_blank" href="http://www.hippiemarktaalsmeer.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktaalsmeer.nl</a><br>
 <br>
-CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 12.00 tot 18.00. We verwachten van de deelnemers dat ze blijven tot 18:00. 
+CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 16.00 tot 23.00. We verwachten van de deelnemers dat ze blijven tot 23:00. 
 <ul>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Een pinautomaat meenemen is aan te raden. Er zijn namelijk geen pinappareten aanwezig op het eiland</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je op tijd bent.</li>
@@ -535,14 +536,11 @@ CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De 
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Plaats geen rekken of producten in de doorloop van de bezoekers! Probeer het zoveel mogelijk naast de kraam te zetten, er is ruimte genoeg. </li>
 </ul>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
-<br>
-Tot zondag 25 juni op De Hippiemarkt De Ronde Venen!<br>
 <br>
 Met vriendelijke groet,<br>
  <br>
 <br>
-Direct events – Organisatie Hippiemarkt De Ronde Venen</p>
+Direct events – Organisatie Hippiemarkt Aalsmeer</p>
 
                         </td>
                     </tr>
@@ -594,7 +592,7 @@ Direct events – Organisatie Hippiemarkt De Ronde Venen</p>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="https://www.facebook.com/events/768595133308430/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://www.facebook.com/events/1787774984873640/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
