@@ -11,12 +11,12 @@
 		<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
 		<!-- STYLES -->
-		{!! Html::style('/assets/css/hippiemarkt-de-ronde-venen/style.css') !!}
+		{!! Html::style('/assets/css/hippiemarkt-aalsmeer/style.css') !!}
 		<!-- <link rel="stylesheet" href="css/bjqs.css"> -->
 
 		<!-- JS -->
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-        <script src="/assets/js/hippiemarkt-de-ronde-venen.js"></script>
+        <script src="/assets/js/hippiemarkt-aalsmeer.js"></script>
 
 		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,26 +33,26 @@
 	</head>
 	<body>
 		<div class="all">
-			<img class="beplanting" src="/assets/img/hippiemarkt-de-ronde-venen/beplanting.png">
-			<img class="sterren" src="/assets/img/hippiemarkt-de-ronde-venen/sterren.png">
-			<img class="glas-drinken" src="/assets/img/hippiemarkt-de-ronde-venen/glas-drinken.png">
+			<img class="beplanting" src="/assets/img/hippiemarkt-aalsmeer/beplanting.png">
+			<img class="sterren" src="/assets/img/hippiemarkt-aalsmeer/sterren.png">
+			<img class="glas-drinken" src="/assets/img/hippiemarkt-aalsmeer/glas-drinken.png">
 
-			<img class="dromenvanger" src="/assets/img/hippiemarkt-de-ronde-venen/dromenvanger.png">
-			<img class="bord" src="/assets/img/hippiemarkt-de-ronde-venen/bord.png">
+			<img class="dromenvanger" src="/assets/img/hippiemarkt-aalsmeer/dromenvanger.png">
+			<img class="bord" src="/assets/img/hippiemarkt-aalsmeer/bord.png">
 
-			<img class="logo" src="/assets/img/hippiemarkt-de-ronde-venen/logo.png">
+			<img class="logo" src="/assets/img/hippiemarkt-aalsmeer/logo.png">
 
 	        <div class="round datum">
 				<div class="round-inner">
 		            ZONDAG
-		            <div class="day">25</div>
-		            JUNI
+		            <div class="day">21</div>
+		            JULI
 		        </div>
 	        </div>
 
 	        <div class="round kramen">
 				<div class="round-inner">
-		            12:00<div>tot</div>18:00
+		            16:00<div>tot</div>23:00
 		        </div>
 	        </div>
 
@@ -69,10 +69,10 @@
 			<div class="close"></div>
 
 			<div class="form-style-10">
-				<h1>Aanmelden<br>Hippiemarkt De Ronde Venen<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt De Ronde Venen.</span></h1>
+				<h1>Aanmelden<br>Hippiemarkt Aalsmeer<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt Aalsmeer.</span></h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-	                <input type="hidden" name="markt_id" value="3" />
+	                <input type="hidden" name="markt_id" value="5" />
 				    <div class="section"><span>1</span>Bedrijfs- &amp; <h3 class="mobile-only"><br></h3>Persoons-gegevens</div>
 				    <div class="inner-wrap">
 				        <label>Bedrijfsnaam*: <input type="text" name="bedrijfsnaam" required/></label>
@@ -100,7 +100,7 @@
 
                             <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
 						</label>
-				        <label>Aantal kramen (4 meter, &euro;120,- incl. BTW): <input type="number" name="kramen" value="0"/></label>
+				        <label>Aantal kramen (4 meter, &euro;121,- incl. BTW): <input type="number" name="kramen" value="0"/></label>
 				        <label>Aantal grondplekken (4 meter, &euro;100,- incl. BTW): <input type="number" name="grondplekken" value="0"/></label>
 				        <div class="form-label">
 							Producten*:<br>
