@@ -44,7 +44,7 @@
 
 	        <div class="round datum">
 				<div class="round-inner">
-		            ZONDAG
+		            VRIJDAG
 		            <div class="day">21</div>
 		            JULI
 		        </div>
