@@ -537,7 +537,7 @@ class PdfController extends Controller
             // sleep(1);
             // dd($nieuwe_factuur);
             $emailData = array(
-                'template' => "factuur",
+                'template' => "hippiemarkt-aalsmeer",
                 'email' => $nieuwe_factuur['email'],
                 'pathToPdf' => $path,
                 'pathToTerms' => $pathToAlgemeneVoorwaarden
