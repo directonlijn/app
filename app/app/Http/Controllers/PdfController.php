@@ -467,7 +467,7 @@ class PdfController extends Controller
             $x++;
         }
 
-        dd($data['facturen']);
+        // dd($data['facturen']);
 
         // return $data['facturen'];
 
