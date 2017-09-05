@@ -296,8 +296,8 @@ class PdfController extends Controller
 
             $factuur->save();
         }
-        echo "testjhg";
-        exit();
+        // echo "testjhg";
+        // exit();
 
         $pdf_data = array();
         $pdf_data['factuurnr'] = $factuur->factuurnummer;
