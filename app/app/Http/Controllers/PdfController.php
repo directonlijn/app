@@ -242,16 +242,16 @@ class PdfController extends Controller
 
                 $dagen = count(explode(",", $standhouderExtra->dagen));
                 if ($dagen > 1) {
-                    echo "count > 1<br>";
+                    // echo "count > 1<br>";
                     if ($markt->aantal_dagen == $dagen) {
-                        echo "alle dagen<br>";
+                        // echo "alle dagen<br>";
                         $factuur->totaal_bedrag = number_format(round(($markt->totaal_prijs_kraam * $standhouderExtra->kraam) + ($markt->totaal_prijs_grondplek * $standhouderExtra->grondplek), 2), 2);
                     }  else {
-                        echo "dagen: " . $dagen . "<br>";
+                        // echo "dagen: " . $dagen . "<br>";
                         $factuur->totaal_bedrag = number_format(round(($dagen * $markt->bedrag_grondplek * $standhouderExtra->grondplek) + ($dagen * $markt->bedrag_kraam * $standhouderExtra->kraam)));
                     }
                 } else {
-                    echo "normale functie<br>";
+                    // echo "normale functie<br>";
                     $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
                 }
             }
@@ -278,18 +278,18 @@ class PdfController extends Controller
             else
             {
                 $dagen = count(explode(",", $standhouderExtra->dagen));
-                echo $dagen;
+                // echo $dagen;
                 if ($dagen > 1) {
-                    echo "count > 1<br>";
+                    // echo "count > 1<br>";
                     if ($markt->aantal_dagen == $dagen) {
-                        echo "alle dagen<br>";
+                        // echo "alle dagen<br>";
                         $factuur->totaal_bedrag = number_format(round(($markt->totaal_prijs_kraam * $standhouderExtra->kraam) + ($markt->totaal_prijs_grondplek * $standhouderExtra->grondplek), 2), 2);
                     }  else {
-                        echo "dagen: " . $dagen . "<br>";
+                        // echo "dagen: " . $dagen . "<br>";
                         $factuur->totaal_bedrag = number_format(round(($dagen * $markt->bedrag_grondplek * $standhouderExtra->grondplek) + ($dagen * $markt->bedrag_kraam * $standhouderExtra->kraam)));
                     }
                 } else {
-                    echo "normale functie<br>";
+                    // echo "normale functie<br>";
                     $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
                 }
             }
