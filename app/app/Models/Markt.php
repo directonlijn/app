@@ -16,7 +16,8 @@ class Markt extends Model
      */
     public $fillable = [
                 'Naam',
-                'Datum',
+                'Datum_van',
+                'Datum_tot',
                 'van-tijd',
                 'tot-tijd',
                 'Website',
@@ -32,7 +33,10 @@ class Markt extends Model
                 'aantalGeselecteerd',
                 'welcome-mail-template',
                 'factuur-mail-template',
-                'algemene-voorwaarden-template'
+                'algemene-voorwaarden-template',
+                'totaal_prijs_kraam',
+                'totaal_prijs_grondplek',
+                'aantal_dagen'
             ];
 
     /**

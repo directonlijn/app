@@ -40,7 +40,8 @@ class Koppel_standhouders_markten extends Model
                 'selected',
                 'factuurnummer',
                 'afgesproken_prijs',
-                'afgesproken_bedrag'
+                'afgesproken_bedrag',
+                'dagen'
             ];
 
 

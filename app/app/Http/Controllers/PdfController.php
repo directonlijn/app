@@ -229,13 +229,38 @@ class PdfController extends Controller
             }
             else
             {
-                $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
+                // if (isset($request->dagen)){
+                //     $aantal_dagen = count($request->dagen);
+                //     if ($markt->aantal_dagen == $aantal_dagen) {
+                //         $koppel_standhouders_markten->bedrag = ($markt->totaal_prijs_kraam * $request->kramen) + ($markt->totaal_prijs_grondplek * $request->grondplekken);
+                //     } else {
+                //         $koppel_standhouders_markten->bedrag = ($aantal_dagen * $markt->bedrag_kraam * $request->kramen) + ($aantal_dagen * $markt->bedrag_grondplek * $request->grondplekken);
+                //     }
+                // } else {
+                //     $koppel_standhouders_markten->bedrag = 0;
+                // }
+
+                $dagen = count(explode(",", $standhouderExtra->dagen));
+                if ($dagen > 1) {
+                    echo "count > 1<br>";
+                    if ($markt->aantal_dagen == $dagen) {
+                        echo "alle dagen<br>";
+                        $factuur->totaal_bedrag = number_format(round(($markt->totaal_prijs_kraam * $standhouderExtra->kraam) + ($markt->totaal_prijs_grondplek * $standhouderExtra->grondplek), 2), 2);
+                    }  else {
+                        echo "dagen: " . $dagen . "<br>";
+                        $factuur->totaal_bedrag = number_format(round(($dagen * $markt->bedrag_grondplek * $standhouderExtra->grondplek) + ($dagen * $markt->bedrag_kraam * $standhouderExtra->kraam)));
+                    }
+                } else {
+                    echo "normale functie<br>";
+                    $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
+                }
             }
+
             $factuur->betaald = 0;
             $factuur->tweede_herinnering = 0;
             $factuur->derde_herinnering = 0;
 
-            $factuur->save();
+            $factuur->save();;
         }
         else
         {
@@ -252,11 +277,27 @@ class PdfController extends Controller
             }
             else
             {
-                $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
+                $dagen = count(explode(",", $standhouderExtra->dagen));
+                echo $dagen;
+                if ($dagen > 1) {
+                    echo "count > 1<br>";
+                    if ($markt->aantal_dagen == $dagen) {
+                        echo "alle dagen<br>";
+                        $factuur->totaal_bedrag = number_format(round(($markt->totaal_prijs_kraam * $standhouderExtra->kraam) + ($markt->totaal_prijs_grondplek * $standhouderExtra->grondplek), 2), 2);
+                    }  else {
+                        echo "dagen: " . $dagen . "<br>";
+                        $factuur->totaal_bedrag = number_format(round(($dagen * $markt->bedrag_grondplek * $standhouderExtra->grondplek) + ($dagen * $markt->bedrag_kraam * $standhouderExtra->kraam)));
+                    }
+                } else {
+                    echo "normale functie<br>";
+                    $factuur->totaal_bedrag = number_format(round($markt->bedrag_grondplek * $standhouderExtra->grondplek + $markt->bedrag_kraam * $standhouderExtra->kraam, 2), 2);
+                }
             }
 
             $factuur->save();
         }
+        echo "testjhg";
+        exit();
 
         $pdf_data = array();
         $pdf_data['factuurnr'] = $factuur->factuurnummer;

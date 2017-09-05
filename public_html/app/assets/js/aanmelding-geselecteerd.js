@@ -304,7 +304,7 @@ $(document).ready(function(){
         $(".standhouder-wijzig").show();
     });
 
-    $(".send-single-invoice-definitief").on("click", function(){
+    $(".send-single-invoice-definitief").on("click", function(e){
         var standhouder_id = $(".standhouder-wijzig").find("input[name=id]").val();
         var markt_id = $(".standhouders-table").attr("data-marktid");
         var $data = { _token: $(".token").text(), markt_id: markt_id, standhouder_id: standhouder_id };
@@ -322,7 +322,7 @@ $(document).ready(function(){
         })
         .fail(function(data){
             e.stopPropagation();
-            alert(JSON.parse(data).message);
+            alert("Something went really bad :(");
         });
     });
 

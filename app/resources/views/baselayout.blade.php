@@ -1,5 +1,5 @@
 <?php
-    $markten = App\Models\Markt::orderBy('datum', 'desc')->get();
+    $markten = App\Models\Markt::orderBy('Datum_van', 'desc')->get();
 ?>
 
 <!DOCTYPE html>

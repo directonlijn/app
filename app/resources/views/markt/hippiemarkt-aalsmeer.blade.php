@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hippiemarkt De Ronde Venen</title>
+		<title>Hippiemarkt The Beach Aalsmeer</title>
 
 		<!-- FONTS -->
 		<!-- <link rel="stylesheet" type="text/css" href="css/fonts/stylesheet.css"> -->
@@ -44,15 +44,15 @@
 
 	        <div class="round datum">
 				<div class="round-inner">
-		            VRIJDAG
-		            <div class="day">21</div>
-		            JULI
+		            VR, ZA, ZO
+		            <div class="day">27, 28, 29</div>
+		            OKTOBER
 		        </div>
 	        </div>
 
-	        <div class="round kramen">
+	        <div class="round kramen" style="display: none;">
 				<div class="round-inner">
-		            16:00<div>tot</div>23:00
+		            INFO
 		        </div>
 	        </div>
 
@@ -72,7 +72,7 @@
 				<h1>Aanmelden<br>Hippiemarkt Aalsmeer<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt Aalsmeer.</span></h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-	                <input type="hidden" name="markt_id" value="5" />
+	                <input type="hidden" name="markt_id" value="7" />
 				    <div class="section"><span>1</span>Bedrijfs- &amp; <h3 class="mobile-only"><br></h3>Persoons-gegevens</div>
 				    <div class="inner-wrap">
 				        <label>Bedrijfsnaam*: <input type="text" name="bedrijfsnaam" required/></label>
@@ -94,14 +94,25 @@
 
 					<div class="section"><span>3</span>Markt gegevens</div>
 				    <div class="inner-wrap">
-				        <label>
+				        <?php
+						/*<label>
 							Food/non-food*:<br>
 							<input type="radio" name="foodNonfood" value="food">food (standaardtarief: €242,- incl. BTW)<br>
 
                             <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
-						</label>
-				        <label>Aantal kramen (4 meter, &euro;121,- incl. BTW): <input type="number" name="kramen" value="0"/></label>
-				        <label>Aantal grondplekken (4 meter, &euro;100,- incl. BTW): <input type="number" name="grondplekken" value="0"/></label>
+						</label>*/
+						?>
+						<input style="display: none;" type="radio" name="foodNonfood" value="non-food" checked="checked">
+						<div class="form-label">
+							Dagen*:<br>
+							<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 27 Oktober - 17:00 tot 23:00</label>
+							<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 28 Oktober - 12:00 tot 20:00</label>
+							<label><input type="checkbox" class="dagen" name="dagen[2]" value="dag3">Zondag 29 Oktober - 12:00 tot 18:00</label>
+							<br>
+							Indien u voor alle drie de dagen kiest word er een prijs gerekend van &euro;50,- incl. BTW
+						</div>
+				        <label>Aantal kramen (4 meter, &euro;60,- incl. BTW per dag): <input type="number" name="kramen" value="0"/></label>
+				        <label>Aantal grondplekken (4 meter, &euro;60,- incl. BTW per dag): <input type="number" name="grondplekken" value="0"/></label>
 				        <div class="form-label">
 							Producten*:<br>
 							<label><input type="checkbox" class="producten" name="producten[0]" value="grote-maten">Grote maten kleding</label>

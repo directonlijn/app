@@ -214,7 +214,11 @@ body {
 .datum .day {
     margin-top: -11px;
     margin-bottom: -11px;
-    font-size: 70px;
+    /* outdoor */
+    /*font-size: 70px;*/
+    /* indoor */
+    font-size: 60px;
+    line-height: 85px;
 }
 
 .kramen span {
@@ -406,7 +410,11 @@ body {
 }
 
 .round.kramen .round-inner {
-    margin-top: -17px;
+    /* outdoor */
+    /*margin-top: -17px;*/
+    /* indoor */
+    font-size: 82px;
+    line-height: 150px;
 }
 
 .round.kramen .round-inner div {

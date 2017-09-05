@@ -19,7 +19,7 @@ class AanmeldController extends Controller
     public function postAanmelding(Request $request)
     {
         $required = ['bedrijfsnaam', 'voornaam', 'achternaam', 'straat', 'postcode', 'huisnummer', 'woonplaats', 'telefoon', 'email'];
-        $allValues = ['bedrijfsnaam', 'voornaam', 'achternaam', 'straat', 'postcode', 'huisnummer', 'toevoeging', 'woonplaats', 'telefoon', 'email', 'website', 'kramen', 'grondplekken', 'foodNonfood'];
+        $allValues = ['bedrijfsnaam', 'voornaam', 'achternaam', 'straat', 'postcode', 'huisnummer', 'toevoeging', 'woonplaats', 'telefoon', 'email', 'website', 'kramen', 'grondplekken', 'foodNonfood', 'dagen'];
         $arrayedValues = ['producten'];
 
         for($x = 0; $x < count($required); $x++){
@@ -57,8 +57,38 @@ class AanmeldController extends Controller
         $koppel_standhouders_markten->type = $request->foodNonfood;
         $koppel_standhouders_markten->kraam = $request->kramen;
         $koppel_standhouders_markten->grondplek = $request->grondplekken;
-        $koppel_standhouders_markten->bedrag = ($markt->bedrag_grondplek * $request->grondplekken) + ($markt->bedrag_kraam * $request->kramen);
+
+        // echo "markt";
+        // var_dump($markt);
+        // echo "<br>";
+        // echo "markt->aantal_dagen".$markt->aantal_dagen."<br>";
+        // echo "var_dump request->dagen";
+        // var_dump($request->dagen);
+        // echo "<br>request->dagen".count($request->dagen)."<br>";
+        // echo count($request->dagen)."<br>";
+        if ($markt->aantal_dagen > 1) {
+            if (isset($request->dagen)){
+                $aantal_dagen = count($request->dagen);
+                if ($markt->aantal_dagen == $aantal_dagen) {
+                    $koppel_standhouders_markten->bedrag = ($markt->totaal_prijs_kraam * $request->kramen) + ($markt->totaal_prijs_grondplek * $request->grondplekken);
+                } else {
+                    $koppel_standhouders_markten->bedrag = ($aantal_dagen * $markt->bedrag_kraam * $request->kramen) + ($aantal_dagen * $markt->bedrag_grondplek * $request->grondplekken);
+                }
+            } else {
+                $koppel_standhouders_markten->bedrag = 0;
+            }
+        } else {
+            $koppel_standhouders_markten->bedrag = ($markt->bedrag_grondplek * $request->grondplekken) + ($markt->bedrag_kraam * $request->kramen);
+        }
+
+        // echo $markt->aantal_dagen."<br>";
+        // echo $aantal_dagen."<br>";
         $koppel_standhouders_markten->stroom = 0;
+        if (isset($request->dagen) && $request->dagen != null){
+            $koppel_standhouders_markten->dagen = implode (", ", $request->dagen);
+        } else {
+            $koppel_standhouders_markten->dagen = "dag1";
+        }
         if ($request->winkeliersvereniging && $request->gevelvrij == "on") {
             $koppel_standhouders_markten->gevel = 1;
         } else {
