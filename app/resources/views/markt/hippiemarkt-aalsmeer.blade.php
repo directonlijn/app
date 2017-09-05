@@ -50,11 +50,11 @@
 		        </div>
 	        </div>
 
-	        <div class="round kramen" style="display: none !important;">
+	        <?php /* <div class="round kramen" style="display: none !important;">
 				<div class="round-inner">
 		            INFO
 		        </div>
-	        </div>
+	        </div> */ ?>
 
 	        <div class="footer">
 	            FASHION | FOOD | DRINKS | MUSIC | LIFESTYLE
