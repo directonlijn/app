@@ -50,7 +50,7 @@
 		        </div>
 	        </div>
 
-	        <div class="round kramen" style="display: none;">
+	        <div class="round kramen" style="display: none !important;">
 				<div class="round-inner">
 		            INFO
 		        </div>
