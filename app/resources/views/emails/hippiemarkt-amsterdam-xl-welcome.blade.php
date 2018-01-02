@@ -493,10 +493,13 @@
 
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de grootste Hippiemarkt in Amsterdam op het Osdorpplein op vrijdag 30 en/of zaterdag 31 maart. </strong><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de grootste Hippiemarkt in Amsterdam op het Osdorpplein op vrijdag 30 en/of zaterdag 31 maart.
+<br>
+<br>
+LET OP: Dat u zich heeft aangemeld houd niet in dat wij ook daadwerkelijk plek voor u hebben!</strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-Hippiemarkt Amsterdam XL is onderdeel van Direct Events. Hippiemarkt Amsterdam XL zal van 11:00 tot 17:00 duren. Er zullen ruim 100 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner met kermis  aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het plein zelf zal een podium met grote cocktail truck en dj  worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). De kramen zijn 4 meter. En zijn voorzien van een witte of roze luifel. Wij kunnen u geen koekkraam garanderen en ook geen extra ruimte naast u kraam. Deze is wel als extra optie bij te boeken net zoals extra planken etc.<br>
+Hippiemarkt Amsterdam XL is onderdeel van Direct Events. Hippiemarkt Amsterdam XL zal van 11:00 tot 17:00 duren. Er zullen ruim 100 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner met kermis  aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het plein zelf zal een podium met grote cocktail truck en dj  worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). De kramen zijn 4 meter. En zijn voorzien van een witte of roze luifel. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam. Deze is wel als extra optie bij te boeken net zoals extra planken etc.<br>
 <br>
 <strong>LOCATIE:</strong><br>
 <strong>Adres: </strong>Osdorpplein Amsterdam<br>
@@ -522,8 +525,8 @@ Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
 <br>
-<a href="https://www.facebook.com/events/1875225416093941/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1875225416093941/</a><br>
-<br>
+<!-- <a href="https://www.facebook.com/events/1875225416093941/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1875225416093941/</a><br> -->
+<!-- <br> -->
 <a href="http://www.hippiemarktamsterdamxl.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktamsterdamxl.nl</a><br>
 <br>
 CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 11.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. Als u zich niet houd aan deze regels kunt u een boete van 50 euro ontvangen.
