@@ -525,8 +525,8 @@ Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
 <br>
-<!-- <a href="https://www.facebook.com/events/1875225416093941/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1875225416093941/</a><br> -->
-<!-- <br> -->
+<a href="https://www.facebook.com/events/223332874876201/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1875225416093941/</a><br>
+<br>
 <a href="http://www.hippiemarktamsterdamxl.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktamsterdamxl.nl</a><br>
 <br>
 CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 11.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. Als u zich niet houd aan deze regels kunt u een boete van 50 euro ontvangen.
@@ -597,7 +597,7 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <!-- <a href="https://www.facebook.com/events/1875225416093941/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a> -->
+                                                                                    <a href="https://www.facebook.com/events/223332874876201/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
