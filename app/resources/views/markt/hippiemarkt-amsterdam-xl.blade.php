@@ -43,18 +43,19 @@
 			<img class="logo" src="/assets/img/hippiemarkt-amsterdam-xl/logo.png">
 
 	        <div class="round datum">
-				<div class="round-inner">
-		            ZONDAG
-		            <div class="day">26</div>
+						<div class="round-inner">
+		            VRIJDAG
+		            <div class="day">30</div>
 		            MAART
 		        </div>
 	        </div>
 
 	        <div class="round kramen">
-				<div class="round-inner">
-		            <span>+200</span>
-		            KRAMEN
-		        </div>
+						<div class="round-inner">
+								ZATERDAG
+								<div class="day">31</div>
+								MAART
+						</div>
 	        </div>
 
 	        <div class="round xl">
@@ -65,7 +66,8 @@
 	            FASHION | FOOD | DRINKS | MUSIC | LIFESTYLE
 	        </div>
 
-			<input type="button" class="aanmelden standhouders" value="Info">
+			<input type="button" class="aanmelden winkeliersvereniging" value="Winkeliers">
+			<input type="button" class="aanmelden standhouders" value="Standhouders">
 		</div>
 
 		<div class="form-overlay"></div>
@@ -75,7 +77,7 @@
 
 
 			<div class="form-style-10">
-				<h1>Informatie Hippiemarkt Amsterdam XL</span></h1>
+				<?php /* <h1>Informatie Hippiemarkt Amsterdam XL</span></h1>
 
 				<h2>Algemene informatie</h2>
 				<ul>
@@ -99,7 +101,7 @@
 				<p>
 					Mocht u nog verdere vragen hebben dan kunt u een e-mail sturen naar <a href="mailto:info@directevents.nl">info@directevents.nl</a>. Tot zondag 26 maart.
 				</p>
-				<?php /*
+				*/ ?>
 				<h1>Aanmelden Hippiemarkt Amsterdam XL<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt Amsterdam XL.</span></h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -128,13 +130,20 @@
 				    <div class="inner-wrap">
 						<label class="gevel">Gevel vrij:<input type="checkbox" name="gevelvrij"></label>
 				        <label>
-							Food/non-food*:
-							<input type="radio" name="foodNonfood" value="food">food
-							<span style="display:inline-block;width:20px;"></span>
-                            <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
-						</label>
-				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;75,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
-				        <label>Aantal grondplekken (4 meter<span class="text-standhouders">, &euro;65,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
+									Food/non-food*:
+									<input type="radio" name="foodNonfood" value="food">food
+									<span style="display:inline-block;width:20px;"></span>
+		                            <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
+								</label>
+								<div class="form-label">
+									Dagen*:<br>
+									<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 30 Maart - 11:00 tot 17:00</label>
+									<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 31 Maart - 11:00 tot 17:00</label>
+									<br>
+									Indien u voor alle drie de dagen kiest word er een prijs gerekend van &euro;50,- incl. BTW
+								</div>
+				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;85,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
+				        <label>Aantal grondplekken (4 meter<span class="text-standhouders">, &euro;75,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
 				        <div class="form-label">
 							Producten*:<br>
 							<label><input type="checkbox" class="producten" name="producten[0]" value="grote-maten">Grote maten kleding</label>
@@ -158,7 +167,7 @@
 				     	<input type="button" name="Aanmelden" value="aanmelden"/>
 				    </div>
 				</form>
-				*/ ?>
+
 			</div>
         </div>
 

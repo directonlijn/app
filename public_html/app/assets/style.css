@@ -34,7 +34,8 @@ body {
     display:none;
 }
 
-.datum {
+.datum,
+.kramen {
     left: 50%;
     top: 50px;
     font-size: 45px;
@@ -48,7 +49,7 @@ body {
 .kramen {
     left: 50%;
     top: 225px;
-    font-size: 55px;
+    /* font-size: 55px; */
     -webkit-transform: translateX(-460px);
     -moz-transform: translateX(-460px);
     -ms-transform: translateX(-460px);
@@ -64,7 +65,8 @@ body {
     transform: scale(1,0.6);
 }
 
-.datum .round-inner {
+.datum .round-inner,
+.kramen .round-inner {
     margin-top: -7px;
 }
 
@@ -211,17 +213,18 @@ body {
     margin-top: 3px;
 }
 
-.datum .day {
+.datum .day,
+.kramen .day {
     margin-top: -11px;
     margin-bottom: -11px;
     font-size: 70px;
 }
 
-.kramen span {
+/* .kramen span {
     font-size: 78px;
     display: block;
     margin-bottom: -13px;
-}
+} */
 .logo {
     position: absolute;
     bottom: 0px;
@@ -448,7 +451,8 @@ body {
         left: 5px;
         font-size: 25px;
     }
-    .datum .day { font-size: 43px; }
+    .datum .day,
+    .kramen .day { font-size: 43px; }
     .kramen {
         width: 75px;
         height: 75px;
@@ -461,8 +465,8 @@ body {
         left: 5px;
         font-size: 25px;
     }
-    .kramen .round-inner { margin-top: -3px; }
-    .kramen span { font-size: 50px; margin-bottom: -10px; }
+    /* .kramen .round-inner { margin-top: -3px; }
+    .kramen span { font-size: 50px; margin-bottom: -10px; } */
     .xl {
         width: 75px;
         height: 75px;
