@@ -493,15 +493,15 @@
 
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de grootste Hippiemarkt van Nederland in Amsterdam op het Osdorpplein op Zondag 26 maart van 11:00 tot 17:00. </strong><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de grootste Hippiemarkt in Amsterdam op het Osdorpplein op vrijdag 30 en/of zaterdag 31 maart. </strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-Hippiemarkt Amsterdam XL is onderdeel van Direct Events. Hippiemarkt Amsterdam XL zal van 11:00 tot 17:00 duren. Er zullen ruim 200 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het plein zelf zal een podium met grote bar worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). Op het plein zal een groot deel van de food geplaatst worden. De kramen zijn 4 meter en hebben aan beide zijde een loop waar eventueel ruimte is voor een rek.<br>
+Hippiemarkt Amsterdam XL is onderdeel van Direct Events. Hippiemarkt Amsterdam XL zal van 11:00 tot 17:00 duren. Er zullen ruim 100 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner met kermis  aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het plein zelf zal een podium met grote cocktail truck en dj  worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). De kramen zijn 4 meter. En zijn voorzien van een witte of roze luifel. Wij kunnen u geen koekkraam garanderen en ook geen extra ruimte naast u kraam. Deze is wel als extra optie bij te boeken net zoals extra planken etc.<br>
 <br>
 <strong>LOCATIE:</strong><br>
 <strong>Adres: </strong>Osdorpplein Amsterdam<br>
 <strong>Opbouw: </strong>9:00 tot 10:45<br>
-<strong><em>LET OP: Alles Trucks dienen om 6:30 aanwezig te zijn!  </em></strong><br>
+<strong><em>LET OP: Alles Trucks dienen om 8:00 aanwezig te zijn!  </em></strong><br>
 <br>
 <strong>Afbouw: </strong>17:00 tot 19:00 <br>
 <br>
@@ -516,8 +516,9 @@ AANKLEDING KRAAM: </p>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Kraam: Een kraam is 4m lang bij 80cm breed en voorzien van een witte luifel.</li>
 </ul>
 PUBLICITEIT:<br>
-Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt Amsterdam XL kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!<br>
-Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. <br>
+Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt Amsterdam XL kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!
+Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. Ook zullen wij in de regionale krant van amsterdam promoten en flyeren in en rondom amsterdam.
+<br>
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
 <br>
@@ -525,19 +526,18 @@ Houd de website en Facebook pagina goed in de gaten voor alle overige informatie
 <br>
 <a href="http://www.hippiemarktamsterdamxl.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktamsterdamxl.nl</a><br>
 <br>
-CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 11.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. 
+CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 11.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. Als u zich niet houd aan deze regels kunt u een boete van 50 euro ontvangen.
 <ul>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Dichtstbijzijnde pinautomaat is een paar honderd meter verderop in het centrum. Een pinautomaat meenemen is aan te raden.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je op tijd bent.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Je bent zelf verantwoordelijk voor het bieden van kwaliteit aan de koper.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">De organisatie is niet aansprakelijk voor diefstal en schade toegebracht door derden.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg voor voldoende wisselgeld!</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Plaats geen rekken of producten in de doorloop van de bezoekers! Probeer het zoveel mogelijk naast de kraam te zetten, er is ruimte genoeg. </li>
 </ul>
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
 <br>
-Tot zondag 26 maart op De Hippiemarkt Amsterdam XL!<br>
+Tot vrijdag 30 en/of zaterdag 31 maart op De Hippiemarkt Amsterdam XL!<br>
 <br>
 Met vriendelijke groet,<br>
  <br>
