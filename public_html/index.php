@@ -4,71 +4,12 @@
   <!doctype html>
   <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="kIJdPKOJ057C5Qn1knw7LR4EfcKFvHVI2P9ImnEQ">
-
-    <title>Direct Events - home</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
-  </head>
+  <?php include_once('components/head.php'); ?>
 
   <body class="home">
     <div id="wrapper" class="container">
 
-      <header>
-        <a class="hidden-xs logo-outer" href="/"><img src="/images/logo.png" class="logo" alt="logo"></a>
-      </header>
-
-      <div class="row">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              <a class="navbar-brand visible-xs" href="/">Direct Events</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <!-- <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Zoeken</button>
-                </form> -->
-              <ul class="nav navbar-nav text-center">
-                <li><a href="/">Home</a></li>
-                <li><a href="standhouders">Standhouders</a></li>
-                <li><a href="sponsoren">Sponsoren</a></li>
-                <li><a href="partners">Partners</a></li>
-                <li><a href="agenda">Agenda</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Evenementen <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="agenda">Alle evenementen</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="markt/hippiemarkt-aalsmeer">Hippiemarkt Aalsmeer</a></li>
-                    <li><a href="markt/hippiemarkt-vinkeveen">Hippiemarkt Vinkeveen</a></li>
-                    <li><a href="hippiemarkt-amsterdam-xl">Hippiemarkt Amsterdam XL</a></li>
-                  </ul>
-                </li>
-                <li><a href="wie-zijn-wij">Wie zijn wij</a></li>
-              </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-      </div>
+      <?php include_once('components/header.php'); ?>
 
       <div class="content">
         <h1 class="page-title">
@@ -147,22 +88,11 @@
         </div>
       </div>
 
-      <footer>
-        <div class="row text-center">
-          <img src="/images/logo.png" class="logo" alt="logo">
-        </div>
-        <div class="row text-center">
-          <p>
-            Copyright 2018 - Direct Events
-          </p>
-        </div>
-      </footer>
-
-      <div class="popup-background" v-on:click="closePopup"></div>
+      <?php include_once('components/footer.php'); ?>
 
     </div>
 
-    <script src="js/app.js"></script>
+    <?php include_once('components/bottom_scripts.php'); ?>
 
   </body>
 
