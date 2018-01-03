@@ -141,8 +141,6 @@
 									Dagen*:<br>
 									<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 30 Maart - 11:00 tot 17:00</label>
 									<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 31 Maart - 11:00 tot 17:00</label>
-									<br>
-									Indien u voor alle drie de dagen kiest word er een prijs gerekend van &euro;50,- incl. BTW
 								</div>
 				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;85,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
 				        <label>Aantal grondplekken (4 meter<span class="text-standhouders">, &euro;75,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
