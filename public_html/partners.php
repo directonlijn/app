@@ -1,3 +1,6 @@
+<?php
+  // exit();
+?>
   <!doctype html>
   <html lang="en">
 
@@ -10,38 +13,21 @@
 
       <div class="content">
         <h1 class="page-title">
-            Sponsoren
+            Partners
         </h1>
 
         <p>
-            Sponsoren van een evenement van Direct Events hebben de mogelijkeheid om op wel drie kanelen
-            terug te komen!
-        </p>
-
-        <ol>
-            <li>
-                Op de facebookpagina van het evenement
-            </li>
-            <li>
-                Op de webpagina van het evenement
-            </li>
-            <li>
-                En op het evenement zelf!
-            </li>
-        </ol>
-
-        <p>
-            Sponsoren krijgen na afloop van het evenement een evaluatierapport met verkregen bereik en het
-            sponsormateriaal in beeld!
+            Evenementenbureau Direct events werkt met verschillende Partners samen. Dit kunnen leveranciers
+            zijn, decoratie specialisten, andere evenementenbureaus maar ook gemeenten!
         </p>
 
         <p>
-            Wilt u sponsor worden van een van de evenementen? Neem dan contact op via onderstaand formulier
+            Wilt u ook partner worden van Direct events neem dan contact op via onderstaand formulier
             of stuur een e-mail naar <a href="mailto:info@directevents.nl">info@directevents.nl</a>.
         </p>
 
         <div class="row">
-            <form id="sign-up-sponsor">
+            <form id="sign-up-partner">
                 <div class="col-sm-6 col-xs-12">
                     <div class="input-group">
                         <label>
@@ -63,15 +49,15 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <textarea name="message" class="form-control" placeholder="Typ hier uw bericht"></textarea>
+                    <div class="input-group">
+                        <textarea class="form-control" name="message" placeholder="Typ hier uw bericht"></textarea>
+                    </div>
                     <div class="input-group text-right">
                         <button type="submit" class="btn btn-default">verzenden</button>
                     </div>
                 </div>
             </form>
         </div>
-
-
       </div>
 
       <?php include_once('components/footer.php'); ?>
