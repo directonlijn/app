@@ -478,9 +478,9 @@ class PdfController extends Controller
                $standhouder['bedrag_grondplek'] = $data['markt']->bedrag_grondplek;
 
                $pdf_data = array();
-               $pdf_data[''] = $temp_standhouder->;
-               $pdf_data[''] = $temp_standhouder->;
-               $pdf_data[''] = $temp_standhouder->;
+               // $pdf_data[''] = $temp_standhouder->;
+               // $pdf_data[''] = $temp_standhouder->;
+               // $pdf_data[''] = $temp_standhouder->;
 
                $standhouder['pdf_data'] = $pdf_data;
 
