@@ -3,7 +3,8 @@
 @section('title') Markten @stop
 
 @section('bottom')
-    <script src="/assets/js/aanmelding-geselecteerd.js"></script>
+    <script src="/assets/js/registrations.js"></script>
+    <!-- <script src="/assets/js/aanmelding-geselecteerd.js"></script> -->
 @stop
 
 @section('content')

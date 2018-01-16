@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Markt as Markt;
+use App\Models\Factuur as Factuur;
 use App\Models\Standhouder as Standhouder;
 use App\Models\Koppel_standhouders_markten as KoppelStandhoudersMarkten;
 use App\Http\Controllers\Controller;
