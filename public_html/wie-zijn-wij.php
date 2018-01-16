@@ -1,5 +1,8 @@
 <?php
   // exit();
+
+    global $page_tite;
+  $page_tite = ' - wie zijn wij';
 ?>
   <!doctype html>
   <html lang="en">
@@ -17,7 +20,7 @@
         </h1>
 
         <p>
-            Welkom Wij zijn Evenementenbureau Direct events. Drie jonge ondernemers met een passie
+            Welkom Wij zijn Evenementenbureau Direct events. Twee jonge ondernemers met een passie
             voor organisatie. Samen bedenken en organiseren we verschillende creatieve concepten voor
             verschillende doelgroepen. Onze doelstelling is om voor de standhouders, sponsoren, partners
             en voor de bezoekers van de evenementen  een ultieme thema-beleving te organiseren.
@@ -26,7 +29,7 @@
         <div class="row owners">
             <div class="col-sm-offset-2 col-sm-4 col-xs-12 text-center owner">
                 <div class="round hideOverflow center">
-                    <img src="{{ asset('images/lorrena.jpg') }}" alt="eigenaar direct events">
+                    <img src="/images/lorrena.jpg" alt="eigenaar direct events">
                 </div>
                 <h3>
                     Lorrena Sluijter
@@ -35,7 +38,7 @@
             </div>
             <div class="col-sm-4 col-xs-12 text-center owner">
                 <div class="round hideOverflow center">
-                    <img src="{{ asset('images/graham.jpg') }}" alt="eigenaar direct events">
+                    <img src="/images/graham.jpg" alt="eigenaar direct events">
                 </div>
                 <h3>
                     Graham Neal

@@ -113,6 +113,20 @@ class PdfController extends Controller
      * Pak het hoogste factuurnummer
      *
      */
+    private function geefNieuwFactuurNummerForCredit()
+    {
+        $year = date("Y");
+        $factuur = Factuur::where('factuurnummer', 'LIKE', 'CR'.$year.'%')->orderBy('factuurnummer', 'desc')->first();
+
+        $factuurnummer = ($factuur) ? ('CR'.str_pad(($factuur->factuurnummer+1), 9, " ", STR_PAD_LEFT)) : 'CR'.$year."00001";
+
+        return intval($factuurnummer);
+    }
+
+    /**
+     * Pak het hoogste factuurnummer
+     *
+     */
     private function mergeStandhouderData($standhouder, $standhouderKoppel)
     {
         $standhouder_merged = array();
@@ -392,6 +406,99 @@ class PdfController extends Controller
         return json_encode(array("message" => "De factuur voor de standhouder is aangemaakt en verstuurd."));
     }
 
+    /*
+     * Sends credit nota for unpayed invoices
+     */
+    public function sendCreditInvoice($slug)
+    {
+      /*
+       *
+       * Pak de markt voor de slug
+       * Get all the standhouders which have received an invoice but weren't set to payed
+       * Create credit invoice
+       */
+
+       // Hier gaan we alle gegevens in stoppen
+       $data = array();
+
+       // 1. welke markt?
+       $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+       // $data['markt'] = Markt::where('id', '2')->firstOrFail();
+       $marktId = $data['markt']->id;
+
+       // 3. Pak de geselecteerde standhouders van de markt
+       $data['koppelStandhoudersMarkten'] = array();
+       $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)->get();
+
+       $data['facturen'] = array();
+
+       $x = 0;
+       foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+       {
+           // Kijk of er al een factuur bestaat voor deze standhouder voor deze markt
+           $factuur = Factuur::where('standhouder_id', $koppelStuk->standhouder_id)->where('markt_id', $marktId)->where('betaald', '0')->first();
+           if ($factuur) {
+               $x++;
+               array_push($data['facturen'], $factuur);
+           }
+       }
+
+       $y = 0;
+       $data['standhouder'] = array();
+       foreach($data['facturen'] as $factuur) {
+           $temp_koppel = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)->where('standhouder_id', $factuur->standhouder_id)->firstOrFail();
+           $temp_standhouder = Standhouder::where('id', $factuur->standhouder_id)->firstOrFail();
+
+           if ($temp_koppel && $temp_standhouder) {
+               $y++;
+
+               $hoogsteFactuurNummer = geefNieuwFactuurNummerForCredit();
+
+               $factuurInstance = new Factuur;
+               $factuurInstance->factuurnummer = $hoogsteFactuurNummer;
+               $factuurInstance->datum = date("Y-m-d");
+               $factuurInstance->standhouder_id = $nieuwe_factuur['id'];
+               $factuurInstance->markt_id = $nieuwe_factuur['markt_id'];
+               $factuurInstance->totaal_bedrag =  '-'.number_format(round($temp_koppel->kraam*$data['markt']->bedrag_kraam + $temp_koppel->grondplek*$data['markt']->bedrag_grondplek, 2), 2);
+               $factuurInstance->betaald = 0;
+               $factuurInstance->tweede_herinnering = 0;
+               $factuurInstance->derde_herinnering = 0;
+               $factuurInstance->credit = 1;
+
+               $factuurInstance->save();
+
+               $standhouder = array();
+               $standhouder['id'] = $temp_koppel->id;
+               $standhouder['kramen'] = $temp_koppel->kraam;
+               $standhouder['grondplekken'] = $temp_koppel->grondplek;
+               $standhouder['afgesproken_prijs'] = $temp_koppel->afgesproken_prijs;
+               $standhouder['afgesproken_bedrag'] = $temp_koppel->afgesproken_bedrag;
+               $standhouder['markt_id'] = $temp_koppel->markt_id;
+               $standhouder['bedrag_kraam'] = $data['markt']->bedrag_kraam;
+               $standhouder['bedrag_grondplek'] = $data['markt']->bedrag_grondplek;
+
+               $pdf_data = array();
+               $pdf_data[''] = $temp_standhouder->;
+               $pdf_data[''] = $temp_standhouder->;
+               $pdf_data[''] = $temp_standhouder->;
+
+               $standhouder['pdf_data'] = $pdf_data;
+
+               // $standhouder[''] = $temp_standhouder->;
+           }
+           // $standhouder[''] = ;
+
+           array_push($data['standhouder'], $standhouder);
+       }
+
+       // return 'onbetaalde facturen: ' . $x . '<br>gevonden koppelingen: ' . $y;
+       // return $x;
+       // return print_r($data);
+       // return print_r($data['markt']);
+       return print_r($data['standhouder']);
+       return print_r($data['facturen']);
+    }
+
     /**
      * Sends standhouder invoice by mail
      *
@@ -570,7 +677,7 @@ class PdfController extends Controller
             // dd($pdf_data);
 
             $path = dirname(__DIR__, 3) . "/public/pdf/".date("Y")."/".$hoogsteFactuurNummer.".pdf";
-            $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/".$data['markt']->{"algemene-voorwaarden-template"}.".pdf";
+            $pathToAlgemeneVoorwaarden = dirname(__DIR__, 3) . "/public/algemene voorwaarden/algemene voorwaarden.pdf";
 
             $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
             // return $pdf->stream();

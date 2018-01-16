@@ -1,5 +1,8 @@
 <?php
   // exit();
+
+    global $page_tite;
+  $page_tite = ' - agenda';
 ?>
   <!doctype html>
   <html lang="en">

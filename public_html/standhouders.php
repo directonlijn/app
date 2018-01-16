@@ -1,5 +1,8 @@
 <?php
   // exit();
+
+    global $page_tite;
+  $page_tite = ' - standhouders';
 ?>
   <!doctype html>
   <html lang="en">
@@ -52,8 +55,8 @@
             <div class="col-sm-6 col-xs-12">
                 <div class="testimonial">
                     <span>
-                        <img class="icon-quote quote-first" alt="quote icon" src="{{ asset('images/quote.png') }}">Super leuke concepten, makkelijk om me in te schrijven
-                        en altijd veel bezoekers<img class="icon-quote quote-last" alt="quote icon" src="{{ asset('images/quote.png') }}">
+                        <img class="icon-quote quote-first" alt="quote icon" src="/images/quote.png">Super leuke concepten, makkelijk om me in te schrijven
+                        en altijd veel bezoekers<img class="icon-quote quote-last" alt="quote icon" src="/images/quote.png">
                     </span>
                     <div class="testimonial-sub text-right">
                         Lil's Fashion
@@ -61,10 +64,10 @@
                 </div>
                 <div class="testimonial">
                     <span>
-                        <img class="icon-quote quote-first" alt="quote icon" src="{{ asset('images/quote.png') }}">Direct events organiseert top
+                        <img class="icon-quote quote-first" alt="quote icon" src="/images/quote.png">Direct events organiseert top
                         evenementen voor jong en oud.
                         Voor vragen zijn ze altijd
-                        gemakkelijk te bereiken.<img class="icon-quote quote-last" alt="quote icon" src="{{ asset('images/quote.png') }}">
+                        gemakkelijk te bereiken.<img class="icon-quote quote-last" alt="quote icon" src="/images/quote.png">
                     </span>
                     <div class="testimonial-sub text-right">
                         ibizaclothes

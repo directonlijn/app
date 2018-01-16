@@ -16,6 +16,12 @@
 // });
 Route::get('/', 'Auth\AuthController@getLogin');
 
+Route::get('get-csrf-token', function(){
+  return csrf_token();
+});
+
+Route::post('markten/{slug}/sendCreditInvoices', 'PdfController@sendCreditInvoice');
+
 /* User Authentication */
 Route::get('login', 'Auth\AuthController@getLogin');
 Route::post('login', 'Auth\AuthController@postLogin');

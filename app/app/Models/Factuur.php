@@ -14,6 +14,6 @@ class Factuur extends Model
      *
      * @var array
      */
-    public $fillable = ['factuurnummer','datum','standhouder_id','markt_id','totaal_bedrag','betaald','tweede_herinnering','tweede_herinnering_datum','derde_herinnering','derde_herinnering_datum'];
+    public $fillable = ['factuurnummer','datum','standhouder_id','markt_id','totaal_bedrag','betaald','tweede_herinnering','tweede_herinnering_datum','derde_herinnering','derde_herinnering_datum', 'credit'];
 
 }

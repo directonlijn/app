@@ -1,3 +1,8 @@
+<?php
+  global $page_tite;
+  $page_tite = ' - sponsoren';
+?>
+
   <!doctype html>
   <html lang="en">
 
