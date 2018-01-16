@@ -96,6 +96,7 @@ Route::group(['middleware' => 'auth'], function()
     Route::post('markten/beheer/getMarkt', 'MarktenController@getMarktManagement');
     Route::get('markten/{slug}/winkeliers', 'MarktenController@getMarktWinkeliers');
     Route::get('markten/{slug}/aanmeldingen', 'MarktenController@getMarktAanmeldingen');
+    Route::get('markten/{slug}/registrations', 'EventController@getEventParticipants');
     Route::get('markten/{slug}/geselecteerd', 'MarktenController@getMarktSelected');
     Route::get('markten/{slug}/betaald', 'MarktenController@getMarktBetaald');
     Route::get('markten/{slug}/openstaand', 'MarktenController@getMarktOpenstaand');
