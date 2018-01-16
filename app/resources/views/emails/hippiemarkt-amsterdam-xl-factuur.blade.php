@@ -435,7 +435,7 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
 
-                            <a href="http://app.directevents.nl/mail/view/factuur" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>
+                            <a href="http://app.directevents.nl/mail/view/hippiemarkt-amsterdam-xl-factuur" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>
                         </td>
                     </tr>
                 </tbody></table>
@@ -462,7 +462,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                        <img align="center" alt="" src="https://gallery.mailchimp.com/042b4e4809d32ad5aa6147613/images/6411988d-5ae2-44d3-a291-341e9769e476.png" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/facebook.png" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
 
 
                             </td>
@@ -495,17 +495,19 @@
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-Bedankt voor uw inschrijving voor De Hippiemarkt Amsterdam XL op zondag 26 maart. Met trots kunnen wij u mededelen dat u van harte welkom bent op de grootste outdoor Hippiemarkt van Nederland.<br>
+Bedankt voor uw inschrijving voor De Hippiemarkt Amsterdam XL op 30 en 31 maart. Met trots kunnen wij u mededelen dat u van harte welkom bent op de grootste outdoor Hippiemarkt van Amsterdam.<br>
  <br>
-Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden (met onder andere opbouw en afbouw tijden) en de factuur.<br>
+Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden en de factuur.<br>
  <br>
-Pas na ontvangst van uw betaling is uw inschrijving definitief.<br>
+Meer informatie ontvangt u in aanloop naar het evenement.
  <br>
-Tot zondag 26 maart te Osdorpplein Amsterdam,<br>
+ <br>
+<strong>Pas na ontvangst van uw betaling is uw inschrijving definitief.</strong><br>
+ <br>
+Tot 30 en/of 31 maart te Osdorpplein Amsterdam,<br>
  <br>
 Contact informatie:<br>
 Info@directevents.nl<br>
-(06) 10434170<br>
  </p>
 
                         </td>
@@ -576,7 +578,7 @@ Info@directevents.nl<br>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="https://www.facebook.com/events/1875225416093941/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://www.facebook.com/events/223332874876201/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -608,7 +610,7 @@ Info@directevents.nl<br>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="http://app.directevents.nl/markt/hippiemarkt-amsterdam-xl" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="http://www.hippiemarktamsterdamxl.nl/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
