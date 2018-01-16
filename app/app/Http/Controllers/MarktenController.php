@@ -34,7 +34,7 @@ class MarktenController extends Controller
      */
     public function getIndex()
     {
-        $markten = Markt::orderBy('datum', 'desc')->get();
+        $markten = Markt::orderBy('Datum_van', 'desc')->get();
         return View('users.markten')->with('markten', $markten);
     }
 
@@ -47,7 +47,7 @@ class MarktenController extends Controller
     {
         // dd("test");
         // return View('users.management-markten');
-        $markten = Markt::orderBy('datum', 'Naam')->get();
+        $markten = Markt::orderBy('Datum_van', 'Naam')->get();
         return View('users.management-markten')->with('markten', $markten);
     }
 
