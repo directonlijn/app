@@ -150,6 +150,19 @@
                 <label><span>Factuur verstuurd:</span><input type="checkbox" name="factuur_verstuurd" value="1"></label>
                 <label><span>Factuur datum:</span><input type="text" name="factuur_datum" value="" readonly></label>
 
+                <br>
+                <br>
+                <br>
+
+                <div class="form-title">Dagen:</div>
+                <?php
+                    if ($data['markt']->aantal_dagen != '' && $data['markt']->aantal_dagen > 0) {
+                        for ($x=0;$x<$data['markt']->aantal_dagen;$x++) {
+                            echo '<label><span>dag'.($x+1).'</span><input type="checkbox" class="dagen" name="dag'.($x+1).'"><br>';
+                        }
+                    }
+                ?>
+
                 <br><br><br>
 
                 <input type="button" value="verstuur factuur" class="send-single-invoice">

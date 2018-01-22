@@ -123,6 +123,7 @@ $(document).ready(function(){
             for (var x=0;x<dagen.length;x++){
                 $('input[name='+dagen[x]+']').prop('checked', true);
             }
+            console.log(dagen);
             // console.log(dagen);
 
             // Markt gegevens
