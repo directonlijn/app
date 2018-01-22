@@ -97,6 +97,7 @@ $(document).ready(function(){
         })
         .done(function(data){
             // contact gegevens
+
             $(".standhouder-wijzig input[name=id]").val(data.standhouder.id);
             $(".standhouder-wijzig input[name=Bedrijfsnaam]").val(data.standhouder.Bedrijfsnaam);
             $(".standhouder-wijzig input[name=Voornaam]").val(data.standhouder.Voornaam);
@@ -114,6 +115,15 @@ $(document).ready(function(){
 
             $(".standhouder-wijzig input[name=afgesproken_prijs]").prop("checked", ((data.standhouderMarktData.afgesproken_prijs) ? true : false));
             $(".standhouder-wijzig input[name=afgesproken_bedrag]").val(data.standhouderMarktData.afgesproken_bedrag);
+
+            // Dagen
+            var alle_dagen = data.standhouderMarktData.dagen;
+            var dagen = alle_dagen.split(',');
+            $('input.dagen').prop('checked', false);
+            for (var x=0;x<dagen.length;x++){
+                $('input[name='+dagen[x]+']').prop('checked', true);
+            }
+            // console.log(dagen);
 
             // Markt gegevens
             $(".standhouder-wijzig input[name=foodNonfood]").each(function(){

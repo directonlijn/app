@@ -40,12 +40,60 @@ class Markt extends Model
             ];
 
     /**
-     * Get all of the standhouders for the markt.
+     * Get all standhouders with an invoice
      */
-    public function standhouders()
+    public function getStandhoudersWithInvoice()
     {
-        return $this->hasManyThrough('Standhouder', 'Koppel_standhouders_markten',
-                                    'markt_id', 'id', 'id');
+        return $this->hasMany('App\Models\Factuur', 'markt_id', 'id');
+    }
+
+    /**
+     * Get all standhouders with a payed invoice
+     */
+    public function getStandhoudersWithPayedInvoice()
+    {
+        return $this->hasMany('App\Models\Factuur', 'markt_id', 'id')->where('betaald', '=', 1);
+    }
+
+    /**
+     * Get all standhouders with a unpayed invoice
+     */
+    public function getStandhoudersWithUnpayedInvoice()
+    {
+        return $this->hasMany('App\Models\Factuur', 'markt_id', 'id')->where('betaald', '=', 0);
+    }
+
+    /**
+     * Retrieves all selected standhouders
+     */
+    public function getSelectedStandhouders()
+    {
+        return $this->getKoppelData()->where('selected', '=', 1);
+    }
+
+    /**
+     * Retrieves all winkeliers
+     */
+    public function getSelectedShopkeepers()
+    {
+        return $this->standhouders_all()->where('selected', '=', 1)->where('winkelier', '=', 1);
+    }
+
+    /**
+     * Get all of the standhouders for the markt with additional data.
+     */
+    public function getKoppelData()
+    {
+        return $this->hasMany('App\Models\Koppel_standhouders_markten', 'markt_id', 'id');
+    }
+
+    /**
+    * Get all of the standhouders for the markt with additional data.
+    */
+    public function standhouders_all()
+    {
+        return $this->hasManyThrough('App\Models\Standhouder', 'App\Models\Koppel_standhouders_markten',
+                                'markt_id', 'id', 'id', 'standhouder_id');
     }
 
 }

@@ -452,7 +452,7 @@ class PdfController extends Controller
            if ($temp_koppel && $temp_standhouder) {
                $y++;
 
-               $hoogsteFactuurNummer = geefNieuwFactuurNummerForCredit();
+               $hoogsteFactuurNummer = $this->geefNieuwFactuurNummerForCredit();
 
                $factuurInstance = new Factuur;
                $factuurInstance->factuurnummer = $hoogsteFactuurNummer;

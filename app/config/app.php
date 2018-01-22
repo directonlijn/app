@@ -136,7 +136,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-	'Illuminate\Html\HtmlServiceProvider',
+    	'Illuminate\Html\HtmlServiceProvider',
+        Jenssegers\Agent\AgentServiceProvider::class,
+        // 'Jenssegers\Agent\AgentServiceProvider',
 
         /*
          * Application Service Providers...
@@ -163,6 +165,7 @@ return [
 
     'aliases' => [
 
+        'Agent'     => Jenssegers\Agent\Facades\Agent::class,
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
         'Auth'      => Illuminate\Support\Facades\Auth::class,

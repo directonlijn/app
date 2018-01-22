@@ -12,6 +12,8 @@ use Illuminate\Contracts\Auth\Guard;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
 
+use Jenssegers\Agent\Agent;
+
 class AuthController extends Controller
 {
 
@@ -74,16 +76,23 @@ class AuthController extends Controller
 
     /* Login get post methods */
     protected function getLogin() {
-        return View('users.login')->with('auth', false);
+        $agent = new Agent();
+
+        if ($agent->isMobile()) {
+            return View('users.mobile.login')->with('auth', false);
+        } else {
+            return View('users.login')->with('auth', false);
+        }
     }
 
     protected function postLogin(LoginRequest $request) {
         if ($this->auth->attempt($request->only('email', 'password'))) {
+            // dd('test post login');
             return redirect()->route('dashboard');
         }
 
         return redirect('login')->withErrors([
-            'email' => 'The email or the password is invalid. Please try again.',
+            'email' => 'Het email adres of wachtwoord is ongeldig. Probeer het nog een keer.',
         ])->with('auth', false);
     }
 

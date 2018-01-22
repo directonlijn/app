@@ -74,10 +74,8 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('register', 'Auth\AuthController@getRegister');
     Route::post('register', 'Auth\AuthController@postRegister');
 
-    Route::get('dashboard', array('as'=>'dashboard', function()
-	{
-	       return View('users.dashboard');
-	}));
+    Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'PageController@getDashboard']);
+    // Route::get('dashboard', 'PageController@getDashboard');
 
     // PDF
     Route::get('markten/{slug}/sendInvoices', 'PdfController@sendInvoce');
@@ -95,12 +93,14 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('markten/beheer', 'MarktenController@getManagement');
     Route::post('markten/beheer/getMarkt', 'MarktenController@getMarktManagement');
     Route::get('markten/{slug}/winkeliers', 'MarktenController@getMarktWinkeliers');
-    Route::get('markten/{slug}/aanmeldingen', 'MarktenController@getMarktAanmeldingen');
+    Route::get('markten/{slug}/aanmeldingen', 'PageController@getMarktAanmeldingen');
+    // Route::get('markten/{slug}/aanmeldingen', 'MarktenController@getMarktAanmeldingen');
     Route::get('markten/{slug}/registrations', 'EventController@getEventParticipants');
     Route::get('markten/{slug}/geselecteerd', 'MarktenController@getMarktSelected');
     Route::get('markten/{slug}/betaald', 'MarktenController@getMarktBetaald');
     Route::get('markten/{slug}/openstaand', 'MarktenController@getMarktOpenstaand');
-    Route::get('markten/{slug}', 'MarktenController@getMarkt');
+    Route::get('markten/{slug}', 'PageController@getMarkt');
+    // Route::get('markten/{slug}', 'MarktenController@getMarkt');
     Route::get('markten', 'MarktenController@getIndex');
     Route::get('mail', 'MailController@getIndex');
 

@@ -8,8 +8,11 @@
 
 @section('content')
     <?php
+
         // dd($data);
-        // dd($data['standhouders'][1]->id);
+        // dd($data['markt']->aantal_dagen);
+        // dd($data['koppelStandhoudersMarkten'][0]);
+
         // dd($data['koppelStandhoudersMarkten'][0]['markt_id']);
     ?>
     <div class="token">{{ csrf_token() }}</div>
@@ -185,6 +188,19 @@
                 <br>
                 <label><span>Factuur verstuurd:</span><input type="checkbox" name="factuur_verstuurd" value="1"></label>
                 <label><span>Factuur datum:</span><input type="text" name="factuur_datum" value="" readonly></label>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="form-title">Dagen:</div>
+                <?php
+                    if ($data['markt']->aantal_dagen != '' && $data['markt']->aantal_dagen > 0) {
+                        for ($x=0;$x<$data['markt']->aantal_dagen;$x++) {
+                            echo '<label><span>dag'.($x+1).'</span><input type="checkbox" class="dagen" name="dag'.($x+1).'"><br>';
+                        }
+                    }
+                ?>
 
                 <br><br><br>
 
