@@ -39,9 +39,10 @@ body{ padding-top: 51px; font-family: Roboto, sans-serif, arial !important; }
 .standhouder-wijzig {
     display: none;
     position: absolute;
-    width: 690px;
+    width: 800px;
+    max-width: 100%;
     padding: 20px;
-    height: 60%;
+    height: 70%;
     overflow: scroll;
     background: #FFF;
     border-radius: 5px;
