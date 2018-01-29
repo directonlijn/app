@@ -1,4 +1,5 @@
 <?php
+  exit();
   global $page_tite;
   $page_tite = ' - sponsoren';
 ?>

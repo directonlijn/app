@@ -160,7 +160,7 @@ class PageController extends Controller
                     }
                 }
             }
-            
+
             return View('users.mobile.aanmeldingen')->with('data', $data);
         } else {
             $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)->get();
@@ -183,6 +183,141 @@ class PageController extends Controller
                     }
                 }
             }
+
+            return View('users.aanmeldingen')->with('data', $data);
+        }
+
+    }
+
+    /**
+     * Get page for markt met alle aanmeldingen
+     *
+     * @return Response
+     */
+    public function getMarktAanmeldingenTest($slug, Request $request)
+    {
+        // dd($request->input('bedrijfsnaam'));
+        $data = array();
+
+        $data['slug'] = $slug;
+
+        $data['markt'] = Markt::where('Naam', $slug)->firstOrFail();
+
+        if ($this->agent->isMobile()) {
+            $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)->get();
+
+            $data['standhouders'] = array();
+            foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+            {
+                $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+
+                if ($standhouder && $standhouder->winkelier != 1) {
+                    $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+
+                    try {
+                        $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                        if ($factuur) {
+                            $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                        }
+                    } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                        // do nothing
+                    }
+                }
+            }
+
+            return View('users.mobile.aanmeldingen')->with('data', $data);
+        } else {
+            // dd($request->all());
+            $new_data = array();
+            $standhouder_filters = [
+                    'Bedrijfsnaam',
+                    'Voornaam',
+                    'Achternaam',
+                    'Straat',
+                    'Postcode',
+                    'Huisnummer',
+                    'Toevoeging',
+                    'Woonplaats',
+                    'Land',
+                    'Telefoon',
+                    'Email',
+                    'Website',
+                    'winkelier',
+                    'updated_at',
+                    'created_at'];
+            $koppel_filters = ['markt_id',
+                    'standhouder_id',
+                    'type',
+                    'kraam',
+                    'grondplek',
+                    'stroom',
+                    'opmerking',
+                    'bedrag',
+                    'betaald',
+                    'grote-maten',
+                    'dames-kleding',
+                    'heren-kleding',
+                    'kinder-kleding',
+                    'baby-kleding',
+                    'fashion-accesoires',
+                    'schoenen',
+                    'lifestyle',
+                    'woon-accessoires',
+                    'kunst',
+                    'sieraden',
+                    'tassen',
+                    'brocante',
+                    'dierenspullen',
+                    'anders',
+                    'anders-text',
+                    'updated_at',
+                    'created_at',
+                    'seen',
+                    'selected',
+                    'afgesproken_prijs',
+                    'afgesproken_bedrag',
+                    'gevel',
+                    'dagen'];
+
+            // $filter_array = new Array();
+            // $filter_array['standhouders'] = new Array();
+            // $filter_array['Koppel_standhouders_markten'] = new Array();
+            // $requests = $request->all();
+            // for ($x=0;$x<count($requests;$x++) {
+            //     if (in_array($requests[$x], $standhouder_filters)){
+            //
+            //     }
+            // }
+            // dd($request->input('kraam'));
+            // dd($standhouder_filters);
+            dd(($request->input('kraam') !== null ? $request->input('kraam') : 'it was empty'));
+            $data['koppelStandhoudersMarkten'] = KoppelStandhoudersMarkten::where('markt_id', $data['markt']->id)
+                                                                            ->where('kraam', ($request->input('kraam') !== null ? $request->input('kraam') : ''))
+                                                                            ->where('grondplek', ($request->input('grondplek') !== null ? $request->input('grondplek') : ''))
+                                                                            ->where('betaald', ($request->input('betaald') !== null ? $request->input('betaald') : ''))
+                                                                            ->get();
+            dd($data);
+
+            $data['standhouders'] = array();
+            foreach($data['koppelStandhoudersMarkten'] as $koppelStuk)
+            {
+                $standhouder = Standhouder::where('id', $koppelStuk->standhouder_id)->firstOrFail();
+
+                if ($standhouder && $standhouder->winkelier != 1) {
+                    $data['standhouders'][$koppelStuk->standhouder_id] = $standhouder;
+
+                    try {
+                        $factuur = Factuur::where('markt_id', $data['markt']->id)->where("standhouder_id", $koppelStuk->standhouder_id)->firstOrFail();
+                        if ($factuur) {
+                            $data['factuur'][$koppelStuk->standhouder_id] = $factuur;
+                        }
+                    } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                        // do nothing
+                    }
+                }
+            }
+
+            // dd($data);
 
             return View('users.aanmeldingen')->with('data', $data);
         }

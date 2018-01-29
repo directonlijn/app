@@ -1,5 +1,5 @@
 <?php
-  // exit();
+  exit();
 
     global $page_tite;
   $page_tite = ' - wie zijn wij';
