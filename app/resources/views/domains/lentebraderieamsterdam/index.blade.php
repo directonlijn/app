@@ -154,6 +154,29 @@
                     'onClosed': function() { $("#aanmelden").addClass('hidden'); }
                 });
 
+                required = ['bedrijfsnaam', 'voornaam', 'achternaam', 'straat', 'postcode', 'huisnummer', 'woonplaats', 'telefoon', 'email'];
+                for(var x=0;x<required.length;x++){
+                    $(".test-form input[name="+required[x]+"]").on("focus keypress keydown paste", function(){
+
+                        var self = $(this);
+                        setTimeout(function(){
+                            if(self.attr("name") == "huisnummer"){
+                                if(self.val().length >= 1 ){
+                                    self.removeClass("error");
+                                } else {
+                                    self.addClass("error");
+                                }
+                            } else {
+                                if(self.val().length > 1 ){
+                                    self.removeClass("error");
+                                } else {
+                                    self.addClass("error");
+                                }
+                            }
+                        }, 10);
+                    });
+                }
+
                 $(".test-form input[type=button]").on("click", function(event){
             	    event.preventDefault();
 
