@@ -11,6 +11,12 @@
 |
 */
 
+Route::group(['domain' => 'lentebraderieamsterdam.{tld}'], function () {
+    Route::get('/', function () {
+        return view('domains.lentebraderieamsterdam.index');
+    });
+});
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
