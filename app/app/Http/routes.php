@@ -12,6 +12,19 @@
 */
 
 Route::group(['domain' => 'lentebraderieamsterdam.{tld}'], function () {
+
+    // To show welcome mail in browser
+    Route::get("mail/view/{slug}", 'MailController@viewTemplate');
+
+    Route::get('/', function () {
+        return view('domains.lentebraderieamsterdam.index');
+    });
+});
+Route::group(['domain' => 'www.lentebraderieamsterdam.{tld}'], function () {
+
+    // To show welcome mail in browser
+    Route::get("mail/view/{slug}", 'MailController@viewTemplate');
+
     Route::get('/', function () {
         return view('domains.lentebraderieamsterdam.index');
     });

@@ -153,6 +153,46 @@
                     'onStart': function() { $("#aanmelden").removeClass('hidden'); },
                     'onClosed': function() { $("#aanmelden").addClass('hidden'); }
                 });
+
+                $(".test-form input[type=button]").on("click", function(event){
+            	    event.preventDefault();
+
+                    for(var x=0;x<required.length;x++){
+                        if ( $(".test-form input[name="+required[x]+"]").val().length < 1 )
+                            {
+                            $(".test-form input[name="+required[x]+"]").addClass("error");
+                            }
+                        else
+                        {
+                            $(".test-form input[name="+required[x]+"]").removeClass("error");
+                        }
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/aanmelding/markt",
+                        data: $(".test-form").serialize(),
+                        success: function(data) {
+                            alert("U aanmelding is succesvol ontvangen. We hebben u zojuist een mail gestuurd. Mocht u deze niet ontvangen hebben graag een e-mail sturen naar standhouders@directevents.nl");
+                            $(".form-overlay").fadeOut(700);
+                            $(".form-wrapper").fadeOut(700);
+                        },
+                        error: function (jXHR, textStatus, errorThrown) {
+                            if(jXHR.status == 503)
+                            {
+                                alert("Nog niet alle velden zijn goed ingevuld.");
+                            }
+                            else if (jXHR.status == 404)
+                            {
+                                alert("We konden de opgegeven markt niet vinden. Wij zouden u willen vragen om een e-mail te sturen naar info@directevents.nl.");
+                            }
+                            else
+                            {
+                                alert("Er is iets fout gegaan. Onze excuses voor het ongemak. Wij zouden u willen vragen om een e-mail te sturen naar info@directevents.nl als dit probleem zich voor blijft doen.");
+                            }
+                        }
+                    });
+                });
             });
         </script>
     </body>
