@@ -10,30 +10,28 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+// Route::group(['domain' => 'lentebraderieamsterdam.test'], function () {
+//     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
+//     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
+//     Route::get('user/{id}', function ($id) {
+//         //
+//     });
+// });
 
-Route::group(['domain' => 'lentebraderieamsterdam.{tld}'], function () {
-
+Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam)');
+Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
+    Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
+    Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
     // To show welcome mail in browser
     Route::get("mail/view/{slug}", 'MailController@viewTemplate');
 
-    Route::get('/', function () {
-        return view('domains.lentebraderieamsterdam.index');
+    Route::get('/', function ($domain) {
+        return view('domains.'.$domain.'.index');
     });
 });
-Route::group(['domain' => 'www.lentebraderieamsterdam.{tld}'], function () {
-
-    // To show welcome mail in browser
-    Route::get("mail/view/{slug}", 'MailController@viewTemplate');
-
-    Route::get('/', function () {
-        return view('domains.lentebraderieamsterdam.index');
-    });
-});
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'Auth\AuthController@getLogin');
 
 Route::get('get-csrf-token', function(){
   return csrf_token();
@@ -133,5 +131,6 @@ Route::group(['middleware' => 'auth'], function()
     Route::post('markt/getStandhouder', 'MarktenController@getStandhouder');
     Route::post('markt/changeStandhouder', 'MarktenController@changeStandhouder');
 });
+Route::get('/', 'Auth\AuthController@getLogin');
 
 return view('errors.404');

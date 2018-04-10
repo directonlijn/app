@@ -7,7 +7,7 @@
 
         <title>Direct Events - Lente braderie Amsterdam</title>
 
-        <base href="http://lentebraderieamsterdam.nl/lentebraderieamsterdam/">
+        <base href="http://{{ $_SERVER['HTTP_HOST'] }}/lentebraderieamsterdam/">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css" />
