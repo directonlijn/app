@@ -196,7 +196,7 @@
                         url: "/aanmelding/markt",
                         data: $(".test-form").serialize(),
                         success: function(data) {
-                            alert("U aanmelding is succesvol ontvangen. We hebben u zojuist een mail gestuurd. Mocht u deze niet ontvangen hebben graag een e-mail sturen naar standhouders@directevents.nl");
+                            alert("U aanmelding is succesvol ontvangen. We hebben u zojuist een mail gestuurd. Mocht u deze niet ontvangen hebben graag een e-mail sturen naar info@directevents.nl");
                             $(".form-overlay").fadeOut(700);
                             $(".form-wrapper").fadeOut(700);
                         },
