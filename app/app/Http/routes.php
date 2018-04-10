@@ -25,7 +25,7 @@ Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
     // To show welcome mail in browser
     Route::get("mail/view/{slug}", 'MailController@viewTemplate');
 
-    Route::get('/', function ($subdomain, $domain) {
+    Route::get('/', function ($domain) {
         return view('domains.'.$domain.'.index');
     });
 });
@@ -36,7 +36,7 @@ Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
     // To show welcome mail in browser
     Route::get("mail/view/{slug}", 'MailController@viewTemplate');
 
-    Route::get('/', function ($subdomain, $domain) {
+    Route::get('/', function ($domain) {
         return view('domains.'.$domain.'.index');
     });
 });
