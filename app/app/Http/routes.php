@@ -18,8 +18,9 @@
 //     });
 // });
 
+Route::pattern('subdomain', '(a-z.)');
 Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam)');
-Route::group(['domain' => '{subdomain}.{domain}.{tld}'], function ($domain) {
+Route::group(['domain' => '{subdomain}{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
     // To show welcome mail in browser
