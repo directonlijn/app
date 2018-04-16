@@ -128,7 +128,7 @@
     							Indien u voor alle drie de dagen kiest word er een prijs gerekend van &euro;55,- incl. BTW per dag voor een kraam of &euro;12,50 incl. BTW per dag per meter voor een grondplek
     						</div>
     				        <label>Aantal kramen (4 meter, &euro;120,- incl. BTW): <input type="number" name="kramen" value="0"/></label>
-    				        <label>Aantal grondplekken (per meter, &euro;27,50 incl. BTW per dag): <input type="number" name="grondplekken" value="0"/></label>
+    				        <label>Aantal grondplekken (per meter, &euro;25,- incl. BTW per dag): <input type="number" name="grondplekken" value="0"/></label>
     				        <div class="form-label">
     							Producten*:<br>
     							<label><input type="checkbox" class="producten" name="producten[0]" value="grote-maten">Grote maten kleding</label>
