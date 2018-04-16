@@ -490,7 +490,7 @@
                     <tbody><tr>
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
-
+<strong><em>LET OP: Uw aanmelding is pas definitief na ontvangst van alle overige informatie!</em></strong><br><br>
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de Hippiemarkt de Ronde Venen op eiland één te Vinkeveen op Zondag 24 juni van 12:00 tot 18:00. </strong><br>
