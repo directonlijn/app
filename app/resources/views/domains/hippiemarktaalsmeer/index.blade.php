@@ -19,6 +19,14 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
         <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
+
+        <meta property="og:url"                content="http://www.hippiemarktaalsmeer.nl" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Hippiemarkt Aalsmeer - Direct Events" />
+        <meta property="og:description"        content="De Hippiemarkt Aalsmeer is op vrijdag 27 juli van 16:00 tot 23:00 op het surfeiland te Aalsmeer" />
+        <meta property="og:image"              content="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.png" />
+
+        <link rel="image_src" href="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.png">
     </head>
     <body>
         <div class="container">
