@@ -31,6 +31,12 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+        <meta property="og:url"                content="http://www.hippiemarktaalsmeer.nl" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Hippiemarkt Aalsmeer - Direct Events" />
+        <meta property="og:description"        content="De Hippiemarkt bevindt zich op het Surfeiland te Aalsmeer" />
+        <meta property="og:image"              content="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.png" />
+
         <link rel="image_src" href="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.png">
 	</head>
 	<body>
