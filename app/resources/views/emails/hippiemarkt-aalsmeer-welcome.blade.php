@@ -521,8 +521,8 @@ Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippi
 Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. <br>
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
-<br>
-<a target="_blank" href="https://www.facebook.com/events/1787774984873640/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1787774984873640/</a><br>
+<!-- <br>
+<a target="_blank" href="https://www.facebook.com/events/1787774984873640/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1787774984873640/</a><br> -->
 <br>
 <a target="_blank" href="http://www.hippiemarktaalsmeer.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktaalsmeer.nl</a><br>
 <br>
@@ -582,7 +582,7 @@ Direct events – Organisatie Hippiemarkt Aalsmeer</p>
                                         <![endif]-->
 
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <!-- <table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                 <tbody><tr>
                                                     <td valign="top" style="padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowContentItemContainer">
                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
@@ -603,7 +603,7 @@ Direct events – Organisatie Hippiemarkt Aalsmeer</p>
                                                         </tbody></table>
                                                     </td>
                                                 </tr>
-                                            </tbody></table>
+                                            </tbody></table> -->
 
                                         <!--[if mso]>
                                         </td>

@@ -462,7 +462,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-de-ronde-venen/mail-header.JPG" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-de-ronde-venen/mail-header.png" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
 
 
                             </td>
@@ -493,10 +493,10 @@
 
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de Hippiemarkt de Ronde Venen op eiland één te Vinkeveen op Zondag 25 juni van 12:00 tot 18:00. </strong><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de Hippiemarkt de Ronde Venen op eiland één te Vinkeveen op Zondag 24 juni van 12:00 tot 18:00. </strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-Hippiemarkt De Ronde Venen is onderdeel van Direct Events. Hippiemarkt De Ronde Venen zal van 12:00 tot 18:00 duren. Er zullen ruim 80 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het eiland zal een podium met grote bar worden geplaatst. Op het eiland wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). In de buurt van de bar het podium zal een groot deel van de food geplaatst worden. De kramen zijn 4 meter en hebben aan beide zijde een loop waar eventueel ruimte is voor een rek.<br>
+Hippiemarkt De Ronde Venen is onderdeel van Direct Events. Hippiemarkt De Ronde Venen zal van 12:00 tot 18:00 duren. Er zullen ruim 50 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het eiland zal een podium met grote bar worden geplaatst. Op het eiland wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). In de buurt van de bar het podium zal een groot deel van de food geplaatst worden. De kramen zijn 4 meter en hebben aan beide zijde een loop waar eventueel ruimte is voor een rek.<br>
 <br>
 <strong>LOCATIE:</strong><br>
 <strong>Adres: </strong>Molenkade 30, Vinkeveen<br>
@@ -520,8 +520,8 @@ Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippi
 Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. <br>
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
-<br>
-<a target="_blank" href="https://www.facebook.com/events/768595133308430/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/768595133308430/</a><br>
+<!-- <br>
+<a target="_blank" href="https://www.facebook.com/events/768595133308430/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/768595133308430/</a><br> -->
 <br>
 <a target="_blank" href="http://www.hippiemarktderondevenen.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktderondevenen.nl</a><br>
 <br>
@@ -537,7 +537,7 @@ CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De 
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
 <br>
-Tot zondag 25 juni op De Hippiemarkt De Ronde Venen!<br>
+Tot zondag 24 juni op De Hippiemarkt De Ronde Venen!<br>
 <br>
 Met vriendelijke groet,<br>
  <br>
@@ -584,7 +584,7 @@ Direct events – Organisatie Hippiemarkt De Ronde Venen</p>
                                         <![endif]-->
 
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <!-- <table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                 <tbody><tr>
                                                     <td valign="top" style="padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowContentItemContainer">
                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
@@ -605,7 +605,7 @@ Direct events – Organisatie Hippiemarkt De Ronde Venen</p>
                                                         </tbody></table>
                                                     </td>
                                                 </tr>
-                                            </tbody></table>
+                                            </tbody></table> -->
 
                                         <!--[if mso]>
                                         </td>
