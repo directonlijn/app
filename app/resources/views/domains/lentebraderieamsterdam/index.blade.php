@@ -15,6 +15,12 @@
 
         <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
 
+        <meta property="og:url"                content="http://www.lentebraderieamsterdam.nl" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Lente Braderie Amsterdam - Direct Events" />
+        <meta property="og:description"        content="De lente braderie bevind zich op het Osdorpplein en Tussenmeer in amsterdam" />
+        <meta property="og:image"              content="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.jpg" />
+
         <link rel="image_src" href="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.jpg">
     </head>
     <body>
