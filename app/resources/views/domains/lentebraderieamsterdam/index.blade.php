@@ -15,7 +15,7 @@
 
         <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
 
-        <link rel="image_src" href="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.png">
+        <link rel="image_src" href="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.jpg">
     </head>
     <body>
         <div class="container">
