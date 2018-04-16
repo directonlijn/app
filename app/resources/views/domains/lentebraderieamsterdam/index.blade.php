@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
         <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
+
+        <link rel="image_src" href="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.png">
     </head>
     <body>
         <div class="container">

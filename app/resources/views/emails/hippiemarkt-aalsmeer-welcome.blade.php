@@ -494,7 +494,7 @@
 							<strong><em>LET OP: Uw aanmelding is pas definitief na ontvangst van alle overige informatie!</em></strong><br><br>
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u zich aanmeld voor de Hippiemarkt Aalsmeer op het surfeiland te Aalsmeer op Zondag 21 juli van 16:00 tot 23:00. </strong><br>
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u zich aanmeld voor de Hippiemarkt Aalsmeer op het surfeiland te Aalsmeer op Zondag 27 juli van 16:00 tot 23:00. </strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
 Hippiemarkt Aalsmeer is onderdeel van Direct Events. Hippiemarkt Aalsmeer zal van 16:00 tot 23:00 duren. Er zullen ruim 60 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het eiland zal een podium met grote bar worden geplaatst. Op het eiland wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). In de buurt van de bar het podium zal een groot deel van de food geplaatst worden. Wij maken gebruik van 4 meter kramen.<br>
