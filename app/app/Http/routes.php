@@ -44,10 +44,6 @@ Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
 //     return view('welcome');
 // });
 
-Route::get('git-pull-origin', function() {
-    system('git pull origin master');
-});
-
 Route::get('get-csrf-token', function(){
   return csrf_token();
 });
