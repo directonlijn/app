@@ -387,6 +387,7 @@ class PdfController extends Controller
         );
 
         $data5 = array(
+            'dagen' => explode(",", $standhouderExtra->dagen),
             'name' => "Graham",
             'datum' => "11 Februari 2017",
             'marktNaam' => 'Hippiemark Amsterdam XL'
