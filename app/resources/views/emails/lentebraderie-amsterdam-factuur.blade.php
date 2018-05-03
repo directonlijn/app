@@ -390,10 +390,21 @@
 
 }</style></head>
     <body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;">
-		dagen:
-		<?php
 
-			print_r($dagen);
+		<?php
+			$aantal_dagen = count($dagen);
+			$dagen_text = '';
+			if ($aantal_dagen == 3) {
+				$dagen_text = '25, 26 en 27';
+			} else if ($aantal_dagen == 2) {
+				$dagen_text = ($dagen[0] == 'dag1' ? '25 en ' : '26 en ') . ($dagen[1] == 'dag2' ? '26' : '27');
+			} else if ($dag[0] == 'dag1') {
+				$dagen_text = '25';
+			} else if ($dag[0] == 'dag2') {
+				$dagen_text = '26';
+			} else if ($dag[0] == 'dag3') {
+				$dagen_text = '27';
+			}
 
 		?>
         <center>
@@ -501,7 +512,7 @@
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-Bedankt voor uw inschrijving voor De Lentebraderie Amsterdam op 25, 26 en 27 mei.<br>
+Bedankt voor uw inschrijving voor De Lentebraderie Amsterdam op <?=$dagen_text;?> mei.<br>
  <br>
 Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden en de factuur.<br>
  <br>
