@@ -400,7 +400,7 @@ class PdfController extends Controller
         if ($aantal_dagen == 3) {
             $dagen_text = '25, 26 en 27';
         } else if ($aantal_dagen == 2) {
-            $dagen_text = ($dagen[0] == 'dag1' ? '25 en ' : '26 en ') . ($dagen[1] == 'dag2' ? '26' : '27');
+            $dagen_text = ($dag[0] == 'dag1' ? '25 en ' : '26 en ') . ($dag[1] == 'dag2' ? '26' : '27');
         } else if ($dag[0] == 'dag1') {
             $dagen_text = '25';
         } else if ($dag[0] == 'dag2') {
