@@ -347,7 +347,7 @@ class PdfController extends Controller
                 $pdf_data['tabel'][$key]['soort'] = "Kraam";
                 $pdf_data['tabel'][$key]['btw'] = "21%";
                 $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_kraam/1.21, 2), 2);
-                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->kraam/1.21), 2), 2);
+                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->kraam/1.21)*$aantal_dagen, 2), 2);
             }
 
             if ($standhouderExtra->grondplek > 0)
@@ -359,12 +359,12 @@ class PdfController extends Controller
                 $pdf_data['tabel'][$key]['soort'] = "Grondplek";
                 $pdf_data['tabel'][$key]['btw'] = "21%";
                 $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_grondplek/1.21, 2), 2);
-                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_grondplek*($standhouderExtra->grondplek/1.21), 2), 2);
+                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_grondplek*($standhouderExtra->grondplek/1.21)*$aantal_dagen, 2), 2);
             }
 
-            $pdf_data['totaalexbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21), 2), 2);
-            $pdf_data['totaalbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21*0.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21*0.21), 2), 2);
-            $pdf_data['totaalinbtw'] = "€ " . number_format(round($standhouderExtra->kraam*$markt->bedrag_kraam + $standhouderExtra->grondplek*$markt->bedrag_grondplek, 2), 2);
+            $pdf_data['totaalexbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21)*$aantal_dagen + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21)*$aantal_dagen, 2), 2);
+            $pdf_data['totaalbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21*0.21)*$aantal_dagen + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21*0.21)*$aantal_dagen, 2), 2);
+            $pdf_data['totaalinbtw'] = "€ " . number_format(round($standhouderExtra->kraam*$markt->bedrag_kraam*$aantal_dagen + $standhouderExtra->grondplek*$markt->bedrag_grondplek*$aantal_dagen, 2), 2);
         }
 
         $pdf_data['vervaldatum'] = date('d-m-Y', strtotime(date("d-m-Y"). ' + 14 days'));
