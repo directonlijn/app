@@ -393,9 +393,8 @@ class PdfController extends Controller
             'marktNaam' => 'Hippiemark Amsterdam XL'
         );
 
-        $aantal_dagen = count($dagen);
-        print_r($dagen);
-        $dag = explode(',', $dagen);
+        $aantal_dagen = $dagen;
+        $dag = explode(',', $standhouderExtra->dagen);
         print_r($dag);
         $dagen_text = '';
         if ($aantal_dagen == 3) {
