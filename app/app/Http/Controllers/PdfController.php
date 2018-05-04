@@ -395,6 +395,7 @@ class PdfController extends Controller
 
         $aantal_dagen = count($dagen);
         $dag = explode(',', $dagen);
+        print_r($dag);
         $dagen_text = '';
         if ($aantal_dagen == 3) {
             $dagen_text = '25, 26 en 27';
