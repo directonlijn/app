@@ -392,7 +392,7 @@ class PdfController extends Controller
             'datum' => "11 Februari 2017",
             'marktNaam' => 'Hippiemark Amsterdam XL'
         );
-        
+
         \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
 
             $message->attach($emailData['pathToPdf']);
@@ -404,7 +404,7 @@ class PdfController extends Controller
 
         });
 
-        return json_encode(array("dagen" => $dagen_text, "message" => "De factuur voor de standhouder is aangemaakt en verstuurd."));
+        return json_encode(array("message" => "De factuur voor de standhouder is aangemaakt en verstuurd."));
     }
 
     /*
