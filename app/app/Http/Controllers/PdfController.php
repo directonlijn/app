@@ -346,7 +346,7 @@ class PdfController extends Controller
                 $pdf_data['tabel'][$key]['aantal'] = $standhouderExtra->kraam;
                 $pdf_data['tabel'][$key]['soort'] = "Kraam";
                 $pdf_data['tabel'][$key]['btw'] = "21%";
-                $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_kraam/1.21*, 2), 2);
+                $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_kraam/1.21, 2), 2);
                 $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->kraam/1.21), 2), 2);
             }
 
