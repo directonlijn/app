@@ -367,7 +367,7 @@ class PdfController extends Controller
             $pdf_data['totaalinbtw'] = "€ " . number_format(round($standhouderExtra->kraam*$markt->bedrag_kraam*$aantal_dagen + $standhouderExtra->grondplek*$markt->bedrag_grondplek*$aantal_dagen, 2), 2);
         }
 
-        $pdf_data['vervaldatum'] = date('d-m-Y', strtotime(date("d-m-Y"). ' + 14 days'));
+        $pdf_data['vervaldatum'] = date('d-m-Y', strtotime(date("d-m-Y"). ' + 8 days'));
 
         $pdf_data['standhouder'] = array();
         $pdf_data['standhouder']['bedrijfsnaam'] = $standhouder->Bedrijfsnaam;

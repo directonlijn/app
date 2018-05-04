@@ -168,7 +168,7 @@
         <div style="height:100px;"></div>
 
         <div class="margin-top: 150px;">
-            Wij verzoeken u vriendelijk bovenstaan bedrag binnen 14 dagen over te maken onder vermelding van uw factuurnummer.
+            Wij verzoeken u vriendelijk bovenstaan bedrag binnen 8 dagen over te maken onder vermelding van uw factuurnummer.
         </div>
 
 </body></html>
