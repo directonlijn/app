@@ -392,35 +392,17 @@ class PdfController extends Controller
             'datum' => "11 Februari 2017",
             'marktNaam' => 'Hippiemark Amsterdam XL'
         );
+        
+        \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
 
-        $aantal_dagen = $dagen;
-        $dag = explode(',', $standhouderExtra->dagen);
-        print_r($dag);
-        $dagen_text = '';
-        if ($aantal_dagen == 3) {
-            $dagen_text = '25, 26 en 27';
-        } else if ($aantal_dagen == 2) {
-            $dagen_text = (trim($dag[0]) == 'dag1' ? '25 en ' : '26 en ') . (trim($dag[1]) == 'dag2' ? '26' : '27');
-        } else if (trim($dag[0]) == 'dag1') {
-            $dagen_text = '25';
-        } else if (trim($dag[0]) == 'dag2') {
-            $dagen_text = '26';
-        } else if (trim($dag[0]) == 'dag3') {
-            $dagen_text = '27';
-        }
+            $message->attach($emailData['pathToPdf']);
+            $message->attach($emailData['pathToTerms']);
 
+            $message->from('info@directevents.nl', 'Factuur Direct Events');
 
+            $message->to($emailData['email'])->subject('Factuur Direct Events');
 
-        // \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
-        //
-        //     $message->attach($emailData['pathToPdf']);
-        //     $message->attach($emailData['pathToTerms']);
-        //
-        //     $message->from('info@directevents.nl', 'Factuur Direct Events');
-        //
-        //     $message->to($emailData['email'])->subject('Factuur Direct Events');
-        //
-        // });
+        });
 
         return json_encode(array("dagen" => $dagen_text, "message" => "De factuur voor de standhouder is aangemaakt en verstuurd."));
     }

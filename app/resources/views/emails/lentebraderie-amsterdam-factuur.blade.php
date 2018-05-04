@@ -392,19 +392,22 @@
     <body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;">
 
 		<?php
-			$aantal_dagen = count($dagen);
-			$dagen_text = '';
-			if ($aantal_dagen == 3) {
-				$dagen_text = '25, 26 en 27';
-			} else if ($aantal_dagen == 2) {
-				$dagen_text = ($dagen[0] == 'dag1' ? '25 en ' : '26 en ') . ($dagen[1] == 'dag2' ? '26' : '27');
-			} else if ($dag[0] == 'dag1') {
-				$dagen_text = '25';
-			} else if ($dag[0] == 'dag2') {
-				$dagen_text = '26';
-			} else if ($dag[0] == 'dag3') {
-				$dagen_text = '27';
-			}
+
+
+		$aantal_dagen = count($dagen);
+		$dag = $dagen;
+		$dagen_text = '';
+		if ($aantal_dagen == 3) {
+			$dagen_text = '25, 26 en 27';
+		} else if ($aantal_dagen == 2) {
+			$dagen_text = (trim($dag[0]) == 'dag1' ? '25 en ' : '26 en ') . (trim($dag[1]) == 'dag2' ? '26' : '27');
+		} else if (trim($dag[0]) == 'dag1') {
+			$dagen_text = '25';
+		} else if (trim($dag[0]) == 'dag2') {
+			$dagen_text = '26';
+		} else if (trim($dag[0]) == 'dag3') {
+			$dagen_text = '27';
+		}
 
 		?>
         <center>
