@@ -315,8 +315,8 @@ class PdfController extends Controller
 
         $aantal_dagen = count(explode(",", $standhouderExtra->dagen));
         $pdf_data = array();
-        $pdf_data['dagen'] = explode(",", $standhouderExtra->dagen),
-        $pdf_data['aantal_dagen'] = $aantal_dagen,
+        $pdf_data['dagen'] = explode(",", $standhouderExtra->dagen);
+        $pdf_data['aantal_dagen'] = $aantal_dagen;
         $pdf_data['factuurnr'] = $factuur->factuurnummer;
         $pdf_data['datum'] = date("d-m-Y");
         $pdf_data['tabel'] = array();
