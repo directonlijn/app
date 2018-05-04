@@ -394,6 +394,7 @@ class PdfController extends Controller
         );
 
         $aantal_dagen = count($dagen);
+        print_r($dagen);
         $dag = explode(',', $dagen);
         print_r($dag);
         $dagen_text = '';
