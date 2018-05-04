@@ -41,6 +41,7 @@ class GitCommit extends Command
         ];
 
         foreach ($commands as $command) {
+            $this->info('running command: ' . $command);
             $process = new Process($command);
             $process->run();
 
