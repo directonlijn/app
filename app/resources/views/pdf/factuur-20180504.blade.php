@@ -81,9 +81,6 @@
                     Factuurnummer
                 </td>
                 <td>
-                    Aantal dagen:
-                </td>
-                <td>
                     Aantal
                 </td>
                 <td>
@@ -107,9 +104,6 @@
                             @if ($x == 0)
                                 {{ $factuurnr }}
                             @endif
-                        </td>
-                        <td>
-                            {{ $aantal_dagen }}
                         </td>
                         <td>
                             {{ $row['aantal'] }}
