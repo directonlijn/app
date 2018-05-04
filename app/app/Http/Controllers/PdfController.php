@@ -359,7 +359,7 @@ class PdfController extends Controller
                 $pdf_data['tabel'][$key]['soort'] = "Grondplek";
                 $pdf_data['tabel'][$key]['btw'] = "21%";
                 $pdf_data['tabel'][$key]['prijsperstuk'] = "€".number_format(round($markt->bedrag_grondplek/1.21, 2), 2);
-                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_kraam*($standhouderExtra->grondplek/1.21), 2), 2);
+                $pdf_data['tabel'][$key]['totaal'] = "€ " . number_format(round($markt->bedrag_grondplek*($standhouderExtra->grondplek/1.21), 2), 2);
             }
 
             $pdf_data['totaalexbtw'] = "€ " . number_format(round($standhouderExtra->kraam*($markt->bedrag_kraam/1.21) + $standhouderExtra->grondplek*($markt->bedrag_grondplek/1.21), 2), 2);
