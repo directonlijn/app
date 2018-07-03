@@ -462,7 +462,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.JPG" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-aalsmeer/mail-header.png" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
 
 
                             </td>
@@ -495,13 +495,13 @@
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-Bedankt voor uw inschrijving voor De Hippiemarkt Aalsmeer op vrijdag 21 juli.<br>
+Bedankt voor uw inschrijving voor De Hippiemarkt Aalsmeer op vrijdag 27 juli.<br>
  <br>
 Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden (met onder andere opbouw en afbouw tijden) en de factuur.<br>
  <br>
 Pas na ontvangst van uw betaling is uw inschrijving definitief.<br>
  <br>
-Tot vrijdag 21 juli op het surfeiland te Aalsmeer,<br>
+Tot vrijdag 27 juli op het surfeiland te Aalsmeer,<br>
  <br>
 Contact informatie:<br>
 Info@directevents.nl<br>
@@ -575,7 +575,7 @@ Info@directevents.nl<br>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="https://www.facebook.com/events/1787774984873640/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://www.facebook.com/events/434974326975583/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -607,7 +607,7 @@ Info@directevents.nl<br>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="http://app.directevents.nl/markt/hippiemarkt-aalsmeer" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="http://www.hippiemarktaalsmeer.nl/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
