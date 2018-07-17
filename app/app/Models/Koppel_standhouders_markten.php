@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Koppel_standhouders_markten extends Model
 {
+    use SoftDeletes;
+
     protected $table = "koppel_standhouders_markten";
 
 
@@ -44,6 +47,11 @@ class Koppel_standhouders_markten extends Model
                 'dagen'
             ];
 
-
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
 
 }
