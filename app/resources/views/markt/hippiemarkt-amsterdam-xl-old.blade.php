@@ -40,35 +40,35 @@
 			<img class="glas-drinken" src="/assets/img/hippiemarkt-amsterdam-xl/glas-drinken.png">
 
 			<img class="dromenvanger" src="/assets/img/hippiemarkt-amsterdam-xl/dromenvanger.png">
-			<img class="bord" src="/assets/img/hippiemarkt-amsterdam-xl/bord-jph.png">
+			<img class="bord" src="/assets/img/hippiemarkt-amsterdam-xl/bord.png">
 
 			<img class="logo" src="/assets/img/hippiemarkt-amsterdam-xl/logo.png">
 
 	        <div class="round datum">
 						<div class="round-inner">
-		            ZATERDAG
-		            <div class="day">22</div>
-		            SEPTEMBER
+		            VRIJDAG
+		            <div class="day">30</div>
+		            MAART
 		        </div>
 	        </div>
 
 	        <div class="round kramen">
 						<div class="round-inner">
-							11:00
-							<div class="day">-</div>
-							17:00
+								ZATERDAG
+								<div class="day">31</div>
+								MAART
 						</div>
 	        </div>
 
-	        {{--<div class="round xl">--}}
-	            {{--<span class="xl-inner">XL</span>--}}
-	        {{--</div>--}}
+	        <div class="round xl">
+	            <span class="xl-inner">XL</span>
+	        </div>
 
 	        <div class="footer">
 	            FASHION | FOOD | DRINKS | MUSIC | LIFESTYLE
 	        </div>
 
-			{{--<input type="button" class="aanmelden winkeliersvereniging" value="Winkeliers">--}}
+			<input type="button" class="aanmelden winkeliersvereniging" value="Winkeliers">
 			<input type="button" class="aanmelden standhouders" value="Standhouders">
 		</div>
 
@@ -104,10 +104,10 @@
 					Mocht u nog verdere vragen hebben dan kunt u een e-mail sturen naar <a href="mailto:info@directevents.nl">info@directevents.nl</a>. Tot zondag 26 maart.
 				</p>
 				*/ ?>
-				<h1>Aanmelden</h1>
+				<h1>Aanmelden Hippiemarkt Amsterdam XL<span>Hier kunt u zich aanmelden als standhouder voor de Hippiemarkt Amsterdam XL.</span></h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-	                <input type="hidden" name="markt_id" value="12" />
+	                <input type="hidden" name="markt_id" value="8" />
 	                <input type="hidden" name="winkeliersvereniging" value="0" />
 				    <div class="section"><span>1</span>Bedrijfs- &amp; <h3 class="mobile-only"><br></h3>Persoons-gegevens</div>
 				    <div class="inner-wrap">
@@ -115,7 +115,7 @@
 				        <label>Voornaam*: <input type="text" name="voornaam" required/></label>
 				        <label>Achternaam*: <input type="text" name="achternaam" required/></label>
 				        <label>Telefoon*: <input type="tel" name="telefoon" maxlength="10" required/></label>
-				        <label>E-mail*: <input type="email" name="email"  placeholder="info@hippiemarktamsterdamxl.nl" required/></label>
+				        <label>E-mail*: <input type="email" name="email"  placeholder="info@hippiemarktderondevenen.nl" required/></label>
 				        <label>Website: <input type="text" name="website" /></label>
 					</div>
 
@@ -137,13 +137,13 @@
 									<span style="display:inline-block;width:20px;"></span>
 		                            <input type="radio" name="foodNonfood" value="non-food" checked="checked">non food
 								</label>
-								{{--<div class="form-label">--}}
-									{{--Dagen*:<br>--}}
-									{{--<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 30 Maart - 11:00 tot 17:00</label>--}}
-									{{--<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 31 Maart - 11:00 tot 17:00</label>--}}
-								{{--</div>--}}
-				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;60,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
-				        <label>Aantal grondplekken (per meter<span class="text-standhouders">, &euro;10,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
+								<div class="form-label">
+									Dagen*:<br>
+									<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 30 Maart - 11:00 tot 17:00</label>
+									<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 31 Maart - 11:00 tot 17:00</label>
+								</div>
+				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;85,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
+				        <label>Aantal grondplekken (4 meter<span class="text-standhouders">, &euro;75,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
 				        <div class="form-label">
 							Producten*:<br>
 							<label><input type="checkbox" class="producten" name="producten[0]" value="grote-maten">Grote maten kleding</label>

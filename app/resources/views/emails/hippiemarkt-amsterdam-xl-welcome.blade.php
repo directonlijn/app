@@ -419,7 +419,7 @@
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
 
-                            Bevestiging aanmelding Hippiemarkt Amsterdam XL
+                            Bevestiging aanmelding Hippiemarkt Amsterdam Centrum
                         </td>
                     </tr>
                 </tbody></table>
@@ -462,7 +462,7 @@
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/facebook.png" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                        <img align="center" alt="" src="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/mail-header.jpg" width="564" style="max-width: 799px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
 
 
                             </td>
@@ -493,17 +493,17 @@
 
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
-<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u deelneemt aan de grootste Hippiemarkt in Amsterdam op het Osdorpplein op vrijdag 30 en/of zaterdag 31 maart.
+<p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>Super dat u wilt deelnemen aan de Hippiemarkt Amsterdam Centrum op de Jan Pieter Heije Straat op Zaterdag 22 september.
 <br>
 <br>
 LET OP: Dat u zich heeft aangemeld houd niet in dat wij ook daadwerkelijk plek voor u hebben!</strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-Hippiemarkt Amsterdam XL is onderdeel van Direct Events. Hippiemarkt Amsterdam XL zal van 11:00 tot 17:00 duren. Er zullen ruim 100 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner met kermis  aanwezig zijn voor de kinderen. Verspreid over de locatie zullen verschillende Sangria bars aanwezig zijn. Op het plein zelf zal een podium met grote cocktail truck en dj  worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). De kramen zijn 4 meter. En zijn voorzien van een witte of roze luifel. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam. Deze is wel als extra optie bij te boeken net zoals extra planken etc.<br>
+    Hippiematkt Amsterdam Centrum is onderdeel van Direct Events. De hippiemarkt zal duren van 11:00 tot 17:00. Er zullen ruim 45 kramen aanwezig zijn met verschillende producten in het ibiza thema. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam.<br>
 <br>
 <strong>LOCATIE:</strong><br>
-<strong>Adres: </strong>Osdorpplein Amsterdam<br>
-<strong>Opbouw: </strong>9:00 tot 10:45<br>
+<strong>Adres: </strong>Jan Pieter Heijestraat, Amsterdam<br>
+<strong>Opbouw: </strong>8:30 tot 10:30<br>
 <strong><em>LET OP: Alles Trucks dienen om 8:00 aanwezig te zijn!  </em></strong><br>
 <br>
 <strong>Afbouw: </strong>17:00 tot 19:00 <br>
@@ -519,13 +519,13 @@ AANKLEDING KRAAM: </p>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Kraam: Een kraam is 4m lang bij 80cm breed en voorzien van een witte luifel.</li>
 </ul>
 PUBLICITEIT:<br>
-Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt Amsterdam XL kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!
-Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. Ook zullen wij in de regionale krant van amsterdam promoten en flyeren in en rondom amsterdam.
+Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Hippiemarkt Amsterdam Centrum kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!
+Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. Ook zullen wij in amsterdam promoten en flyeren.
 <br>
 <br>
 Houd de website en Facebook pagina goed in de gaten voor alle overige informatie!<br>
 <br>
-<a href="https://www.facebook.com/events/223332874876201/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1875225416093941/</a><br>
+<a href="https://www.facebook.com/events/1083889585101889/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1083889585101889/</a><br>
 <br>
 <a href="http://www.hippiemarktamsterdamxl.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.hippiemarktamsterdamxl.nl</a><br>
 <br>
@@ -540,7 +540,7 @@ CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De 
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
 <br>
-Tot vrijdag 30 en/of zaterdag 31 maart op De Hippiemarkt Amsterdam XL!<br>
+Tot zaterdag 22 september op De Hippiemarkt Amsterdam Centrum!<br>
 <br>
 Met vriendelijke groet,<br>
  <br>
@@ -597,7 +597,7 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="https://www.facebook.com/events/223332874876201/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="https://www.facebook.com/events/1083889585101889/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 

@@ -449,7 +449,11 @@ body {
         transform: translateX(0px);
         top: 55px;
         left: 5px;
-        font-size: 25px;
+        line-height: 39px;
+        font-size: 20px;
+    }
+    .datum .round-inner {
+        margin-top: -10px;
     }
     .datum .day,
     .kramen .day { font-size: 43px; }
