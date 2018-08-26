@@ -1,3 +1,8 @@
+<?php
+	header("Location: http://hippiemarktamsterdamxl.nl");
+	die();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
