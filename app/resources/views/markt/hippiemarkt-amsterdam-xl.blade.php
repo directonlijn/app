@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hippiemarkt Amsterdam XL</title>
+		<title>Hippiemarkt Amsterdam Centrum</title>
 
 		<!-- FONTS -->
 		<!-- <link rel="stylesheet" type="text/css" href="css/fonts/stylesheet.css"> -->
@@ -29,9 +29,15 @@
 
 		</script>
 
+		<meta property="og:url"                content="http://www.hippiemarktamsterdamxl.nl" />
+		<meta property="og:type"               content="website" />
+		<meta property="og:title"              content="Hippiemarkt Amsterdam Centrum - Direct Events" />
+		<meta property="og:description"        content="De Hippiemarkt Amsterdam Centrum is op zaterdag 22 september tijdens burendag op de Jan Pieter Heijestraat te Amsterdam" />
+		<meta property="og:image"              content="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/mail-header.jpg" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-		<link rel="image_src" href="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/facebook.png">
+		<link rel="image_src" href="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/mail-header.jpg">
 	</head>
 	<body>
 		<div class="all">
