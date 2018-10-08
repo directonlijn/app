@@ -25,9 +25,9 @@ $markt_id = 13;
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="Pepernotenmarkt Amsterdam Osdorp - Direct Events" />
         <meta property="og:description"        content="De Pepernotenmartk bevind zich op het Osdorpplein in amsterdam Osdorp" />
-        <meta property="og:image"              content="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.jpg" />
+        <meta property="og:image"              content="http://www.pepernotenmarktamsterdam.nl/pepernotenmarktamsterdam/images/pepernotenmarkt.jpg" />
 
-        <link rel="image_src" href="http://app.directevents.nl/assets/img/lentebraderieamsterdam/facebook.jpg">
+        <link rel="image_src" href="http://www.pepernotenmarktamsterdam.nl/pepernotenmarktamsterdam/images/pepernotenmarkt.jpg">
     </head>
     <body>
         <div class="container">
