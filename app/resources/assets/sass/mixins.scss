@@ -1,0 +1,93 @@
+$xs: "(min-width: 0px)";
+$xs360: "(min-width: 360px)";
+$xs400: "(min-width: 400px)";
+$sm: "(min-width: 768px)";
+$md: "(min-width: 992px)";
+$mdlg: "(min-width: 1024px)";
+$lg: "(min-width: 1200px)";
+$xlg: "(min-width: 1300px)";
+$xxlg: "(min-width: 1740px)";
+$xs-only: "(max-width: 767px)";
+$mobile-height-xs: "(max-width: 767px) and (min-height: 560px)";
+$mobile-height-sm: "(max-width: 767px) and (min-height: 600px)";
+
+@mixin xs {
+    @media #{$xs}  {
+        @content;
+    }
+}
+
+@mixin xs360 {
+    @media #{$xs360}  {
+        @content;
+    }
+}
+
+@mixin xs400 {
+    @media #{$xs400}  {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media #{$sm}  {
+        @content;
+    }
+}
+
+@mixin md{
+    @media #{$md}  {
+        @content;
+    }
+}
+
+@mixin mdlg {
+    @media #{$mdlg}  {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media #{$lg}  {
+        @content;
+    }
+}
+
+@mixin xlg {
+    @media #{$xlg}  {
+        @content;
+    }
+}
+
+@mixin xxlg {
+    @media #{$xxlg}  {
+        @content;
+    }
+}
+
+@mixin xs-only{
+    @media #{$xs-only}  {
+        @content;
+    }
+}
+
+@mixin mobile-height-xs{
+    @media #{$mobile-height-xs}  {
+        @content;
+    }
+}
+
+@mixin mobile-height-sm{
+    @media #{$mobile-height-sm}  {
+        @content;
+    }
+}
+
+@mixin keyframes($naam) {
+    @keyframes #{$naam} {
+        @content;
+    }
+    @-webkit-keyframes #{$naam} {
+        @content;
+    }
+}

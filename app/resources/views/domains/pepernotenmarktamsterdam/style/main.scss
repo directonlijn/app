@@ -1,0 +1,296 @@
+/*http://rscss.io*/
+@import './resources/assets/sass/main';
+@import 'base/config';
+@import 'base/utils';
+
+img {
+    max-width: 100%;
+}
+
+.shine-animation {
+    z-index: 10;
+    -webkit-transition: all .32s linear;
+    transition: all .32s linear;
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 47%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 51%,rgba(255,255,255,0) 53%,rgba(255,255,255,0) 100%);
+    background-position: -200vw -200vw;
+    background-size: 200vw 200vw;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: ShineAnimation;
+    animation-name: ShineAnimation;
+    -webkit-animation-delay: .0s;
+    animation-delay: .0s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+@-webkit-keyframes ShineAnimation {
+    from,to {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 47%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 51%,rgba(255,255,255,0) 53%,rgba(255,255,255,0) 100%);
+        background-position: -200vw -200vw;
+        background-size: 200vw 200vw;
+    }
+
+    50% {
+        background-repeat: no-repeat;
+        background-position: 0 0
+    }
+}
+
+@-moz-keyframes ShineAnimation {
+    from,to {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 47%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 51%,rgba(255,255,255,0) 53%,rgba(255,255,255,0) 100%);
+        background-position: -200vw -200vw;
+        background-size: 200vw 200vw;
+    }
+
+    50% {
+        background-repeat: no-repeat;
+        background-position: 0 0
+    }
+}
+
+@-ms-keyframes ShineAnimation {
+    from,to {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 47%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 51%,rgba(255,255,255,0) 53%,rgba(255,255,255,0) 100%);
+        background-position: -200vw -200vw;
+        background-size: 200vw 200vw;
+    }
+
+    50% {
+        background-repeat: no-repeat;
+        background-position: 0 0
+    }
+}
+
+@-o-keyframes ShineAnimation {
+    from,to {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 47%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 51%,rgba(255,255,255,0) 53%,rgba(255,255,255,0) 100%);
+        background-position: -200vw -200vw;
+        background-size: 200vw 200vw;
+    }
+
+    50% {
+        background-repeat: no-repeat;
+        background-position: 0 0
+    }
+}
+
+@keyframes ShineAnimation {
+    from,to {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(top left,rgba(255,255,255,0) 0,rgba(255,255,255,0) 47%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.5) 51%,rgba(255,255,255,0) 53%,rgba(255,255,255,0) 100%);
+        background-position: -200vw -200vw;
+        background-size: 200vw 200vw;
+    }
+
+    50% {
+        background-repeat: no-repeat;
+        background-position: 0 0
+    }
+}
+
+body {
+    background: url('/pepernotenmarktamsterdam/images/background.jpg');
+    background-position: 60% 50%;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    @include md {
+        background-position: center bottom;
+    }
+
+    .container {
+        @include md {
+            max-width: 960px;
+        }
+    }
+
+    .round {
+        background: #FF0000;
+        border-radius: 50%;
+        box-shadow: 1px 1px 0 0 rgba(0,0,0,0.5);
+        color: #FFF;
+        font-weight: 700;
+        height: calc(33.333333vw - 30px);
+
+        @include sm {
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        @include md {
+            height: 200px;
+            width: 200px;
+        }
+
+        &.round-date {
+            font-size: 24px;
+            line-height: calc(33.333333vw - 30px);
+
+            @include xs360 {
+                font-size: 28px;
+            }
+
+            @include sm {
+                font-size: 57px;
+                line-height: 200px;
+            }
+
+            @include md {
+                margin-top: 50px;
+            }
+        }
+
+        &.round-time {
+            font-size: 20px;
+            padding: 8px 0;
+
+            @include xs360 {
+                font-size: 24px;
+            }
+
+            @include sm {
+                font-size: 45px;
+                padding: 27px 0;
+            }
+
+            @include md {
+
+            }
+
+            span {
+                display: block;
+                line-height: 3px;
+
+                @include sm {
+                    line-height: 15px;
+                }
+
+                @include md {
+
+                }
+            }
+        }
+    }
+
+    #aanmelden {
+        background: #FF0000;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 0 0 rgba(0,0,0,0.5);
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        margin: 20px auto;
+        position: relative;
+        text-transform: uppercase;
+        width: 100%;
+
+        @include xs360 {
+            font-size: 25px;
+            line-height: 50px;
+        }
+
+        @include sm {
+            font-size: 30px;
+            line-height: 60px;
+            margin: 50px auto;
+            max-width: 500px;
+        }
+
+        @include md {
+            border-radius: 10px;
+            box-shadow: 3px 3px 0 0 rgba(0,0,0,0.5);
+            line-height: 80px;
+        }
+
+        .shineAnimation {
+            @extend .shine-animation;
+            display: block;
+        }
+    }
+
+    footer {
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 700;
+
+        @include xs360 {
+            font-size: 15px;
+        }
+
+        @include sm {
+            font-size: 30px;
+        }
+
+        @include md {
+
+        }
+    }
+
+    #aanmeldformulier {
+        padding: 0px;
+
+        .modal-body {
+            margin: 0 !important;
+            width: 100%;
+
+            [data-section=marktgegevens] {
+                .checkboxes {
+                    .form-control {
+                        display: inline-block;
+                        float:right;
+                        line-height: 13px;
+                        vertical-align: middle;
+                        width: 13px;
+
+                        @include xs360 {
+
+                        }
+
+                        @include sm {
+
+                        }
+
+                        @include md {
+
+                        }
+                    }
+
+                    label {
+                        font-size: 10px;
+                        line-height: 13px;
+                        margin: 0 !important;
+                        vertical-align: middle;
+
+                        @include xs360 {
+
+                        }
+
+                        @include sm {
+
+                        }
+
+                        @include md {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

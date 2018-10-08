@@ -45,9 +45,25 @@ gulp.task('concat-js', function () {
         .pipe(gulp.dest("public/campaigns/"+folder+"/script/"));
 });
 
-gulp.task('compile-scss', function () {
-    return gulp.src("resources/views/domains/"+domain+"/"+folder+"/style/**/*.scss")
-      .pipe(sass({ outputStyle: 'compressed' }).on('error', swallowError))
-	    .pipe(concat('all.css'))
-      .pipe(gulp.dest("public/"+domain+"/style/"));
+gulp.task('watch-scss', function () {
+    livereload.listen();
+    gulp.watch("resources/views/domains/"+domain+"/style/**/*.scss", ['compile-scss']);
 });
+
+gulp.task('compile-scss', function () {
+    return gulp.src("resources/views/domains/"+domain+"/style/main.scss")
+            .pipe(debug())
+            .pipe(sass({ outputStyle: 'compressed' }).on('error', swallowError))
+            .pipe(debug())
+            .pipe(concat('all.css'))
+            .pipe(debug())
+            .pipe(gulp.dest("../public_html/"+domain+"/style/"))
+            .pipe(debug())
+            .pipe(livereload());
+});
+
+function swallowError(error) {
+    // If you want details of the error in the console
+    console.log(error.toString())
+    this.emit('end')
+}
