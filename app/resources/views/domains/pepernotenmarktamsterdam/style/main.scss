@@ -186,7 +186,7 @@ body {
         }
     }
 
-    #aanmelden {
+    .aanmelden {
         background: #FF0000;
         border: none;
         border-radius: 5px;
@@ -278,11 +278,12 @@ body {
                         vertical-align: middle;
 
                         @include xs360 {
+                            font-size: 13px;
 
                         }
 
                         @include sm {
-
+                            font-size: 14px;
                         }
 
                         @include md {
@@ -291,6 +292,10 @@ body {
                     }
                 }
             }
+        }
+
+        .aanmelden {
+            margin: 0 auto;
         }
     }
 }

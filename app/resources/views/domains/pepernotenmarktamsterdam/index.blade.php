@@ -64,7 +64,7 @@ $markt_id = 13;
 
             <div class="row">
                 <div class="col-12">
-                    <button data-src="#aanmeldformulier" id="aanmelden">
+                    <button data-src="#aanmeldformulier" class="aanmelden _aanmeldformulieropenen">
                         <div class="shineAnimation"></div>
                         Aanmelden
                     </button>
@@ -185,117 +185,103 @@ $markt_id = 13;
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="form-group">
-                                            <label for="kramen">Aantal kramen: *</label>
+                                            <label for="kramen">Aantal kramen (&euro;65,- excl. BTW): *</label>
                                             <input type="text" class="form-control" id="kramen" name="kramen" placeholder="Aantal kramen">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="form-group">
-                                            <label for="grondplek">Grondplek per M: *</label>
+                                            <label for="grondplek">Grondplek per M (&euro;12,50 excl. BTW): *</label>
                                             <input type="text" class="form-control" id="grondplek" name="grondplekken" placeholder="aantal">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                <div class="row checkboxes mt-3">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="grote-maten">Grote maten:</label>
                                             <input type="checkbox" class="form-control" name="producten[0]" id="grote-maten" value="grote-maten">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="dames-kleding">Dames kleding:</label>
                                             <input type="checkbox" class="form-control" name="producten[1]" id="dames-kleding" value="dames-kleding">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="heren-kleding">Herenkleding:</label>
                                             <input type="checkbox" class="form-control" name="producten[2]" id="heren-kleding" value="heren-kleding">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="kinder-kleding">Kinderkleding:</label>
                                             <input type="checkbox" class="form-control" name="producten[3]" id="kinder-kleding" value="kinder-kleding">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="baby-kleding">Babykleding:</label>
                                             <input type="checkbox" class="form-control" name="producten[4]" id="baby-kleding" value="baby-kleding">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="fashion-accesoires">Kledingaccesoires:</label>
                                             <input type="checkbox" class="form-control" name="producten[5]" id="fashion-accesoires" value="fashion-accesoires">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="schoenen">Schoenen:</label>
                                             <input type="checkbox" class="form-control" name="producten[6]" id="schoenen" value="schoenen">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="lifestyle">Lifestyle:</label>
                                             <input type="checkbox" class="form-control" name="producten[7]" id="lifestyle" value="lifestyle">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="woon-accessoires">Woonaccessoires:</label>
                                             <input type="checkbox" class="form-control" name="producten[8]" id="woon-accessoires" value="woon-accessoires">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="kunst">Kunst:</label>
                                             <input type="checkbox" class="form-control" name="producten[9]" id="kunst" value="kunst">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="sieraden">Sieraden:</label>
                                             <input type="checkbox" class="form-control" name="producten[10]" id="sieraden" value="sieraden">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="tassen">Tassen:</label>
                                             <input type="checkbox" class="form-control" name="producten[11]" id="tassen" value="tassen">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="brocante">Brocante:</label>
                                             <input type="checkbox" class="form-control" name="producten[12]" id="brocante" value="brocante">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="dierenspullen">Dierenspullen:</label>
                                             <input type="checkbox" class="form-control" name="producten[13]" id="dierenspullen" value="dierenspullen">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row checkboxes">
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-4">
                                         <div class="form-group">
                                             <label for="anders">Anders:</label>
                                             <input type="checkbox" class="form-control" name="producten[14]" id="anders" value="anders">
@@ -307,7 +293,10 @@ $markt_id = 13;
                         </div>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-default">Aanmelden</button>
+                        <button class="btn btn-default aanmelden">
+                            <div class="shineAnimation"></div>
+                            Aanmelden
+                        </button>
                     </div>
 
                 </form>
@@ -319,7 +308,7 @@ $markt_id = 13;
 
         <script>
             $(document).ready(function(){
-                $("#aanmelden").fancybox({
+                $("._aanmeldformulieropenen").fancybox({
                     'onStart': function() { $("#aanmelden").removeClass('hidden'); },
                     'onClosed': function() { $("#aanmelden").addClass('hidden'); }
                 });

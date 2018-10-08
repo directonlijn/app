@@ -499,7 +499,7 @@
 LET OP: Dat u zich heeft aangemeld houd niet in dat wij ook daadwerkelijk plek voor u hebben!</strong><br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
-    Pepernotemarkt Amsterdam Osdorp is onderdeel van Direct Events. De markt zal duren van 11:00 tot 17:00. Er zullen ruim 45 kramen aanwezig zijn met verschillende producten. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam. U kunt dit wel bijboeken tegen betaling.<br>
+    Pepernotenmarkt Amsterdam Osdorp is onderdeel van Direct Events. De markt zal duren van 11:00 tot 17:00. Er zullen ruim 45 kramen aanwezig zijn met verschillende producten. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam. U kunt dit wel bijboeken tegen betaling.<br>
 <br>
 <strong>LOCATIE:</strong><br>
 <strong>Adres: </strong>Osdoropplein, Amsterdam<br>
@@ -519,7 +519,7 @@ AANKLEDING KRAAM: </p>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Kraam: Een kraam is 4m lang bij 80cm breed en voorzien van een witte luifel.</li>
 </ul>
 PUBLICITEIT:<br>
-Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Pepernotemarkt Amsterdam kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!
+Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Pepernotenmarkt Amsterdam kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden!
 Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. Ook zullen wij in amsterdam promoten en flyeren.
 <br>
 <br>
@@ -527,7 +527,7 @@ Houd de website en Facebook pagina goed in de gaten voor alle overige informatie
 <br>
 {{--<a href="https://www.facebook.com/events/1083889585101889/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">https://www.facebook.com/events/1083889585101889/</a><br>--}}
 {{--<br>--}}
-<a href="http://www.pepernotemarktamsterdam.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.pepernotemarktamsterdam.nl</a><br>
+<a href="http://www.pepernotenmarktamsterdam.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.pepernotenmarktamsterdam.nl</a><br>
 <br>
 CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 11.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. Als u zich niet houd aan deze regels kunt u een boete van 50 euro ontvangen.
 <ul>
@@ -629,7 +629,7 @@ Direct events – Organisatie</p>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="http://www.pepernotemarktamsterdam.nl" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="http://www.pepernotenmarktamsterdam.nl" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
