@@ -148,8 +148,8 @@
 									{{--<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 30 Maart - 11:00 tot 17:00</label>--}}
 									{{--<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 31 Maart - 11:00 tot 17:00</label>--}}
 								{{--</div>--}}
-				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;60,- incl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
-				        <label>Aantal grondplekken (per meter<span class="text-standhouders">, &euro;10,- incl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
+				        <label>Aantal kramen (4 meter<span class="text-standhouders">, &euro;70,- excl. BTW</span>): <input type="number" name="kramen" value="0"/></label>
+				        <label>Aantal grondplekken (per meter<span class="text-standhouders">, &euro;15,- excl. BTW</span>): <input type="number" name="grondplekken" value="0"/></label>
 				        <div class="form-label">
 							Producten*:<br>
 							<label><input type="checkbox" class="producten" name="producten[0]" value="grote-maten">Grote maten kleding</label>
