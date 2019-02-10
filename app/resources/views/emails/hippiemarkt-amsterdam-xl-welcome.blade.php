@@ -540,7 +540,7 @@ CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De 
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
 <br>
-Tot zaterdag 22 september op De Hippiemarkt Amsterdam XL!<br>
+Tot zondag 31 maart op De Hippiemarkt Amsterdam XL!<br>
 <br>
 Met vriendelijke groet,<br>
  <br>
