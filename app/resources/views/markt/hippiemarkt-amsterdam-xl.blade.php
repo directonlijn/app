@@ -31,13 +31,13 @@
 
 		<meta property="og:url"                content="http://www.hippiemarktamsterdamxl.nl" />
 		<meta property="og:type"               content="website" />
-		<meta property="og:title"              content="Hippiemarkt Amsterdam Centrum - Direct Events" />
-		<meta property="og:description"        content="De Hippiemarkt Amsterdam Centrum is op zaterdag 22 september tijdens burendag op de Jan Pieter Heijestraat te Amsterdam" />
-		<meta property="og:image"              content="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/mail-header.jpg" />
+		<meta property="og:title"              content="Hippiemarkt Amsterdam XL - Direct Events" />
+		<meta property="og:description"        content="De Hippiemarkt Amsterdam XL is op zaterdag 22 september tijdens burendag op de Jan Pieter Heijestraat te Amsterdam" />
+		<meta property="og:image"              content="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/facebook.png" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-		<link rel="image_src" href="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/mail-header.jpg">
+		<link rel="image_src" href="http://app.directevents.nl/assets/img/hippiemarkt-amsterdam-xl/facebook.png">
 	</head>
 	<body>
 		<div class="all">
@@ -46,21 +46,21 @@
 			<img class="glas-drinken" src="/assets/img/hippiemarkt-amsterdam-xl/glas-drinken.png">
 
 			<img class="dromenvanger" src="/assets/img/hippiemarkt-amsterdam-xl/dromenvanger.png">
-			<img class="bord" src="/assets/img/hippiemarkt-amsterdam-xl/bord-jph.png">
+			<img class="bord" src="/assets/img/hippiemarkt-amsterdam-xl/bord.png">
 
 			<img class="logo" src="/assets/img/hippiemarkt-amsterdam-xl/logo.png">
 
 	        <div class="round datum">
 						<div class="round-inner">
-		            ZATERDAG
-		            <div class="day">22</div>
-		            SEPTEMBER
+		            ZONDAG
+		            <div class="day">31</div>
+		            MAART
 		        </div>
 	        </div>
 
 	        <div class="round kramen">
 						<div class="round-inner">
-							11:00
+							12:00
 							<div class="day">-</div>
 							17:00
 						</div>
@@ -113,7 +113,7 @@
 				<h1>Aanmelden</h1>
 				<form class="test-form" action="test.php" method="post">
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-	                <input type="hidden" name="markt_id" value="12" />
+	                <input type="hidden" name="markt_id" value="14" />
 	                <input type="hidden" name="winkeliersvereniging" value="0" />
 				    <div class="section"><span>1</span>Bedrijfs- &amp; <h3 class="mobile-only"><br></h3>Persoons-gegevens</div>
 				    <div class="inner-wrap">
