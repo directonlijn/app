@@ -377,8 +377,8 @@ class PdfController extends Controller
         // return \PDF::loadView('pdf.factuur', $pdf_data)->stream();
         // dd($pdf_data);
 
-        $path = dirname(__DIR__) . "/public/pdf/".date("Y")."/".$factuur->factuurnummer.".pdf";
-        $pathToAlgemeneVoorwaarden = dirname(__DIR__) . "/public/algemene voorwaarden/algemene voorwaarden.pdf";
+        $path = dirname(__DIR__) . "../../../public/pdf/".date("Y")."/".$factuur->factuurnummer.".pdf";
+        $pathToAlgemeneVoorwaarden = dirname(__DIR__) . "../../../public/algemene voorwaarden/algemene voorwaarden.pdf";
 
         $pdf = \PDF::loadView('pdf.factuur', $pdf_data)->save( $path );
 
