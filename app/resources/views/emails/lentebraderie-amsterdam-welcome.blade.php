@@ -494,11 +494,11 @@
                             <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Beste standhouder</h1>
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
-	<strong>Super dat u deelneemt aan de 3daagse lente braderie op het Osdorpplein/tussenmeer op vrijdag 25 tot en met 27 mei.</strong>
+	<strong>Super dat u deelneemt aan de 3daagse lente braderie op het Osdorpplein/tussenmeer op vrijdag 31 mei tot en met 2 juli.</strong>
 <br>
 <br>
 <strong><em>Lees deze info goed!</em></strong><br>
- Lente braderie Amsterdam is onderdeel van Direct Events. Lente Braderie Amsterdam  zal van 10:00 tot 17:00 duren. Er zullen ruim 200 kramen aanwezig zijn met verschillende producten in het Ibiza thema. Ook zal er een kidscorner met kermis aanwezig zijn voor de kinderen. Op het plein zelf zal een podium met een dj worden geplaatst. Op het plein zelf wordt de gehele dag gezorgd voor entertainment (dj’s, dansacts, workshops en meer). De kramen zijn 4 meter. En zijn voorzien van een witte of roze luifel. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam. Deze is wel als extra optie bij te boeken net zoals extra planken etc.<br>
+    Lente braderie Amsterdam is onderdeel van Direct Events. Lente Braderie Amsterdam  zal van 10:00 tot 17:00 duren. Er zullen ruim 200 kramen aanwezig zijn met verschillende producten. Ook zal er een kermis aanwezig zijn voor de kinderen.  Op het plein zelf wordt gedurende de dag gezorgd voor entertainment. De kramen zijn 4 meter. En zijn voorzien van een witte of roze luifel. Wij kunnen u geen hoekkraam garanderen en ook geen extra ruimte naast u kraam. Deze is wel als extra optie bij te boeken net zoals extra planken etc <strong>tegen betaling.</strong><br>
 <br>
 <strong>LOCATIE:</strong><br>
 <strong>Adres: </strong>Osdorpplein Amsterdam<br>
@@ -512,6 +512,7 @@ Na het laden en lossen kunnen de auto’s geparkeerd worden in de buurt. Wij ver
 AANKLEDING KRAAM: </p>
 
 <ul>
+    <li><strong>Verkoop uit dozen niet toegestaan!</strong> Hier staat een boete op van €100,- per geconstateerde overtreding.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Wij vragen van jullie om de kraam zo sfeervol en origineel mogelijk passend bij het thema ‘braderie’ in te richten.</li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je kraam er netjes en professioneel uitziet. </li>
 	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat wat onder je kraam staat er netjes bijstaat, of nog beter: zorg ervoor dat het bedekt is door een kleed, denk ook aan de zijkanten van je kraam.</li>
@@ -521,18 +522,15 @@ PUBLICITEIT:<br>
 Blijf vooral iedereen uitnodigen om te komen shoppen via de facebookpagina Lente braderie Amsterdam kun je dit evenement delen. Je staat er niet alleen voor de verkoop van die ene dag. Zorg dat je visitekaartjes/flyers/ander promomateriaal bij je hebt, zodat mensen je later terug kunnen vinden! Maak zoveel mogelijk reclame voor de markt op je website, twitter, facebook, etc., Zo komen er nog meer mensen en weten jouw vrienden/familie/klanten dat ze jouw producten (weer) in het echt kunnen bewonderen. Ook zullen wij in de regionale krant van amsterdam promoten en flyeren in en rondom amsterdam.
 <br>
 <br>
-<a href="https://www.facebook.com/events/156907234953718/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">facebook Lente Braderie Osdorp</a><br>
-<br>
+{{--<a href="https://www.facebook.com/events/156907234953718/" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">facebook Lente Braderie Osdorp</a><br>--}}
+{{--<br>--}}
 <a href="http://www.lentebraderieamsterdam.nl" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: normal;text-decoration: underline;">www.lentebraderieamsterdam.nl</a><br>
 <br>
-CHECK: Laat je kraam netjes achter. Neem je vuilnis na afloop mee naar huis! De markt duurt van 1.00 tot 17.00. We verwachten van de deelnemers dat ze blijven tot 17:00. Als u zich niet houd aan deze regels kunt u een boete van 50 euro ontvangen.
-<ul>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Dichtstbijzijnde pinautomaat is een paar honderd meter verderop in het centrum. Een pinautomaat meenemen is aan te raden.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg dat je op tijd bent.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Je bent zelf verantwoordelijk voor het bieden van kwaliteit aan de koper.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">De organisatie is niet aansprakelijk voor diefstal en schade toegebracht door derden.</li>
-	<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Zorg voor voldoende wisselgeld!</li>
-</ul>
+<strong>Belangrijk:</strong>
+Doordat er vorig jaar enorm veel afval is blijven liggen hebben wij besloten als organisatie om dit jaar met een borg te werken.
+Er zal een <strong>borg van €100,- contant per dag</strong> betaald moeten worden. Aan het eind van de dag zal er iemand meelopen
+om te controleren of u uw borg terug krijgt. <strong>Let op: Gedurende de dag zullen verscheidene mensen langs lopen om dit te controleren!</strong>
+
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><em>Verdere gedetailleerde informatie over uw factuur, parkeren, contactpersonen ten tijde van het evenement en punt om te melden bij aankomst op het evenement volgt in aanloop van het event.</em><br>
 <br>
@@ -541,7 +539,7 @@ Hopelijk tot dan op De Lente Braderie Amsterdam<br>
 Met vriendelijke groet,<br>
  <br>
 <br>
-Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
+Direct events – Organisatie Lentebraderie Amsterdam Osdorp</p>
 
                         </td>
                     </tr>
@@ -592,9 +590,9 @@ Direct events – Organisatie Hippiemarkt Amsterdam XL</p>
                                                                     <table align="left" border="0" cellpadding="0" cellspacing="0" width="" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                         <tbody><tr>
 
-                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="https://www.facebook.com/events/156907234953718/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
-                                                                                </td>
+                                                                                {{--<td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">--}}
+                                                                                    {{--<a href="https://www.facebook.com/events/156907234953718/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>--}}
+                                                                                {{--</td>--}}
 
 
                                                                         </tr>

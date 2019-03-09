@@ -393,20 +393,25 @@
 
 		<?php
 
+                $dagen = [
+//                        'dag1',
+//                        'dag2',
+                        'dag3'
+                    ];
 
 		$aantal_dagen = count($dagen);
 		$dag = $dagen;
 		$dagen_text = '';
 		if ($aantal_dagen == 3) {
-			$dagen_text = '25, 26 en 27';
+			$dagen_text = '31 mei, 1 en 2 juni';
 		} else if ($aantal_dagen == 2) {
-			$dagen_text = (trim($dag[0]) == 'dag1' ? '25 en ' : '26 en ') . (trim($dag[1]) == 'dag2' ? '26' : '27');
+			$dagen_text = (trim($dag[0]) == 'dag1' ? '31 mei en ' : '1 en ') . (trim($dag[1]) == 'dag2' ? '1 juni' : '2 juni');
 		} else if (trim($dag[0]) == 'dag1') {
-			$dagen_text = '25';
+			$dagen_text = '31 mei';
 		} else if (trim($dag[0]) == 'dag2') {
-			$dagen_text = '26';
+			$dagen_text = '1 juni';
 		} else if (trim($dag[0]) == 'dag3') {
-			$dagen_text = '27';
+			$dagen_text = '2 juni';
 		}
 
 		?>
@@ -447,21 +452,21 @@
 				</td>
 				<![endif]-->
 
-				<!--[if mso]>
-				<td valign="top" width="210" style="width:210px;">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
+				{{--<!--[if mso]>--}}
+				{{--<td valign="top" width="210" style="width:210px;">--}}
+				{{--<![endif]-->--}}
+                {{--<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 210px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%" class="mcnTextContentContainer">--}}
+                    {{--<tbody><tr>--}}
 
-                        <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
+                        {{--<td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">--}}
 
-                            <a href="http://app.directevents.test/mail/view/lentebraderie-amsterdam-factuur" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
+                            {{--<a href="http://app.directevents.test/mail/view/lentebraderie-amsterdam-factuur" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Mail niet leesbaar of graag in uw browser openen? Klik hier.</a>--}}
+                        {{--</td>--}}
+                    {{--</tr>--}}
+                {{--</tbody></table>--}}
+				{{--<!--[if mso]>--}}
+				{{--</td>--}}
+				{{--<![endif]-->--}}
 
 				<!--[if mso]>
 				</tr>
@@ -515,14 +520,14 @@
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-Bedankt voor uw inschrijving voor De Lentebraderie Amsterdam op <?=$dagen_text;?> mei.<br>
+Bedankt voor uw inschrijving voor De Lentebraderie Amsterdam op <?=$dagen_text;?>.<br>
  <br>
 Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden en de factuur.<br>
  <br>
 Meer informatie ontvangt u in aanloop naar het evenement.
  <br>
  <br>
-<strong>Pas na ontvangst van uw betaling is uw inschrijving definitief.</strong><br>
+<strong>Pas na ontvangst van uw betaling is uw inschrijving definitief.</strong> Mocht de betaling niet binnen de gestelde betalingstermijn gedaan zijn kan uw plek komen te vervallen!<br>
  <br>
 Tot dan op het Osdorpplein Amsterdam,<br>
  <br>
@@ -583,37 +588,37 @@ Info@directevents.nl<br>
                                     <tr>
                                     <![endif]-->
 
-                                        <!--[if mso]>
-                                        <td align="center" valign="top">
-                                        <![endif]-->
+                                        {{--<!--[if mso]>--}}
+                                        {{--<td align="center" valign="top">--}}
+                                        {{--<![endif]-->--}}
 
 
-                                            <table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                <tbody><tr>
-                                                    <td valign="top" style="padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowContentItemContainer">
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                            <tbody><tr>
-                                                                <td align="left" valign="middle" style="padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                        <tbody><tr>
+                                            {{--<table align="left" border="0" cellpadding="0" cellspacing="0" style="display: inline;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">--}}
+                                                {{--<tbody><tr>--}}
+                                                    {{--<td valign="top" style="padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowContentItemContainer">--}}
+                                                        {{--<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">--}}
+                                                            {{--<tbody><tr>--}}
+                                                                {{--<td align="left" valign="middle" style="padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">--}}
+                                                                    {{--<table align="left" border="0" cellpadding="0" cellspacing="0" width="" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">--}}
+                                                                        {{--<tbody><tr>--}}
 
-                                                                                <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="https://www.facebook.com/events/223332874876201/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
-                                                                                </td>
+                                                                                {{--<td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">--}}
+                                                                                    {{--<a href="https://www.facebook.com/events/223332874876201/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>--}}
+                                                                                {{--</td>--}}
 
 
-                                                                        </tr>
-                                                                    </tbody></table>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody></table>
-                                                    </td>
-                                                </tr>
-                                            </tbody></table>
+                                                                        {{--</tr>--}}
+                                                                    {{--</tbody></table>--}}
+                                                                {{--</td>--}}
+                                                            {{--</tr>--}}
+                                                        {{--</tbody></table>--}}
+                                                    {{--</td>--}}
+                                                {{--</tr>--}}
+                                            {{--</tbody></table>--}}
 
-                                        <!--[if mso]>
-                                        </td>
-                                        <![endif]-->
+                                        {{--<!--[if mso]>--}}
+                                        {{--</td>--}}
+                                        {{--<![endif]-->--}}
 
                                         <!--[if mso]>
                                         <td align="center" valign="top">
@@ -630,7 +635,7 @@ Info@directevents.nl<br>
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                    <a href="http://www.hippiemarktamsterdamxl.nl/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                                    <a href="http://www.lentebraderieamsterdam.nl/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
