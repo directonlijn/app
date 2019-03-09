@@ -393,12 +393,6 @@
 
 		<?php
 
-                $dagen = [
-//                        'dag1',
-//                        'dag2',
-                        'dag3'
-                    ];
-
 		$aantal_dagen = count($dagen);
 		$dag = $dagen;
 		$dagen_text = '';
