@@ -28,8 +28,8 @@
             <div class="row">
                 <div class="hidden-xs hidden-sm col-md-2 rounds-left">
                     <div class="yellow-round date">
-                        25|26|27
-                        <div>Mei</div>
+                        31 mei<br>
+                        1, 2 juni
                     </div>
                     <div class="yellow-round time">
                         10:00<br>
@@ -44,8 +44,8 @@
             <div class="row visible-xs visible-sm">
                 <div class="col-xs-6">
                     <div class="yellow-round date">
-                        25|26|27
-                        <div>Mei</div>
+                        31 mei<br>
+                        1, 2 juni
                     </div>
                 </div>
                 <div class="col-xs-6">
@@ -69,7 +69,7 @@
         </div>
         <div class="bottom-text">
             <div class="col-xs-12 title">
-                Osdorpplein Amsterdam XL
+                Osdorpplein Amsterdam
             </div>
             <div class="col-xs-12 subtitle">
                 food | music | fashion | lifestyle | kermis
@@ -84,7 +84,7 @@
     				<h1>Aanmelden<br>lentebraderie amsterdam<span>Hier kunt u zich aanmelden als standhouder voor de Lentebraderie Amsterdam.</span></h1>
     				<form class="test-form" action="test.php" method="post">
     					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-    	                <input type="hidden" name="markt_id" value="9" />
+    	                <input type="hidden" name="markt_id" value="15" />
     				    <div class="section"><span>1</span>Bedrijfs- &amp; <h3 class="mobile-only"><br></h3>Persoons-gegevens</div>
     				    <div class="inner-wrap">
     				        <label>Bedrijfsnaam*: <input type="text" name="bedrijfsnaam" required/></label>
@@ -117,13 +117,13 @@
     						<input style="display: none;" type="radio" name="foodNonfood" value="non-food" checked="checked">
     						<div class="form-label">
     							Dagen*:<br>
-    							<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 25 Mei - 10:00 tot 17:00</label>
-    							<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 26 Mei - 10:00 tot 17:00</label>
-    							<label><input type="checkbox" class="dagen" name="dagen[2]" value="dag3">Zondag 27 Mei - 10:00 tot 17:00</label>
+    							<label><input type="checkbox" class="dagen" name="dagen[0]" value="dag1">Vrijdag 31 Mei - 10:00 tot 17:00</label>
+    							<label><input type="checkbox" class="dagen" name="dagen[1]" value="dag2">Zaterdag 1 Juni - 10:00 tot 17:00</label>
+    							<label><input type="checkbox" class="dagen" name="dagen[2]" value="dag3">Zondag 2 Juni - 10:00 tot 17:00</label>
     							<br>
-    							Indien u voor alle drie de dagen kiest word er een prijs gerekend van &euro;55,- incl. BTW per dag voor een kraam of &euro;12,50 incl. BTW per dag per meter voor een grondplek
+    							{{--Indien u voor alle drie de dagen kiest word er een prijs gerekend van &euro;55,- incl. BTW per dag voor een kraam of &euro;12,50 incl. BTW per dag per meter voor een grondplek--}}
     						</div>
-    				        <label>Aantal kramen (4 meter, &euro;65,- incl. BTW per dag): <input type="number" name="kramen" value="0"/></label>
+    				        <label>Aantal kramen (4 meter, &euro;75,- incl. BTW per dag): <input type="number" name="kramen" value="0"/></label>
     				        <label>Aantal grondplekken (per meter, &euro;15,- incl. BTW per dag): <input type="number" name="grondplekken" value="0"/></label>
     				        <div class="form-label">
     							Producten*:<br>
