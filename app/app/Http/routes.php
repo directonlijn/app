@@ -18,7 +18,7 @@
 //     });
 // });
 
-Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|pepernotenmarktamsterdam)');
+Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|pepernotenmarktamsterdam|ibizamarkteindhoven)');
 Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
@@ -29,7 +29,8 @@ Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
         return view('domains.'.$domain.'.index');
     });
 });
-Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|pepernotenmarktamsterdam)');
+
+Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|pepernotenmarktamsterdam|ibizamarkteindhoven)');
 Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
