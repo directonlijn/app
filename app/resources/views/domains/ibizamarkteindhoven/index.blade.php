@@ -20,11 +20,11 @@
 
         <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
 
-        <meta property="og:url"                content="http://www.ibizamarkteindhoven.nl" />
-        <meta property="og:type"               content="website" />
-        <meta property="og:title"              content="Ibizamarkt Aquabest Eindhoven - Direct Events" />
-        <meta property="og:description"        content="Ibizamarkt Aquabest Eindhoven is op zondag 12 mei van 12:00 tot 17:00 in Eindhoven" />
-        <meta property="og:image"              content="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg" />
+        <meta property="og:url"                content="http://www.ibizamarkteindhoven.nl">
+        <meta property="og:type"               content="website">
+        <meta property="og:title"              content="Ibizamarkt Aquabest Eindhoven - Direct Events">
+        <meta property="og:description"        content="Ibizamarkt Aquabest Eindhoven is op zondag 12 mei van 12:00 tot 17:00 in Eindhoven">
+        <meta property="og:image"              content="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg">
 
         <link rel="image_src" href="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg">
     </head>
