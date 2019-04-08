@@ -6,6 +6,13 @@
 <html>
     <head>
         <meta charset="utf-8">
+
+        <meta property="og:url"                content="http://www.ibizamarkteindhoven.nl">
+        <meta property="og:type"               content="website">
+        <meta property="og:title"              content="Ibizamarkt Aquabest Eindhoven - Direct Events">
+        <meta property="og:description"        content="Ibizamarkt Aquabest Eindhoven is op zondag 12 mei van 12:00 tot 17:00 in Eindhoven">
+        <meta property="og:image"              content="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg">
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{{ csrf_token() }}}">
@@ -19,12 +26,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
         <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
-
-        <meta property="og:url"                content="http://www.ibizamarkteindhoven.nl">
-        <meta property="og:type"               content="website">
-        <meta property="og:title"              content="Ibizamarkt Aquabest Eindhoven - Direct Events">
-        <meta property="og:description"        content="Ibizamarkt Aquabest Eindhoven is op zondag 12 mei van 12:00 tot 17:00 in Eindhoven">
-        <meta property="og:image"              content="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg">
 
         <link rel="image_src" href="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg">
     </head>
