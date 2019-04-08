@@ -24,9 +24,9 @@
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="Ibizamarkt Aquabest Eindhoven - Direct Events" />
         <meta property="og:description"        content="Ibizamarkt Aquabest Eindhoven is op zondag 12 mei van 12:00 tot 17:00 in Eindhoven" />
-        <meta property="og:image"              content="http://app.directevents.nl/assets/img/ibizamarkteindhoven/mail-header.png" />
+        <meta property="og:image"              content="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg" />
 
-        <link rel="image_src" href="http://app.directevents.nl/assets/img/ibizamarkteindhoven/mail-header.png">
+        <link rel="image_src" href="http://app.directevents.nl/assets/img/ibizamarkteindhoven/aqua best.jpg">
     </head>
     <body>
         <div class="container">
@@ -194,7 +194,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="form-group">
-                                            <label for="grondplek">Grondplek per M (&euro;25,- excl. BTW): *</label>
+                                            <label for="grondplek">Grondplek per strekkende meter (&euro;25,- excl. BTW): *</label>
                                             <input type="text" class="form-control" id="grondplek" name="grondplekken" placeholder="Aantal meters">
                                         </div>
                                     </div>
