@@ -189,13 +189,13 @@ $markt_id = 17;
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="kramen">Aantal kramen (&euro;70,- excl. BTW): *</label>
+                                    <label for="kramen">Aantal kramen (&euro;50,- excl. BTW): *</label>
                                     <input type="text" class="form-control" id="kramen" name="kramen" placeholder="Aantal kramen">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="grondplek">Grondplek per strekkende meter (&euro;16,- excl. BTW): *</label>
+                                    <label for="grondplek">Grondplek per strekkende meter (&euro;10,- excl. BTW): *</label>
                                     <input type="text" class="form-control" id="grondplek" name="grondplekken" placeholder="Aantal meters">
                                 </div>
                             </div>
