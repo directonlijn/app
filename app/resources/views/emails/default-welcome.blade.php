@@ -3,7 +3,7 @@
     $mailLink = 'http://app.directevents.nl/mail/view/default-welcome/'.$markt->id;
     $facebookLink = '';
     $eventName = $markt->Naam;
-    $headerImage = '/'.strtolower ($markt->Naam).'/mail.jpg';
+    $headerImage = 'http://app.directevents.nl/'.strtolower ($markt->Naam).'/mail.jpg';
     $eventDate = 'zondag 26 mei';
     $event_start_time = substr($markt["van-tijd"], 0, -3);
     $event_end_time = substr($markt["tot-tijd"], 0, -3);
