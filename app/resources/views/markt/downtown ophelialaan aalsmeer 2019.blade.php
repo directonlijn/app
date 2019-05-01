@@ -10,7 +10,7 @@ $markt_id = 18;
     <meta property="og:url"                content="http://app.directevents.nl/markt/downtown%20ophelialaan%20aalsmeer%202019">
     <meta property="og:type"               content="website">
     <meta property="og:title"              content="Downtown Ophelialaan Aalsmeer - Direct Events">
-    <meta property="og:description"        content="Downtown Ophelialaan is op zondag 22 juni van 12:00 tot 17:00 in Aalsmeer">
+    <meta property="og:description"        content="Downtown Ophelialaan is op Zaterdag 22 juni van 12:00 tot 17:00 in Aalsmeer">
     <meta property="og:image"              content="http://app.directevents.nl/downtown%20ophelialaan%20aalsmeer%202019/mail.jpg">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@ $markt_id = 18;
     <div class="row">
         <div class="d-none d-md-block col-md-2 rounds-left">
             <div class="yellow-round date">
-                Zondag
+                Zaterdag
                 <div>22 Juni</div>
             </div>
             <div class="yellow-round time">
@@ -53,7 +53,7 @@ $markt_id = 18;
     <div class="row d-flex d-md-none">
         <div class="col-6">
             <div class="yellow-round date">
-                Zondag
+                Zaterdag
                 <div>22 Juni</div>
             </div>
         </div>
