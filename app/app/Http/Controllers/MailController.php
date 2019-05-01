@@ -32,7 +32,8 @@ class MailController extends Controller
         $data = array(
             'name' => "Graham",
             'datum' => "19 Januari 2017",
-            'marktNaam' => 'Hippiemark Amsterdam XL'
+            'marktNaam' => 'Hippiemark Amsterdam XL',
+            'markt' => $emailData['data']['markt']
         );
 
         \Mail::send('emails.'.$emailData['template'], $data, function ($message) use($emailData) {
