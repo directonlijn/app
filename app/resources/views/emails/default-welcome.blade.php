@@ -4,7 +4,9 @@
     $facebookLink = '';
     $eventName = $markt->Naam;
     $headerImage = 'http://app.directevents.nl/'.strtolower ($markt->Naam).'/mail.jpg';
-    $eventDate = 'zondag 26 mei';
+//setlocale(LC_ALL, 'nl_NL');
+//    dd(date('F', strtotime($markt['Datum_van'])));
+    $eventDate = '22 juni';
     $event_start_time = substr($markt["van-tijd"], 0, -3);
     $event_end_time = substr($markt["tot-tijd"], 0, -3);
     $event_build_start_time = date('H:i', strtotime($event_start_time) - 120*60);
