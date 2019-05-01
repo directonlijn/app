@@ -4,11 +4,6 @@
     $markt_id = 10;
 ?>
 
-<?php
-header("Location: http://hippiemarktamsterdamxl.nl");
-die();
-?>
-
 <html>
     <head>
         <meta charset="utf-8">
