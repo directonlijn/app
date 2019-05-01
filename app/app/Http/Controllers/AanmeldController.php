@@ -107,7 +107,8 @@ class AanmeldController extends Controller
         $data = array(
             'data' => array(
                     'template' => $template_name,
-                    'email' => $request->email
+                    'email' => $request->email,
+                    'markt' => $markt
                 )
         );
 
