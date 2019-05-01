@@ -7,11 +7,11 @@ $markt_id = 18;
 <head>
     <meta charset="utf-8">
 
-    <meta property="og:url"                content="http://http://app.directevents.nl/markt/hippiemarkt-amsterdam-xl">
+    <meta property="og:url"                content="http://app.directevents.nl/markt/downtown%20ophelialaan%20aalsmeer%202019">
     <meta property="og:type"               content="website">
-    <meta property="og:title"              content="Hippiemarkt Beachfestival Zeewolde - Direct Events">
-    <meta property="og:description"        content="IHippiemarkt Beachfestival Zeewolde is op zondag 26 mei van 12:00 tot 20:00 in Zeewolde">
-    <meta property="og:image"              content="http://app.directevents.nl/assets/img/beachfestival-zeewolde/hippiemarkt-beachfestival-zeewolde.jpg">
+    <meta property="og:title"              content="Downtown Ophelialaan Aalsmeer - Direct Events">
+    <meta property="og:description"        content="Downtown Ophelialaan is op zondag 22 juni van 12:00 tot 17:00 in Aalsmeer">
+    <meta property="og:image"              content="http://app.directevents.nl/downtown%20ophelialaan%20aalsmeer%202019/mail.jpg">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
