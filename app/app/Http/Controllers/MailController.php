@@ -33,7 +33,7 @@ class MailController extends Controller
             'name' => "Graham",
             'datum' => "19 Januari 2017",
             'marktNaam' => 'Hippiemark Amsterdam XL',
-            'markt' => $emailData['data']['markt']
+            'markt' => $emailData['markt']
         );
 
         \Mail::send('emails.'.$emailData['template'], $data, function ($message) use($emailData) {
