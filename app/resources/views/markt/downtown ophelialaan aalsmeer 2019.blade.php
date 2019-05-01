@@ -195,7 +195,7 @@ $markt_id = 18;
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="grondplek">Grondplek per strekkende meter (&euro;10,- excl. BTW): *</label>
+                                    <label for="grondplek">Grondplek per strekkende meter (&euro;12,50 excl. BTW): *</label>
                                     <input type="text" class="form-control" id="grondplek" name="grondplekken" placeholder="Aantal meters">
                                 </div>
                             </div>
