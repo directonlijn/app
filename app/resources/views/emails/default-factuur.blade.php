@@ -3,7 +3,7 @@
 //    $standhouderExtra = $standhouder['koppelStandhoudersMarktenWithMarkt'];
 //    $markt = $standhouder['koppelStandhoudersMarktenWithMarkt']['Markt'];
 
-    $headerImage = 'http://app.directevents.nl/'.strtolower ($markt->Naam).'/mail.jpg';
+    $headerImage = 'http://app.directevents.nl/'.urlencode(strtolower ($markt->Naam)).'/mail.jpg';
 
 ?>
 
