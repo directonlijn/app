@@ -386,7 +386,8 @@ class PdfController extends Controller
             'template' => $markt->{"factuur-mail-template"},
             'email' => $standhouder->Email,
             'pathToPdf' => $path,
-            'pathToTerms' => $pathToAlgemeneVoorwaarden
+            'pathToTerms' => $pathToAlgemeneVoorwaarden,
+            'markt' => $markt
         );
 
         $data5 = array(

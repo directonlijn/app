@@ -23,7 +23,7 @@ Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
     // To show welcome mail in browser
-    Route::get("mail/view/{slug}", 'MailController@viewTemplate');
+    Route::get("mail/view/{slug}/{markt_id?}/{standhouder_id?}", 'MailController@viewTemplate');
 
     Route::get('/', function ($domain) {
         return view('domains.'.$domain.'.index');
@@ -35,7 +35,7 @@ Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
     // To show welcome mail in browser
-    Route::get("mail/view/{slug}", 'MailController@viewTemplate');
+    Route::get("mail/view/{slug}/{markt_id?}/{standhouder_id?}", 'MailController@viewTemplate');
 
     Route::get('/', function ($domain) {
         return view('domains.'.$domain.'.index');
@@ -65,7 +65,7 @@ Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
 Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
 
 // To show welcome mail in browser
-Route::get("mail/view/{slug}/{markt_id?}", 'MailController@viewTemplate');
+Route::get("mail/view/{slug}/{markt_id?}/{standhouder_id?}", 'MailController@viewTemplate');
 
 Route::get("mail/test", "MarktenController@test");
 

@@ -33,4 +33,14 @@ class Standhouder extends Model
         return $table->markten->where("id", $markt_id)->toJson();
     }
 
+    public function koppelStandhoudersMarkten()
+    {
+        return $this->hasOne('App\Models\Koppel_standhouders_markten');
+    }
+
+    public function koppelStandhoudersMarktenWithMarkt()
+    {
+        return $this->hasOne('App\Models\Koppel_standhouders_markten')->with('markt');
+    }
+
 }

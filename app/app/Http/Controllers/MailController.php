@@ -51,9 +51,14 @@ class MailController extends Controller
      * Sends standhouder welcome mail
      *
      */
-    public function viewTemplate($slug, $markt_id = false)
+    public function viewTemplate($slug, $markt_id = false, $standhouder_id = false)
     {
-        if ($markt_id !== false) {
+        if ($standhouder_id !== false) {
+            $standhouder = Standhouder::with('koppelStandhoudersMarktenWithMarkt')->where('id', $standhouder_id)->firstOrFail();
+//            dd($standhouder);
+            return View('emails.' . $slug)->with(compact('markt','standhouder'));
+
+        } else if ($markt_id !== false) {
             $markt = Markt::where('id', $markt_id)->firstOrFail();
 
             return View('emails.' . $slug)->with('markt', $markt);

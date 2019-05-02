@@ -54,4 +54,9 @@ class Koppel_standhouders_markten extends Model
      */
     protected $dates = ['deleted_at'];
 
+    public function markt()
+    {
+        return $this->hasOne('App\Models\Markt', 'id', 'markt_id');
+    }
+
 }
