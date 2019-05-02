@@ -394,7 +394,8 @@ class PdfController extends Controller
             'dagen' => explode(",", $standhouderExtra->dagen),
             'name' => "Graham",
             'datum' => "11 Februari 2017",
-            'marktNaam' => 'Hippiemark Amsterdam XL'
+            'marktNaam' => 'Hippiemark Amsterdam XL',
+            'markt' => $markt
         );
 
         \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
