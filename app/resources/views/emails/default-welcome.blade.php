@@ -1,5 +1,5 @@
 <?php
-    $eventLink = 'http://app.directevents.nl/markt/'.strtolower ($markt->Naam);
+    $eventLink = $markt->Website;
     $mailLink = 'http://app.directevents.nl/mail/view/default-welcome/'.$markt->id;
     $facebookLink = '';
     $eventName = $markt->Naam;
