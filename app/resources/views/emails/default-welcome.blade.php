@@ -3,7 +3,7 @@
     $mailLink = 'http://app.directevents.nl/mail/view/default-welcome/'.$markt->id;
     $facebookLink = '';
     $eventName = $markt->Naam;
-    $headerImage = 'http://app.directevents.nl/'.strtolower ($markt->Naam).'/mail.jpg';
+    $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($markt->Naam) ).'/mail.jpg';
     setlocale(LC_ALL, 'nl_NL');
     $eventDate = date('j', strtotime($markt['Datum_van'])).' '. strftime('%B', strtotime($markt['Datum_van']));
     $event_start_time = substr($markt["van-tijd"], 0, -3);
