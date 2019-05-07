@@ -10,12 +10,12 @@
         $date = date('j', strtotime($markt['Datum_van'])).' '. strftime('%B', strtotime($markt['Datum_van']));
         $start_time = substr($markt["van-tijd"], 0, -3);
         $end_time = substr($markt["tot-tijd"], 0, -3);
-        $kraam_prijs = $markt->bedrag_kraam;
-        $grondplek_prijs = $markt->bedrag_grondplek;
+        $kraam_prijs = $markt->bedrag_kraam / 1.21;
+        $grondplek_prijs = $markt->bedrag_grondplek / 1.21;
 
 //        dd($markt);
     } else {
-        dd('markt is al geweest');
+        dd('Deze markt is al geweest. Mocht u zich willen aanmelden voor volgende markten kunt u een e-mail sturen naar info@directevents.nl');
     }
 ?>
 <html>
