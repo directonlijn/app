@@ -26,7 +26,6 @@ Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
     Route::get("mail/view/{slug}/{markt_id?}/{standhouder_id?}", 'MailController@viewTemplate');
 
     Route::get('/', function ($domain) {
-        dd($domain);
         $markt = \App\Models\Markt::where('Website', 'like', '%' . $domain . '%')->orderBy('id', 'desc')->first();
         return view('domains.'.$domain.'.index');
     });
@@ -40,7 +39,6 @@ Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
     Route::get("mail/view/{slug}/{markt_id?}/{standhouder_id?}", 'MailController@viewTemplate');
 
     Route::get('/', function ($domain) {
-        dd($domain);
         $markt = \App\Models\Markt::where('Website', 'like', '%' . $domain . '%')->orderBy('id', 'desc')->first();
         return view('domains.'.$domain.'.index')->with(compact('markt'));
     });
