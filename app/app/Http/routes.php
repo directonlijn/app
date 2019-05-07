@@ -27,7 +27,7 @@ Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
 
     Route::get('/', function ($domain) {
         $markt = \App\Models\Markt::where('Website', 'like', '%' . $domain . '%')->orderBy('id', 'desc')->first();
-        return view('domains.'.$domain.'.index');
+        return view('domains.'.$domain.'.index')->with(compact('markt'));
     });
 });
 
