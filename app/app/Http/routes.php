@@ -18,7 +18,7 @@
 //     });
 // });
 
-Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|pepernotenmarktamsterdam|ibizamarkteindhoven)');
+Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|hippiemarkthaarlem|pepernotenmarktamsterdam|ibizamarkteindhoven)');
 Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
@@ -30,7 +30,7 @@ Route::group(['domain' => 'www.{domain}.{tld}'], function ($domain) {
     });
 });
 
-Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|pepernotenmarktamsterdam|ibizamarkteindhoven)');
+Route::pattern('domain', '(hippiemarktderondevenen|lentebraderieamsterdam|hippiemarktaalsmeer|hippiemarkthaarlem|pepernotenmarktamsterdam|ibizamarkteindhoven)');
 Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
     Route::post('aanmelding/markt', 'AanmeldController@postAanmelding');
     Route::get('aanmelding/markt', 'AanmeldController@postAanmelding');
@@ -38,7 +38,8 @@ Route::group(['domain' => '{domain}.{tld}'], function ($domain) {
     Route::get("mail/view/{slug}/{markt_id?}/{standhouder_id?}", 'MailController@viewTemplate');
 
     Route::get('/', function ($domain) {
-        return view('domains.'.$domain.'.index');
+        $markt = \App\Models\Markt::where('Website', 'like', '%' . $domain . '%')->where('Datum_van', '>', date('Y-m-d', time()))->first();
+        return view('domains.'.$domain.'.index')->with(compact('markt'));
     });
 });
 // Route::get('/', function () {
