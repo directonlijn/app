@@ -31,7 +31,7 @@ class PdfController extends Controller
      */
     public function actualDownloadInvoice($year, $factuurnummer)
     {
-        $path = dirname(__DIR__, 3) . "/public/pdf/".$year."/".$factuurnummer.".pdf";
+        $path = getcwd() . "/../../app/public/pdf/".$year."/".$factuurnummer.".pdf";
 
         if (file_exists($path))
         {
