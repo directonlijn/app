@@ -65,7 +65,6 @@ class PdfController extends Controller
             $date = \DateTime::createFromFormat("Y-m-d", $factuur->datum);
 
             $path = getcwd() . "/../public/pdf/".$date->format("Y")."/".$factuur->factuurnummer.".pdf";
-//            dd($path);
 
             if (file_exists($path))
             {
@@ -79,6 +78,7 @@ class PdfController extends Controller
             }
             else
             {
+            dd($path);
                 $returnData = array(
                     'message' => 'De factuur is niet gevonden.'
                 );
