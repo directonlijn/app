@@ -39,6 +39,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/dashboard">Home</a></li>
                     @if (Auth::check())
+                        <li><a href="/invoices">Facturen</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Markten
                             <span class="caret"></span></a>

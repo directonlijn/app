@@ -144,6 +144,12 @@ Route::group(['middleware' => 'auth'], function()
     Route::post('markt/setStandhouderBetaald', 'MarktenController@setStandhouderBetaaldRequest');
     Route::post('markt/getStandhouder', 'MarktenController@getStandhouder');
     Route::post('markt/changeStandhouder', 'MarktenController@changeStandhouder');
+
+
+
+    // NEW ROUTES
+    Route::get('invoices', 'InvoiceController@index');
+    Route::get('standhouder/{standhouder}', 'StandhouderController@get');
 });
 Route::get('/', 'Auth\AuthController@getLogin');
 

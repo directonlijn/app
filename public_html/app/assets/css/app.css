@@ -24,7 +24,8 @@ body{ padding-top: 51px; font-family: Roboto, sans-serif, arial !important; }
     background-color: rgba(77, 255, 0, 0.18);
 }
 
-.adjust { width: 20px; }
+.adjust,
+.see { width: 20px; }
 
 .overlay {
     position: absolute;
