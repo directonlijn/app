@@ -65,6 +65,7 @@ class PdfController extends Controller
             $date = \DateTime::createFromFormat("Y-m-d", $factuur->datum);
 
             $path = public_path() . "/pdf/".$date->format("Y")."/".$factuur->factuurnummer.".pdf";
+            dd($path);
 
             if (file_exists($path))
             {
