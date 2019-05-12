@@ -259,6 +259,7 @@ class MarktenController extends Controller
             $koppelStandhoudersMarkten->bedrag = ($markt->bedrag_kraam * $request->input("kraam") + $markt->bedrag_grondplek * $request->input("grondplek"));
             $this->setStandhouderBetaaldBedrag($request->input("markt_id"), $request->input("id"), ($markt->bedrag_kraam * $request->input("kraam") + $markt->bedrag_grondplek * $request->input("grondplek")), $request->input("betaald"));
 
+//            dd($koppelStandhoudersMarkten);
             $koppelStandhoudersMarkten->save();
 
             try {

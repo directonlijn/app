@@ -197,7 +197,7 @@
                 <?php
                     if ($data['markt']->aantal_dagen != '' && $data['markt']->aantal_dagen > 0) {
                         for ($x=0;$x<$data['markt']->aantal_dagen;$x++) {
-                            echo '<label><span>dag'.($x+1).'</span><input type="checkbox" class="dagen" name="dag'.($x+1).'"><br>';
+                            echo '<label><span>dag'.($x+1).'</span><input type="checkbox" class="dagen" name="dag['.($x+1).']"><br>';
                         }
                     }
                 ?>
