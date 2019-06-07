@@ -133,10 +133,10 @@ class StandhouderController extends Controller
     }
 
     public function credit($id, $asFunction = false) {
-        $factuur = Factuur::where('standhouder_id', $id)->where('credit', 0)->firstOrFail();
+        $originalFactuur = Factuur::where('standhouder_id', $id)->where('credit', 0)->firstOrFail();
         $standhouder = Standhouder::where('id', $id)->firstOrFail();
         $standhouderExtra = KoppelStandhoudersMarkten::where('standhouder_id', $id)->firstOrFail();
-        $markt = Markt::where('id', $factuur->markt_id)->firstOrFail();
+        $markt = Markt::where('id', $originalFactuur->markt_id)->firstOrFail();
 
         // Er is nog geen credit factuur en dus gaan we een nieuwe credit factuur versturen
         $factuur = new Factuur;
@@ -265,6 +265,8 @@ class StandhouderController extends Controller
         });
 
         // @todo Set original invoice to credited
+        $originalFactuur->credit = 1;
+        $originalFactuur->save();
 
         if (!$asFunction) {
             return json_encode(array("success" => true, "message" => "De credit factuur voor de standhouder is aangemaakt en verstuurd."));
