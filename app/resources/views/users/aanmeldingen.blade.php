@@ -37,6 +37,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
+                            <th>Verwijder</th>
                             <th>Wijzig</th>
                             <th>Gezien</th>
                             <th>Geselecteerd</th>
@@ -50,21 +51,21 @@
                             <th>Kraam</th>
                             <th>Grondplek</th>
                             <th>Bedrag</th>
-                            <th>Grote maten</th>
-                            <th>Dames kleding</th>
-                            <th>Heren kleding</th>
-                            <th>Kinder kleding</th>
-                            <th>Baby kleding</th>
-                            <th>Fashion accessoires</th>
-                            <th>Schoenen</th>
-                            <th>Lifestyle</th>
-                            <th>Woon accessoires</th>
-                            <th>Kunst</th>
-                            <th>Sieraden</th>
-                            <th>Tassen</th>
-                            <th>Brocante</th>
-                            <th>Dieren spullen</th>
-                            <th>Anders</th>
+                            {{--<th>Grote maten</th>--}}
+                            {{--<th>Dames kleding</th>--}}
+                            {{--<th>Heren kleding</th>--}}
+                            {{--<th>Kinder kleding</th>--}}
+                            {{--<th>Baby kleding</th>--}}
+                            {{--<th>Fashion accessoires</th>--}}
+                            {{--<th>Schoenen</th>--}}
+                            {{--<th>Lifestyle</th>--}}
+                            {{--<th>Woon accessoires</th>--}}
+                            {{--<th>Kunst</th>--}}
+                            {{--<th>Sieraden</th>--}}
+                            {{--<th>Tassen</th>--}}
+                            {{--<th>Brocante</th>--}}
+                            {{--<th>Dieren spullen</th>--}}
+                            {{--<th>Anders</th>--}}
                         </tr>
                     </thead>
                     <tbody>
@@ -90,6 +91,7 @@
 
                                 echo '<td class="filterable-cell">' . $standhouder->id . '</td>';
 
+                                echo '<td class="filterable-cell"><img class="open-delete-standhouder-popup" src="/assets/img/dashboard/icons/close-icon.png"></td>';
                                 echo '<td class="filterable-cell"><img class="adjust" src="/assets/img/dashboard/icons/pencil.png"></td>';
 
                                 echo '<td class="filterable-cell"><input type="checkbox" class="seen" name="seen" value="seen"';
@@ -123,21 +125,21 @@
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->schoenen . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->lifestyle . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kunst . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->sieraden . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->tassen . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->brocante . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->dierenspullen . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->anders . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->schoenen . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->lifestyle . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"} . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kunst . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->sieraden . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->tassen . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->brocante . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->dierenspullen . '</td>';
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->anders . '</td>';
 
                                 echo '</tr>';
                                 $x++;
@@ -262,6 +264,15 @@
             <div class="popup-text">U staat op het punt om een standhouder een nieuwe of een mogelijk gewijzigde factuur te sturen.<br><span style="color:red;">Heeft u wel eerst de wijzigingen opgeslagen?</span></div>
 
             <input type="button" class="cancel-standhouder-send-invoice" value="Annuleren" style="margin-right:20px;"> <input type="button" class="send-single-invoice-definitief" value="Verzenden">
+        </div>
+
+        <div class="popup popup-delete-standhouder">
+            <input type="hidden" name="standhouder_id" id="standhouder_id">
+            <div class="popup-title">Weet u het zeker?</div>
+
+            <div class="popup-text">U staat op het punt om een standhouder te verwijderen.<br><span style="color:red;"></span></div>
+
+            <input type="button" class="cancel-delete-standhouder" value="Annuleren" style="margin-right:20px;"> <input type="button" class="delete-standhouder" value="Verwijder">
         </div>
 
     </div>
