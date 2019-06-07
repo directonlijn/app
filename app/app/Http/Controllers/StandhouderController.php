@@ -126,8 +126,9 @@ class StandhouderController extends Controller
     {
         $year = date("Y");
         $factuur = Factuur::where('factuurnummer', 'LIKE', $year.'%')->orderBy('factuurnummer', 'desc')->first();
-dd($factuur);
+
         $factuurnummer = ($factuur) ? (str_pad(($factuur->factuurnummer+1), 9, " ", STR_PAD_LEFT)) : $year."00001";
+        dd($factuurnummer);
 
         return intval($factuurnummer, true);
     }
