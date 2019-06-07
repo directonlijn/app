@@ -104,7 +104,7 @@ class StandhouderController extends Controller
             $credited = $this->credit($id, true);
         }
 
-        if (isset($factuur) && $credited === true || !isset($factuur) && $credited === false) {
+        if (isset($factuur) && $credited === true || !isset($factuur) && $credited === '') {
             // Remove koppel
             $standhouderExtra = KoppelStandhoudersMarkten::where('standhouder_id', $id)->firstOrFail();
             $standhouderExtra->destroy();
