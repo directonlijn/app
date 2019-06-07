@@ -131,7 +131,7 @@
                     }
                 })
                 .fail(function(data){
-                    data = JSON.parse(data);
+                    // data = JSON.parse(data);
                     console.log(data);
                     if (data.status == '404') {
                         alert('Waarschijnlijk bestaat er geen factuur');
