@@ -128,7 +128,6 @@ class StandhouderController extends Controller
         $factuur = Factuur::where('factuurnummer', 'LIKE', $year.'%')->orderBy('factuurnummer', 'desc')->first();
 
         $factuurnummer = ($factuur) ? (str_pad(($factuur->factuurnummer+1), 9, " ", STR_PAD_LEFT)) : $year."00001";
-//        dd($factuurnummer);
 
         return $factuurnummer;
     }
@@ -139,7 +138,6 @@ class StandhouderController extends Controller
         $standhouderExtra = KoppelStandhoudersMarkten::where('standhouder_id', $id)->firstOrFail();
         $markt = Markt::where('id', $factuur->markt_id)->firstOrFail();
 
-        dd($this->geefNieuwFactuurNummer());
         // Er is nog geen credit factuur en dus gaan we een nieuwe credit factuur versturen
         $factuur = new Factuur;
         $factuur->factuurnummer = $this->geefNieuwFactuurNummer();
