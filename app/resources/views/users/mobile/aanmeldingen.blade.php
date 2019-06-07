@@ -73,20 +73,66 @@
                                     </div>
                                 </div>
                             </li>
-                            <!-- <li class="list-group-item">
+                            <li class="list-group-item">
                                 <div class="row">
                                     <div class="col-xs-6">
-
+                                        <button id="credit" class="btn btn-warning" data-id="{{ $index }}">Crediteren</button>
                                     </div>
                                     <div class="col-xs-6">
-
+                                        <button id="delete" class="btn btn-danger" data-id="{{ $index }}">Verwijderen</button>
                                     </div>
                                 </div>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
             @endforeach
         </div>
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $(document).on('click', '#delete', function(){
+                var id = $(this).attr('data-id');
+
+                $.post({
+                    type: 'GET',
+                    url: '/standhouder/delete/'+id
+                })
+                .done(function(data){
+                    console.log(data);
+                    if (data.success) {
+                        alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
+                    } else {
+                        alert('Er is iets mis gegaan');
+                    }
+                })
+                .fail(function(data){
+                    console.log(data);
+                    alert('Er is iets mis gegaan');
+                });
+            });
+
+            $(document).on('click', '#credit', function(){
+                var id = $(this).attr('data-id');
+
+                $.post({
+                    type: 'GET',
+                    url: '/standhouder/credit/'+id
+                })
+                .done(function(data){
+                    console.log(data);
+                    if (data.success) {
+                        alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
+                    } else {
+                        alert('Er is iets mis gegaan');
+                    }
+                })
+                .fail(function(data){
+                    console.log(data);
+                    alert('Er is iets mis gegaan');
+                });
+            });
+        });
+    </script>
 @stop

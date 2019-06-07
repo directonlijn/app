@@ -1,0 +1,217 @@
+body{ padding-top: 51px; font-family: Roboto, sans-serif, arial !important; }
+
+.standhouders-table tr.unseen-row {
+    cursor: pointer;
+}
+
+.standhouders-table tr.unseen-row:nth-of-type(odd)
+{
+    background-color: rgba(255, 0, 0, 0.43);
+}
+
+.standhouders-table tr.unseen-row:nth-of-type(even)
+{
+    background-color: rgba(255, 0, 0, 0.18);
+}
+
+.standhouders-table tr.selected-row:nth-of-type(odd)
+{
+    background-color: rgba(77, 255, 0, 0.43);
+}
+
+.standhouders-table tr.selected-row:nth-of-type(even)
+{
+    background-color: rgba(77, 255, 0, 0.18);
+}
+
+.adjust,
+.open-delete-standhouder-popup,
+.see { width: 20px; }
+
+.overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.standhouder-wijzig {
+    display: none;
+    position: absolute;
+    width: 800px;
+    max-width: 100%;
+    padding: 20px;
+    height: 70%;
+    overflow: scroll;
+    background: #FFF;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.close-standhouder-wijzig { position: absolute; right: 10px; top: 10px; width: 40px; cursor: pointer; }
+
+.standhouder-wijzig label { width: 300px; display:inline-block; }
+.standhouder-wijzig label span { width: 49%; display:inline-block; }
+.standhouder-wijzig label input[type=text] { margin-left: 5px; width: 40%; }
+.standhouder-wijzig label input[type=checkbox] { margin-right: 5px; width: 40px; }
+.standhouder-wijzig label input[readonly] { background: #BEBEBE; }
+
+.send-single-invoice, .download-single-invoice { position: absolute; left: 490px; }
+.form-title { font-size: 20px; font-weight: 600; margin-bottom: 10px;}
+
+.markt-form label { display: inline-block; width: 300px;}
+.markt-form label span { width: 49%; display:inline-block; }
+.markt-form label input[type=text] { margin-left: 5px; width: 40%; }
+.markt-form label input[type=checkbox] { margin-right: 5px; width: 40px; }
+.markt-form label input[readonly] { background: #BEBEBE; }
+
+.popup {
+    display: none;
+    position: absolute;
+    background: #FFF;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.popup-title { font-size: 25px; font-weight: 600; color: red; margin-bottom: 15px;}
+.popup-text { font-size: 15px; font-weight: 500; margin-bottom: 20px; }
+
+.token { display: none; }
+
+.loading #loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.loading #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+.loading #loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.loading #loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+/* Loaded */
+
+body:not(.loading) #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+body:not(.loading) #loader-wrapper {
+    visibility: hidden;
+
+    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateY(-100%);  /* IE 9 */
+            transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.3s 1s ease-out;
+            transition: all 0.3s 1s ease-out;
+}
+
+.download-single-invoice-link { width: 0px; height: 0px; display:block; }
+
+.fixed-table-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.fixed-table-th {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}

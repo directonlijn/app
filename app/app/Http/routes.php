@@ -150,6 +150,8 @@ Route::group(['middleware' => 'auth'], function()
     // NEW ROUTES
     Route::get('invoices', 'InvoiceController@index');
     Route::get('standhouder/{standhouder}', 'StandhouderController@get');
+    Route::get('standhouder/delete/{id}', 'StandhouderController@destroy');
+    Route::get('standhouder/credit/{id}', 'StandhouderController@credit');
 });
 Route::get('/', 'Auth\AuthController@getLogin');
 
