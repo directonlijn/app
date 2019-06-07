@@ -243,8 +243,7 @@ class StandhouderController extends Controller
             'template' => $markt->{"factuur-mail-template"},
             'email' => $standhouder->Email,
             'pathToPdf' => $path,
-            'markt' => $markt,
-            'credit' => 1
+            'markt' => $markt
         );
 
         $data5 = array(
@@ -252,7 +251,8 @@ class StandhouderController extends Controller
             'name' => "Graham",
             'datum' => "11 Februari 2017",
             'marktNaam' => 'Hippiemark Amsterdam XL',
-            'markt' => $markt
+            'markt' => $markt,
+            'credit' => 1
         );
 
         \Mail::send('emails.'.$emailData['template'], $data5, function ($message) use($emailData) {
