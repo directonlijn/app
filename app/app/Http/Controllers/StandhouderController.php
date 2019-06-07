@@ -95,13 +95,13 @@ class StandhouderController extends Controller
     public function destroy($id)
     {
         // Credit invoice if any
-        $factuur = Factuur::where('standhouder_id', $id)->first();
+        $factuur = Factuur::where('standhouder_id', $id)->where('credit', 0)->where('totaal_bedrag', '>', 0)->first();
         $credited = '';
 
         if (isset($factuur)) {
             // We hebben een factuur dus die moet gecrediteerd worden
 
-            $credited = $this->credit($id);
+            $credited = $this->credit($id, true);
         }
 
         if (isset($factuur) && $credited === true || !isset($factuur) && $credited === false) {
@@ -114,7 +114,7 @@ class StandhouderController extends Controller
 
             return json_encode(array("success" => true));
         } else {
-            return json_encode(array("success" => false, "message" => "Er is iets mis gegaan"));
+            return json_encode(array("success" => false, "message" => "Er is iets mis gegaan123"));
         }
     }
 
@@ -265,7 +265,7 @@ class StandhouderController extends Controller
 
         });
 
-        // @todo Set original invoice to credited
+        // Set original invoice to credited
         $originalFactuur->credit = 1;
         $originalFactuur->save();
 
