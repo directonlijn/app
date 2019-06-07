@@ -37,17 +37,18 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Verwijder</th>
-                            <th>Wijzig</th>
+                            <th></th>
+                            <th></th>
+                            <th>credit</th>
                             <th>Gezien</th>
-                            <th>Geselecteerd</th>
+                            <th>Select</th>
                             <th>Betaald</th>
                             <th>Bedrijfsnaam</th>
                             <th>Naam</th>
                             <th>Telefoon</th>
                             <th>E-mail</th>
-                            <th>Website</th>
-                            <th>Type</th>
+                            {{--<th>Website</th>--}}
+                            {{--<th>Type</th>--}}
                             <th>Kraam</th>
                             <th>Grondplek</th>
                             <th>Bedrag</th>
@@ -91,8 +92,9 @@
 
                                 echo '<td class="filterable-cell">' . $standhouder->id . '</td>';
 
-                                echo '<td class="filterable-cell"><img class="open-delete-standhouder-popup" src="/assets/img/dashboard/icons/close-icon.png"></td>';
+                                echo '<td class="filterable-cell"><img class="delete-standhouder" data-id="' . $standhouder->id . '" style="width: 20px;" src="/assets/img/dashboard/icons/close-icon.png"></td>';
                                 echo '<td class="filterable-cell"><img class="adjust" src="/assets/img/dashboard/icons/pencil.png"></td>';
+                                echo '<td class="filterable-cell"><img class="credit-standhouder" data-id="' . $standhouder->id . '" style="width: 20px;" src="/assets/img/dashboard/icons/credit.png"></td>';
 
                                 echo '<td class="filterable-cell"><input type="checkbox" class="seen" name="seen" value="seen"';
                                 if($data['koppelStandhoudersMarkten'][$x]->seen){
@@ -119,9 +121,9 @@
                                 echo '<td class="filterable-cell">' . $standhouder->Voornaam . " " . $standhouder->Achternaam . '</td>';
                                 echo '<td class="filterable-cell">' . $standhouder->Telefoon . '</td>';
                                 echo '<td class="filterable-cell">' . $standhouder->Email . '</td>';
-                                echo '<td class="filterable-cell">' . $standhouder->Website . '</td>';
-
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
+//                                echo '<td class="filterable-cell">' . $standhouder->Website . '</td>';
+//
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
@@ -266,14 +268,58 @@
             <input type="button" class="cancel-standhouder-send-invoice" value="Annuleren" style="margin-right:20px;"> <input type="button" class="send-single-invoice-definitief" value="Verzenden">
         </div>
 
-        <div class="popup popup-delete-standhouder">
-            <input type="hidden" name="standhouder_id" id="standhouder_id">
-            <div class="popup-title">Weet u het zeker?</div>
-
-            <div class="popup-text">U staat op het punt om een standhouder te verwijderen.<br><span style="color:red;"></span></div>
-
-            <input type="button" class="cancel-delete-standhouder" value="Annuleren" style="margin-right:20px;"> <input type="button" class="delete-standhouder" value="Verwijder">
-        </div>
-
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $(document).on('click', '.delete-standhouder', function(){
+                var id = $(this).attr('data-id');
+
+                $.post({
+                    type: 'GET',
+                    url: '/standhouder/delete/'+id
+                })
+                    .done(function(data){
+                        data = JSON.parse(data);
+                        console.log(data);
+                        if (data.success) {
+                            alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
+                        } else {
+                            alert('Er is iets mis gegaan');
+                        }
+                    })
+                    .fail(function(data){
+                        console.log(data);
+                        alert('Er is iets mis gegaan');
+                    });
+            });
+
+            $(document).on('click', '.credit-standhouder', function(){
+                var id = $(this).attr('data-id');
+
+                $.post({
+                    type: 'GET',
+                    url: '/standhouder/credit/'+id
+                })
+                    .done(function(data){
+                        data = JSON.parse(data);
+                        console.log(data);
+                        if (data.success) {
+                            alert('Gecrediteerd');
+                        } else {
+                            alert('Er is iets mis gegaan');
+                        }
+                    })
+                    .fail(function(data){
+                        // data = JSON.parse(data);
+                        console.log(data);
+                        if (data.status == '404') {
+                            alert('Waarschijnlijk bestaat er geen factuur');
+                        } else {
+                            alert('Er is iets mis gegaan');
+                        }
+                    });
+            });
+        });
+    </script>
 @stop
