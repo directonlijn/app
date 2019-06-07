@@ -100,6 +100,7 @@
                     url: '/standhouder/delete/'+id
                 })
                 .done(function(data){
+                    data = JSON.parse(data);
                     console.log(data);
                     if (data.success) {
                         alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
@@ -121,6 +122,7 @@
                     url: '/standhouder/credit/'+id
                 })
                 .done(function(data){
+                    data = JSON.parse(data);
                     console.log(data);
                     if (data.success) {
                         alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
