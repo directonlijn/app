@@ -505,9 +505,9 @@ $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-    @if(isset($credit) && $credit == 1)
+    <?php if(isset($credit) && $credit == 1) ?>
         Hierbij ontvangt u de credit factuur.<br>
-    @else
+    <?php } else { ?>
         Bedankt voor uw inschrijving voor {{ $markt->Naam }}.<br>
          <br>
         Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden en de factuur.<br>
@@ -518,7 +518,7 @@ $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($
         <strong>Pas na ontvangst van uw betaling is uw inschrijving definitief.</strong> Mocht de betaling niet binnen de gestelde betalingstermijn gedaan zijn kan uw plek komen te vervallen!<br>
          <br>
         Tot dan,<br>
-    @endif
+    <?php } ?>
  <br>
 Contact informatie:<br>
 Info@directevents.nl<br>
