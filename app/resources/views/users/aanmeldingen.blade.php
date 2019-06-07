@@ -7,14 +7,6 @@
 @stop
 
 @section('content')
-    <?php
-
-        // dd($data);
-        // dd($data['markt']->aantal_dagen);
-        // dd($data['koppelStandhoudersMarkten'][0]);
-
-        // dd($data['koppelStandhoudersMarkten'][0]['markt_id']);
-    ?>
     <div class="token">{{ csrf_token() }}</div>
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" style="position: absolute;">
@@ -127,21 +119,6 @@
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
                                 echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->schoenen . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->lifestyle . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"} . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kunst . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->sieraden . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->tassen . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->brocante . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->dierenspullen . '</td>';
-//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->anders . '</td>';
 
                                 echo '</tr>';
                                 $x++;

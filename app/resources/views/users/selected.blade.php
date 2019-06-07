@@ -3,17 +3,10 @@
 @section('title') Markten @stop
 
 @section('bottom')
-    <?php
-        $markt_name = request()->segment(2);
-    ?>
-
     <script src="/assets/js/aanmelding-geselecteerd.js"></script>
 @stop
 
 @section('content')
-    <?php
-        // dd($data);
-    ?>
     <div class="token">{{ csrf_token() }}</div>
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" style="position: absolute;">
@@ -31,117 +24,106 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" data-tab="aanmeldingen">
             <h1 class="page-header">Geselecteerd</h1>
             <input type="button" class="exportToExcel" value="export all">
-            <input type="button" class="verstuurFacturen" value="verstuur facturen">
-            <div class="table-responsive">
-                <table class="table table-fixed standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
+            <div class="table-responsive" style="max-height: 70vh;margin-top: 50px;position:relative;">
+                <table class="table table-striped standhouders-table" data-marktid="{{$data['koppelStandhoudersMarkten'][0]['markt_id']}}">
                     <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Wijzig</th>
-                            <th>Gezien</th>
-                            <th>Geselecteerd</th>
-                            <th>Betaald</th>
-                            <th>Bedrijfsnaam</th>
-                            <th>Naam</th>
-                            <th>Telefoon</th>
-                            <th>E-mail</th>
-                            <th>Website</th>
-                            <th>Type</th>
-                            <th>Kraam</th>
-                            <th>Grondplek</th>
-                            <th>Bedrag</th>
-                            <th>Grote maten</th>
-                            <th>Dames kleding</th>
-                            <th>Heren kleding</th>
-                            <th>Kinder kleding</th>
-                            <th>Baby kleding</th>
-                            <th>Fashion accessoires</th>
-                            <th>Schoenen</th>
-                            <th>Lifestyle</th>
-                            <th>Woon accessoires</th>
-                            <th>Kunst</th>
-                            <th>Sieraden</th>
-                            <th>Tassen</th>
-                            <th>Brocante</th>
-                            <th>Dieren spullen</th>
-                            <th>Anders</th>
-                        </tr>
+                    <tr>
+                        <th>#</th>
+                        <th></th>
+                        <th></th>
+                        <th>credit</th>
+                        <th>Gezien</th>
+                        <th>Select</th>
+                        <th>Betaald</th>
+                        <th>Bedrijfsnaam</th>
+                        <th>Naam</th>
+                        <th>Telefoon</th>
+                        <th>E-mail</th>
+                        {{--<th>Website</th>--}}
+                        {{--<th>Type</th>--}}
+                        <th>Kraam</th>
+                        <th>Grondplek</th>
+                        <th>Bedrag</th>
+                        {{--<th>Grote maten</th>--}}
+                        {{--<th>Dames kleding</th>--}}
+                        {{--<th>Heren kleding</th>--}}
+                        {{--<th>Kinder kleding</th>--}}
+                        {{--<th>Baby kleding</th>--}}
+                        {{--<th>Fashion accessoires</th>--}}
+                        {{--<th>Schoenen</th>--}}
+                        {{--<th>Lifestyle</th>--}}
+                        {{--<th>Woon accessoires</th>--}}
+                        {{--<th>Kunst</th>--}}
+                        {{--<th>Sieraden</th>--}}
+                        {{--<th>Tassen</th>--}}
+                        {{--<th>Brocante</th>--}}
+                        {{--<th>Dieren spullen</th>--}}
+                        {{--<th>Anders</th>--}}
+                    </tr>
                     </thead>
                     <tbody>
-                        <?php
-                            $x = 0;
-                            // for ($x=0;$x < count($data['standhouders']); $x++)
-                        	foreach($data['standhouders'] as $standhouder)
-                            {
-                                // dd($standhouder);
-                                if (!$data['koppelStandhoudersMarkten'][$x]->seen)
-                                {
-                                    echo '<tr class="unseen-row" data-id="'.$standhouder->id.'">';
-                                }
-                                else if ($data['koppelStandhoudersMarkten'][$x]->selected)
-                                {
-                                    echo '<tr class="selected-row" data-id="'.$standhouder->id.'">';
-                                }
-                                else
-                                {
-                                    echo '<tr data-id="'.$standhouder->id.'">';
-                                }
+                    <?php
+                    $x = 0;
+                    // for ($x=0;$x < count($data['standhouders']); $x++)
+                    // $data['standhouders'][1]['id'];
+                    foreach($data['standhouders'] as $standhouder)
+                    {
+                        // dd($standhouder);
+                        if (!$data['koppelStandhoudersMarkten'][$x]->seen)
+                        {
+                            echo '<tr class="unseen-row" data-id="'.$standhouder->id.'">';
+                        }
+                        else if ($data['koppelStandhoudersMarkten'][$x]->selected)
+                        {
+                            echo '<tr class="selected-row" data-id="'.$standhouder->id.'">';
+                        }
+                        else
+                        {
+                            echo '<tr data-id="'.$standhouder->id.'">';
+                        }
 
-                                echo '<td>' . $standhouder->id . '</td>';
+                        echo '<td class="filterable-cell">' . $standhouder->id . '</td>';
 
-                                echo '<td class="filterable-cell"><img class="adjust" src="/assets/img/dashboard/icons/pencil.png"></td>';
+                        echo '<td class="filterable-cell"><img class="delete-standhouder" data-id="' . $standhouder->id . '" style="width: 20px;" src="/assets/img/dashboard/icons/close-icon.png"></td>';
+                        echo '<td class="filterable-cell"><img class="adjust" src="/assets/img/dashboard/icons/pencil.png"></td>';
+                        echo '<td class="filterable-cell"><img class="credit-standhouder" data-id="' . $standhouder->id . '" style="width: 20px;" src="/assets/img/dashboard/icons/credit.png"></td>';
 
-                                echo '<td><input type="checkbox" class="seen" name="seen" value="seen"';
-                                if($data['koppelStandhoudersMarkten'][$x]->seen){
-                                    echo 'checked=checked>' . '</td>';
-                                } else {
-                                    echo '>' . '</td>';
-                                }
+                        echo '<td class="filterable-cell"><input type="checkbox" class="seen" name="seen" value="seen"';
+                        if($data['koppelStandhoudersMarkten'][$x]->seen){
+                            echo 'checked=checked>' . '</td>';
+                        } else {
+                            echo '>' . '</td>';
+                        }
 
-                                echo '<td><input type="checkbox" class="selected" name="selected" value="selected"';
-                                if($data['koppelStandhoudersMarkten'][$x]->selected){
-                                    echo 'checked=checked>' . '</td>';
-                                } else {
-                                    echo '>' . '</td>';
-                                }
+                        echo '<td class="filterable-cell"><input type="checkbox" class="selected" name="selected" value="selected"';
+                        if($data['koppelStandhoudersMarkten'][$x]->selected){
+                            echo 'checked=checked>' . '</td>';
+                        } else {
+                            echo '>' . '</td>';
+                        }
 
-                                echo '<td class="filterable-cell"><input type="checkbox" class="betaald" name="betaald" value="betaald"';
-                                if(isset($data['factuur'][$standhouder->id]) && $data['factuur'][$standhouder->id]->betaald){
-                                    echo 'checked=checked>' . '</td>';
-                                } else {
-                                    echo '>' . '</td>';
-                                }
+                        echo '<td class="filterable-cell"><input type="checkbox" class="betaald" name="betaald" value="betaald"';
+                        if(isset($data['factuur'][$standhouder->id]) && $data['factuur'][$standhouder->id]->betaald){
+                            echo 'checked=checked>' . '</td>';
+                        } else {
+                            echo '>' . '</td>';
+                        }
 
-                                echo '<td class="filterable-cell">' . $standhouder->Bedrijfsnaam . '</td>';
-                                echo '<td class="filterable-cell">' . $standhouder->Voornaam . " " . $standhouder->Achternaam . '</td>';
-                                echo '<td class="filterable-cell">' . $standhouder->Telefoon . '</td>';
-                                echo '<td class="filterable-cell">' . $standhouder->Email . '</td>';
-                                echo '<td class="filterable-cell">' . $standhouder->Website . '</td>';
+                        echo '<td class="filterable-cell">' . $standhouder->Bedrijfsnaam . '</td>';
+                        echo '<td class="filterable-cell">' . $standhouder->Voornaam . " " . $standhouder->Achternaam . '</td>';
+                        echo '<td class="filterable-cell">' . $standhouder->Telefoon . '</td>';
+                        echo '<td class="filterable-cell">' . $standhouder->Email . '</td>';
+//                                echo '<td class="filterable-cell">' . $standhouder->Website . '</td>';
+//
+//                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
+                        echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
+                        echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
+                        echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
 
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->type . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kraam . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->grondplek . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->bedrag . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"grote-maten"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"dames-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"heren-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"kinder-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"baby-kleding"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"fashion-accessoires"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->schoenen . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->lifestyle . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->{"woon-accessoires"} . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->kunst . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->sieraden . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->tassen . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->brocante . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->dierenspullen . '</td>';
-                                echo '<td class="filterable-cell">' . $data['koppelStandhoudersMarkten'][$x]->anders . '</td>';
-
-                                echo '</tr>';
-                                $x++;
-                            }
-                        ?>
+                        echo '</tr>';
+                        $x++;
+                    }
+                    ?>
                     </tbody>
                 </table>
             </div>
@@ -194,11 +176,11 @@
 
                 <div class="form-title">Dagen:</div>
                 <?php
-                    if ($data['markt']->aantal_dagen != '' && $data['markt']->aantal_dagen > 0) {
-                        for ($x=0;$x<$data['markt']->aantal_dagen;$x++) {
-                            echo '<label><span>dag'.($x+1).'</span><input type="checkbox" class="dagen" name="dag['.($x+1).']"><br>';
-                        }
+                if ($data['markt']->aantal_dagen != '' && $data['markt']->aantal_dagen > 0) {
+                    for ($x=0;$x<$data['markt']->aantal_dagen;$x++) {
+                        echo '<label><span>dag'.($x+1).'</span><input type="checkbox" class="dagen" name="dag['.($x+1).']"><br>';
                     }
+                }
                 ?>
 
                 <br><br><br>
@@ -264,4 +246,57 @@
         </div>
 
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $(document).on('click', '.delete-standhouder', function(){
+                var id = $(this).attr('data-id');
+
+                $.post({
+                    type: 'GET',
+                    url: '/standhouder/delete/'+id
+                })
+                    .done(function(data){
+                        data = JSON.parse(data);
+                        console.log(data);
+                        if (data.success) {
+                            alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
+                        } else {
+                            alert('Er is iets mis gegaan');
+                        }
+                    })
+                    .fail(function(data){
+                        console.log(data);
+                        alert('Er is iets mis gegaan');
+                    });
+            });
+
+            $(document).on('click', '.credit-standhouder', function(){
+                var id = $(this).attr('data-id');
+
+                $.post({
+                    type: 'GET',
+                    url: '/standhouder/credit/'+id
+                })
+                    .done(function(data){
+                        data = JSON.parse(data);
+                        console.log(data);
+                        if (data.success) {
+                            alert('Gecrediteerd');
+                        } else {
+                            alert('Er is iets mis gegaan');
+                        }
+                    })
+                    .fail(function(data){
+                        // data = JSON.parse(data);
+                        console.log(data);
+                        if (data.status == '404') {
+                            alert('Waarschijnlijk bestaat er geen factuur');
+                        } else {
+                            alert('Er is iets mis gegaan');
+                        }
+                    });
+            });
+        });
+    </script>
 @stop
