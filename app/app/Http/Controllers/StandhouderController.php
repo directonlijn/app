@@ -107,10 +107,10 @@ class StandhouderController extends Controller
         if (isset($factuur) && $credited === true || !isset($factuur) && $credited === '') {
             // Remove koppel
             $standhouderExtra = KoppelStandhoudersMarkten::where('standhouder_id', $id)->firstOrFail();
-            $standhouderExtra->destroy();
+            $standhouderExtra->destroy($standhouderExtra->id);
             // Remove standhouder
             $standhouder = Standhouder::where('id', $id)->firstOrFail();
-            $standhouder->destroy();
+            $standhouder->destroy($standhouder->id);
 
             return json_encode(array("success" => true));
         } else {
