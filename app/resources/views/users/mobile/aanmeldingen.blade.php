@@ -131,8 +131,13 @@
                     }
                 })
                 .fail(function(data){
+                    data = JSON.parse(data);
                     console.log(data);
-                    alert('Er is iets mis gegaan');
+                    if (data.status == '404') {
+                        alert('Waarschijnlijk bestaat er geen factuur');
+                    } else {
+                        alert('Er is iets mis gegaan');
+                    }
                 });
             });
         });
