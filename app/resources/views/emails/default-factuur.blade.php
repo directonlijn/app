@@ -429,7 +429,7 @@ $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;text-align: left;">
 
-                            {{ (isset($credit) ? 'Credit factuur' : 'factuur') }} {{ $markt->Naam }}
+                            {{ (isset($credit) ? 'Credit factuur' : 'Factuur') }} {{ $markt->Naam }}
                         </td>
                     </tr>
                 </tbody></table>
@@ -501,7 +501,7 @@ $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
-                            <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">Factuur {{ $markt->Naam }}</h1>
+                            <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">{{ (isset($credit) ? 'Credit factuur' : 'Factuur') }}  {{ $markt->Naam }}</h1>
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
