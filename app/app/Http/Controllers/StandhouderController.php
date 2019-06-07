@@ -243,7 +243,8 @@ class StandhouderController extends Controller
             'template' => $markt->{"factuur-mail-template"},
             'email' => $standhouder->Email,
             'pathToPdf' => $path,
-            'markt' => $markt
+            'markt' => $markt,
+            'credit' => 1
         );
 
         $data5 = array(
