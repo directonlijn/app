@@ -125,7 +125,7 @@
                     data = JSON.parse(data);
                     console.log(data);
                     if (data.success) {
-                        alert('Verwijderd en gecrediteerd als er een factuur gestuurd was.');
+                        alert('Gecrediteerd');
                     } else {
                         alert('Er is iets mis gegaan');
                     }
