@@ -501,13 +501,10 @@ $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($
 
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
-                            <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">{{ ((isset($credit) && $credit == 1) ? 'Credit factuur' : 'Factuur') }}  {{ $markt->Naam }}</h1>
+                            <h1 style="display: block;margin: 0;padding: 0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">{{ ((isset($credit)) ? 'Credit factuur' : 'Factuur') }}  {{ $markt->Naam }}</h1>
 
 <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Beste Standhouder,<br>
  <br>
-    <?php if(isset($credit) && $credit == 1) { ?>
-        Hierbij ontvangt u de credit factuur.<br>
-    <?php } else { ?>
         Bedankt voor uw inschrijving voor {{ $markt->Naam }}.<br>
          <br>
         Wij zijn enorm druk met alle voorbereidingen om de markt tot een succes te laten verlopen. In de bijlage sturen wij de algemene voorwaarden en de factuur.<br>
@@ -518,7 +515,6 @@ $headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($
         <strong>Pas na ontvangst van uw betaling is uw inschrijving definitief.</strong> Mocht de betaling niet binnen de gestelde betalingstermijn gedaan zijn kan uw plek komen te vervallen!<br>
          <br>
         Tot dan,<br>
-    <?php } ?>
  <br>
 Contact informatie:<br>
 Info@directevents.nl<br>
