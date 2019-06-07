@@ -130,7 +130,7 @@ class StandhouderController extends Controller
         $factuurnummer = ($factuur) ? (str_pad(($factuur->factuurnummer+1), 9, " ", STR_PAD_LEFT)) : $year."00001";
 //        dd($factuurnummer);
 
-        return intval($factuurnummer, true);
+        return $factuurnummer;
     }
 
     public function credit($id, $asFunction = false) {
