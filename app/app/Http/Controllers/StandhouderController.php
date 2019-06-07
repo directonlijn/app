@@ -133,7 +133,7 @@ class StandhouderController extends Controller
     }
 
     public function credit($id, $asFunction = false) {
-        $originalFactuur = Factuur::where('standhouder_id', $id)->where('credit', 0)->firstOrFail();
+        $originalFactuur = Factuur::where('standhouder_id', $id)->where('credit', 0)->where('totaal_bedrag', '>', 0)->firstOrFail();
         $standhouder = Standhouder::where('id', $id)->firstOrFail();
         $standhouderExtra = KoppelStandhoudersMarkten::where('standhouder_id', $id)->firstOrFail();
         $markt = Markt::where('id', $originalFactuur->markt_id)->firstOrFail();
