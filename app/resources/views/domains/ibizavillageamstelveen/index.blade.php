@@ -12,6 +12,7 @@
         $end_time = substr($markt["tot-tijd"], 0, -3);
         $kraam_prijs = $markt->bedrag_kraam / 1.21;
         $grondplek_prijs = $markt->bedrag_grondplek / 1.21;
+        $markt_vol = true;
 
 //        dd($markt);
     } else {
@@ -99,7 +100,18 @@
 
 <div style="display: none;" class="modal" id="aanmeldformulier">
     <div class="modal-content">
-        <form id="aanmeld-formulier">
+        <?php if (isset($markt_vol) && $markt_vol) { ?>
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Aanmelden</h4>
+            </div>
+            <div class="modal-body mx-3">
+                Beste standhouder,<br><br>
+                Helaas zitten wij helemaal vol en is aanmelden niet meer mogelijk. We hopen u te mogen verwelkomen op een van onze andere markten of als bezoeker op Ibiza Village Amstelveen.<br><br>
+                Met vriendelijke groet,<br>
+                Direct Events
+            </div>
+        <?php } else { ?>
+            <form id="aanmeld-formulier">
             <div class="modal-header text-center">
                 <h4 class="modal-title w-100 font-weight-bold">Aanmelden</h4>
             </div>
@@ -350,6 +362,7 @@
             </div>
 
         </form>
+        <?php } ?>
     </div>
 </div>
 
