@@ -13,11 +13,11 @@ $grondplek_prijs = '25,-';
 <head>
     <meta charset="utf-8">
 
-    <meta property="og:url"                content="http://app.directevents.nl/markt/downtown%20ophelialaan%20aalsmeer%202019">
+    <meta property="og:url"                content="http://hippiemarktaalsmeer.nl">
     <meta property="og:type"               content="website">
     <meta property="og:title"              content="Hippiemarkt Surfeiland Aalsmeer - Direct Events">
-    <meta property="og:description"        content="Hippiemarkt Surfeiland is op Zaterdag 22 juni van 12:00 tot 17:00 in Aalsmeer">
-    <meta property="og:image"              content="http://app.directevents.nl/downtown%20ophelialaan%20aalsmeer%202019/mail.jpg">
+    <meta property="og:description"        content="Hippiemarkt Surfeiland is op Vrijdag 26 juli van 16:00 tot 23:00 in Aalsmeer">
+    <meta property="og:image"              content="http://hippiemarktaalsmeer.nl/hippiemarkt%20surfeiland%20aalsmeer%202019/mail.jpg">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@ $grondplek_prijs = '25,-';
 
     <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
 
-    <link rel="image_src" href="http://app.directevents.nl/hippiemarkt surfeiland aalsmeer 2019/mail.jpg">
+    <link rel="image_src" href="http://hippiemarktaalsmeer.nl/hippiemarkt%20surfeiland%20aalsmeer%202019/mail.jpg">
 </head>
 <body>
 <div class="container">
