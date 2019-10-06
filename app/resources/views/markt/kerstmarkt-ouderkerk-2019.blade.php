@@ -29,7 +29,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?=$name;?> - Direct Events">
     <meta property="og:description"
-          content="<?=$name;?> is op <?=$day;?> <?=$date;?> van <?=$start_time;?> tot <?=$end_time;?> in <?=$markt->Plaats;?>">
+          content="<?=$name;?> is op <?=$day;?> <?=$date;?> van <?=$start_time;?> tot <?=$end_time;?> in de <?=$markt->Adres;?>, <?=$markt->Plaats;?>">
     <meta property="og:image" content="http://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
