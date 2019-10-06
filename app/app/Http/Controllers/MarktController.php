@@ -28,19 +28,9 @@ class MarktController extends Controller
      */
     public function getMarkt($slug)
     {
-        // $data = array();
-        // $data['standhouders'] = DB::select('
-        //         SELECT standhouders.*
-        //         FROM standhouders
-        //         INNER JOIN koppel_standhouders_markten
-        //         ON koppel_standhouders_markten.standhouder_id=standhouders.id
-        //         INNER JOIN markten
-        //         ON koppel_standhouders_markten.markt_id = markten.id
-        //         WHERE markten.Naam = ?',
-        //     [$slug]);
+        $markt = \App\Models\Markt::where('Website', 'like', '%' . $slug . '%')->orderBy('id', 'desc')->first();
 
-        // return View('markt.{$slug}');
-        return view("markt.{$slug}");
+        return view("markt.{$slug}")->with(['markt' => $markt, 'slug' => $slug]);
     }
 
     /**
