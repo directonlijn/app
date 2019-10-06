@@ -30,7 +30,7 @@
     <meta property="og:title" content="<?=$name;?> - Direct Events">
     <meta property="og:description"
           content="<?=$name;?> is op <?=$day;?> <?=$date;?> van <?=$start_time;?> tot <?=$end_time;?> in <?=$markt->Plaats;?>">
-    <meta property="og:image" content="<?=$markt->Website;?>/mail.jpg">
+    <meta property="og:image" content="http://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@
 
     <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
 
-    <link rel="image_src" href="<?=$markt->Website;?>/mail.jpg">
+    <link rel="image_src" href="http://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
 </head>
 <body>
 <div class="container">
