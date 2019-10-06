@@ -215,6 +215,9 @@
                         <h4 class="mt-3">
                             Markt gegevens:
                         </h4>
+                        <p>
+                            Stroom is inbegrepen!
+                        </p>
                         <input type="hidden" name="dag[0]" checked="checked">
                         <div class="row">
                             <div class="col-12 col-md-6">
