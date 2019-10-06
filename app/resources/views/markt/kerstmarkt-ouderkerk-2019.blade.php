@@ -12,8 +12,8 @@
         $date = date('j', strtotime($markt['Datum_van'])).' '. strftime('%B', strtotime($markt['Datum_van']));
         $start_time = substr($markt["van-tijd"], 0, -3);
         $end_time = substr($markt["tot-tijd"], 0, -3);
-        $kraam_prijs = $markt->bedrag_kraam;
-        $grondplek_prijs = $markt->bedrag_grondplek;
+        $kraam_prijs = round($markt->bedrag_kraam / 1.21, 2);
+        $grondplek_prijs = round($markt->bedrag_grondplek / 1.21, 2);
         $markt_vol = false;
 
     //        dd($markt);
