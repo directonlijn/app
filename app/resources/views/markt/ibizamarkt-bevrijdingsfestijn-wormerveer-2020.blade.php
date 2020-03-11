@@ -30,7 +30,7 @@ if ($markt) {
     <meta property="og:title" content="<?=$name;?> - Direct Events">
     <meta property="og:description"
           content="<?=$name;?> is op <?=$day;?> <?=$date;?> van <?=$start_time;?> tot <?=$end_time;?> in de <?=$markt->Adres;?>, <?=$markt->Plaats;?>">
-    <meta property="og:image" content="http://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
+    <meta property="og:image" content="https://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,14 +38,14 @@ if ($markt) {
 
     <title>Direct Events - {{ $name }}</title>
 
-    <base href="http://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/">
+    <base href="https://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
     <link media="all" type="text/css" rel="stylesheet" href="style/style.css">
 
-    <link rel="image_src" href="http://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
+    <link rel="image_src" href="https://{{ $_SERVER['HTTP_HOST'] }}/{{ $slug }}/mail.jpg">
 </head>
 <body>
 <div class="container">
