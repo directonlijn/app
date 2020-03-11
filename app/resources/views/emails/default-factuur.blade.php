@@ -3,8 +3,11 @@
 //    $standhouderExtra = $standhouder['koppelStandhoudersMarktenWithMarkt'];
 //    $markt = $standhouder['koppelStandhoudersMarktenWithMarkt']['Markt'];
 
-$headerImage = 'http://app.directevents.nl/'.str_replace(' ', '_', strtolower ($markt->Naam) ).'/mail.jpg';
-
+if ($markt->id >= 23) {
+    $headerImage = 'https://app.directevents.nl/'.str_replace(' ', '-', strtolower ($markt->Naam) ).'/mail.jpg';
+} else {
+    $headerImage = 'https://app.directevents.nl/'.str_replace(' ', '_', strtolower ($markt->Naam) ).'/mail.jpg';
+}
 ?>
 
 <!doctype html>
